@@ -2,13 +2,21 @@
 export default defineNuxtConfig({
     modules: [
         '@nuxt/devtools',
-        '@nuxtjs/tailwindcss' 
+        '@nuxt/image',
+        '@nuxt/ui', 
+        'nuxt-time'
     ],
     runtimeConfig: {
         public: {
-            wordpressUrl: 'https://acfheadless.wpengine.local/graphql'
+            wordpressUrl: 'https://wpnuxt.vernaillen.com/graphql'
+        }
+    },
+    css: [
+        '~/assets/css/main.css',
+    ],
+    routeRules:  {
+        '/**': {
+            swr: true
         }
     }
 })
-
-

@@ -1,28 +1,24 @@
+<script setup lang="ts">
+import type { Post } from '~/types/wordpress';
+
+defineProps<{
+    post: Post
+}>();
+</script>
+
 <template>
     <NuxtLink :to='post.uri'>
-        <div class="flex 
-        items-center 
-        bg-gradient-to-r
-        from-cyan-500 
-        to-blue-500 
-        p-8 
-        rounded-lg 
-        text-white 
-        transition-all 
-        hover:-translate-y-1 
-        hover:scale-105"
-        >
-            <div>
-                <h2 class="font-semibold text-2xl">{{ post.title }}</h2>
-                <p>{{ new Date(post.date).toLocaleDateString() }}</p>
-            </div>
-        </div>
+        <UCard>
+            <template #header>
+                <NuxtImg v-if="post.featuredImage?.node?.sourceUrl" :src="post.featuredImage?.node?.sourceUrl"/>
+            </template>
+            <h2 class="font-semibold text-2xl font-mic32">
+                {{ post.title }}
+            </h2>
+            <p class="text-xs mt-2"><nuxt-time :datetime="post.date" month="long" day="numeric" year="numeric" locale="nl-BE" /></p>
+            <template #footer>
+                <div v-html="post.excerpt" />
+            </template>
+        </UCard>
     </NuxtLink>
 </template>
-
-<script setup lang="ts">
-const props = defineProps<{
-    post: Record<'title' | 'date' | 'excerpt' | 'uri', string>
-}>();
-
-</script>

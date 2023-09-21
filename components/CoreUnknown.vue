@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import type { Block } from '../types/wordpress-blocks'
 defineProps<{
-    blocks: Block[]
+    block: Block
 }>();
 </script>
 
 <template>
-    <Block v-for="block, index in blocks" :key="index" :block="block"></Block>
+    <p v-html="block.originalContent"></p>
 </template>

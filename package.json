@@ -1,4 +1,6 @@
 {
+  "name": "nuxt",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "build": "nuxt build",
@@ -6,13 +8,18 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "start" : "node .output/server/index.mjs"
+    "start": "node .output/server/index.mjs"
   },
   "devDependencies": {
-    "nuxt": "^3.2.3"
+    "@nuxt/devtools": "^0.8.3",
+    "@nuxt/kit": "^3.7.3",
+    "@nuxt/ui": "^2.8.1",
+    "@vueuse/core": "^10.4.1",
+    "nuxt": "^3.2.3",
+    "nuxt-time": "^0.1.1"
   },
   "dependencies": {
-    "@nuxt/devtools": "^0.2.5",
-    "@nuxtjs/tailwindcss": "^6.4.1"
+    "@nuxt/image": "1.0.0-rc.2",
+    "vue-easy-lightbox": "^1.16.0"
   }
 }
