@@ -50,7 +50,7 @@ useHead({
             <nav class="mx-auto mt-6 p-2 ">
                 <UButton to="/">Back</UButton>
             </nav>
-            <main class="prose mt-6 p-6 rounded-lg">
+            <main class="prose dark:prose-invert p-6 rounded-lg">
                 <h1 class="text-4xl">{{ post.title }}</h1>
                 <div class="text-xs text-primary-500 my-2">
                     gepubliceerd op <nuxt-time :datetime="post.date" month="long" day="numeric" year="numeric" locale="nl-BE" />
