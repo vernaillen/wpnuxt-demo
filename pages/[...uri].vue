@@ -7,12 +7,10 @@ const cacheKey = computed(() => `post-${uri}`)
 const cachedPost = useNuxtData(cacheKey.value)
 
 if (cachedPost.data.value) {
-    console.log('found cached post data', cachedPost.data.value)
     post.value = cachedPost.data.value
 } else {
-    console.log('no cached post data found')
     const config = useRuntimeConfig();
-    const { data, pending, refresh, error } = await useFetch(config.public.wordpressUrl, {
+    const { data, pending, refresh, error } = await useFetch(config.public.wpGraphQLUrl, {
         key: cacheKey.value,
         method: 'get',
         query: {

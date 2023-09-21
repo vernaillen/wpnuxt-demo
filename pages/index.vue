@@ -8,12 +8,9 @@ const cachedPosts = useNuxtData(cacheKey)
 const posts = ref()
 
 if (cachedPosts.data.value) {
-  console.log('found cached posts', cachedPosts.data.value)
   posts.value = cachedPosts.data.value
 } else {
-  console.log('no cached posts found')
-
-  const { data, refresh, pending } = await useFetch(config.public.wordpressUrl, {
+  const { data, refresh, pending } = await useFetch(config.public.wpGraphQLUrl, {
     key: cacheKey,
     method: 'get',
     query: {

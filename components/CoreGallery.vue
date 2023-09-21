@@ -1,13 +1,21 @@
 <script setup lang="ts">
 import type { CoreGallery } from '../types/wordpress-blocks'
+const img = useImage()
+const config = useRuntimeConfig();
+const wpUrl = config.public.wordpressUrl
 const props = defineProps<{
     block: CoreGallery
 }>();
 const lightbox = useLightbox()
 const images: string[] = []
-props.block?.innerBlocks.forEach((block) => {
-    if (block.name === 'core/image') {
-        images.push(block.attributes.url)
+props.block?.innerBlocks.forEach((imgBlock) => {
+    if (imgBlock.name === 'core/image') {
+        if (imgBlock.attributes?.url && imgBlock.attributes.url.indexOf(wpUrl) > -1) {
+            const imgUrl = img(imgBlock.attributes.url.replace(wpUrl, ''))
+            images.push(imgUrl)
+        } else {
+            images.push(imgBlock.attributes.url)
+        }
     }
 })
 function openGallery (i: number) {
@@ -19,9 +27,13 @@ function openGallery (i: number) {
 
 <template>
     <div class="columns-2 md:columns-3 lg:columns-4 mx-[-8px] mb-20">
-        <div v-for="(image, index) in images" :key="index" class="px-0 md:px-1">
+        <div v-for="(imgBlock, index) in block?.innerBlocks" :key="index" class="px-0 md:px-1">
             <div class="galleryImgWrapper rounded-lg overflow-hidden relative mb-4 md:mb-6  shadow-md hover:shadow-xl">
-                <NuxtImg :src="image" class="rounded-lg cursor-pointer w-full" :alt="image" @click="openGallery(index)" />
+                <Image 
+                    :url="imgBlock.attributes.url" 
+                    class="rounded-lg cursor-pointer w-full" 
+                    @click="openGallery(index)" 
+                    :width="300"/>
             </div>
         </div>
     </div>

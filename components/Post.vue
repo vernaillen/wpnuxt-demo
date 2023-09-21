@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import type { Post } from '~/types/wordpress';
-
-defineProps<{
+const props = defineProps<{
     post: Post
 }>();
 </script>
@@ -10,7 +9,7 @@ defineProps<{
     <NuxtLink :to='post.uri'>
         <UCard>
             <template #header>
-                <NuxtImg v-if="post.featuredImage?.node?.sourceUrl" :src="post.featuredImage?.node?.sourceUrl"/>
+                <Image v-if="post.featuredImage?.node?.sourceUrl" :url="post.featuredImage?.node?.sourceUrl" />
             </template>
             <h2 class="font-semibold text-2xl font-mic32">
                 {{ post.title }}

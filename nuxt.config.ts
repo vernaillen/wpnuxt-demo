@@ -8,12 +8,19 @@ export default defineNuxtConfig({
     ],
     runtimeConfig: {
         public: {
-            wordpressUrl: 'https://wpnuxt.vernaillen.com/graphql'
+            wordpressUrl: 'https://wpnuxt.vernaillen.com',
+            wpGraphQLUrl: 'https://wpnuxt.vernaillen.com/graphql'
         }
     },
     css: [
         '~/assets/css/main.css',
     ],
+    image: {
+        provider: 'twicpics',
+        twicpics: {
+            baseURL: 'https://vernaillen.twic.pics/nuxt-wordpress-poc'
+        }
+    },
     routeRules:  {
         '/**': {
             swr: true
