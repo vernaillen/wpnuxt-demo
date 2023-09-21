@@ -20,6 +20,6 @@
 
 .page-enter-from,
 .page-leave-to {
-  @apply opacity-70 blur-[2px];
+  @apply opacity-70;
 }
 </style>
