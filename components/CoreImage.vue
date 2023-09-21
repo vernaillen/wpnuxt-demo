@@ -10,7 +10,9 @@ console.log(imgUrl)
 </script>
 
 <template>
-    <Image v-if="props.block?.attributes?.url" :url="props.block?.attributes?.url"
+    <Image 
+        v-if="props.block?.attributes?.url" 
+        :url="props.block?.attributes?.url"
         :alt="block?.attributes?.alt" 
         :width="block?.attributes?.width"
         :height="block?.attributes?.height" />

@@ -45,9 +45,6 @@ useHead({
 <template>
     <NuxtLayout>
         <UContainer>
-            <nav class="mx-auto mt-6 p-2 ">
-                <UButton to="/">Back</UButton>
-            </nav>
             <main class="prose dark:prose-invert p-6 rounded-lg">
                 <h1 class="text-4xl">{{ post.title }}</h1>
                 <div class="text-xs text-primary-500 my-2">
@@ -57,6 +54,9 @@ useHead({
                     <BlockRenderer :blocks="post.blocks"/>
                 </div>
             </main>
+            <nav class="mx-auto mt-6 p-2 ">
+                <UButton to="/">Back</UButton>
+            </nav>
         </UContainer>
     </NuxtLayout>
 </template>
