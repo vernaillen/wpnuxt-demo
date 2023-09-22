@@ -1,0 +1,27 @@
+query Posts($limit: Int = 10) {
+  posts(first: $limit) {
+    nodes {
+      title
+      date
+      excerpt
+      uri
+      featuredImage {
+        node {
+          sourceUrl
+        }
+      }
+    }
+  }
+}
+
+query PostByUri($uri: String!) {
+  nodeByUri(uri: $uri) {
+    ... on Post {
+      id
+      title
+      date
+      content
+      blocks
+    }
+  }
+}

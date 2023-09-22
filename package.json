@@ -16,6 +16,7 @@
     "@nuxt/ui": "^2.8.1",
     "@vueuse/core": "^10.4.1",
     "nuxt": "^3.2.3",
+    "nuxt-graphql-client": "^0.2.30",
     "nuxt-time": "^0.1.1"
   },
   "dependencies": {

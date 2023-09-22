@@ -1,0 +1,6 @@
+query Settings {
+  generalSettings {
+    title
+    url
+  }
+}

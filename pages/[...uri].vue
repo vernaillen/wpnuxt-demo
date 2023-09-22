@@ -1,56 +1,27 @@
 
 <script setup lang="ts">
-const post = ref()
 const route = useRoute();
-const uri = route.params.uri.join('/');
-const cacheKey = computed(() => `post-${uri}`)
-const cachedPost = useNuxtData(cacheKey.value)
+const uri = route.params.uri
+const post = await usePost(uri[0])
 
-if (cachedPost.data.value) {
-    post.value = cachedPost.data.value
-} else {
-    const config = useRuntimeConfig();
-    const { data, pending, refresh, error } = await useFetch(config.public.wpGraphQLUrl, {
-        key: cacheKey.value,
-        method: 'get',
-        query: {
-            query: `
-            query QueryWPPost($uri: String!) {
-                nodeByUri(uri: $uri) {
-                    ... on Post {
-                        id
-                        title
-                        date
-                        content,
-                        blocks
-                    }
-                }
-            }
-            `,
-            variables: {
-                uri: uri
-            }
-        },
-        transform (data) {
-            return data.data.nodeByUri
-        }
+if (post?.data?.title) {
+    useHead({
+        title: post.data.title
     })
-    post.value = data.value
 }
-
-useHead({
-    title: post.value.title
-})
 </script>
 <template>
-    <UContainer>
+    <UContainer v-if="post?.data">
+        <nav class="mx-auto mt-2">
+            <UButton to="/">Back</UButton>
+        </nav>
         <main class="prose dark:prose-invert p-6 rounded-lg">
-            <h1 class="text-4xl">{{ post.title }}</h1>
+            <h1 class="text-4xl">{{ post.data.title }}</h1>
             <div class="text-xs text-primary-500 my-2">
-                gepubliceerd op <nuxt-time :datetime="post.date" month="long" day="numeric" year="numeric" locale="nl-BE" />
+                gepubliceerd op <nuxt-time :datetime="post.data.date" month="long" day="numeric" year="numeric" locale="nl-BE" />
             </div>
             <div class="mt-5">
-                <BlockRenderer :blocks="post.blocks"/>
+                <BlockRenderer :blocks="post.data.blocks"/>
             </div>
         </main>
         <nav class="mx-auto mt-6 p-2 ">

@@ -4,12 +4,25 @@ export default defineNuxtConfig({
         '@nuxt/devtools',
         '@nuxt/image',
         '@nuxt/ui', 
-        'nuxt-time'
+        'nuxt-graphql-client',
+        'nuxt-time',
     ],
     runtimeConfig: {
         public: {
             wordpressUrl: 'https://wpnuxt.vernaillen.com',
-            wpGraphQLUrl: 'https://wpnuxt.vernaillen.com/graphql'
+            wpGraphQLUrl: 'https://wpnuxt.vernaillen.com/graphql',
+            GQL_HOST: 'https://wpnuxt.vernaillen.com/graphql'
+        }
+    },
+    'graphql-client': {
+        codegen: {
+            silent: false,
+            skipTypename: true,
+            useTypeImports: true,
+            dedupeFragments: true,
+            onlyOperationTypes: false,
+            avoidOptionals: false,
+            disableOnBuild: false
         }
     },
     app: {

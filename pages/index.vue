@@ -1,43 +1,5 @@
 <script setup lang="ts">
-import type { Post } from '~/types/wordpress';
-
-const route = useRoute()
-const config = useRuntimeConfig();
-const cacheKey = 'allPosts'
-const cachedPosts = useNuxtData(cacheKey)
-const posts = ref()
-
-if (cachedPosts.data.value) {
-  posts.value = cachedPosts.data.value
-} else {
-  const { data, refresh, pending } = await useFetch(config.public.wpGraphQLUrl, {
-    key: cacheKey,
-    method: 'get',
-    query: {
-      query: `
-      query QueryWPPosts {
-        posts(first:10){
-          nodes {
-            title
-            date
-            excerpt
-            uri
-            featuredImage {
-              node {
-                id
-                sourceUrl
-              }
-            }
-          }
-        }
-      }`
-    },
-    transform (data: any) {
-      return data.data.posts.nodes as Array<Post>;
-    }
-  });
-  posts.value = data.value
-}
+const posts = await usePosts()
 useHead({
   title: "Home"
 })
@@ -57,7 +19,7 @@ const items = [{
 
 <template>
   <UContainer>
-    <div class="pt-5 pb-5 prose dark:prose-invert">
+    <div class="pt-5 pb-5 -ml-2 mr-1 prose dark:prose-invert">
       <UAccordion :items="items">
         <template #item="{ item }">
           <p class="italic text-gray-900 dark:text-white text-center">
@@ -78,8 +40,11 @@ const items = [{
         </template>
       </UAccordion>
     </div>
-    <div class="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-      <Post v-for="post in posts" :key="post.uri" :post="post"></Post>
+    <div v-show="posts" class="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <Post v-for="post in posts.data" :key="post.uri" :post="post"></Post>
+    </div>
+    <div v-show="!posts" class="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <PostSkeleton v-for="i in [1,2,3,4]"/>
     </div>
   </UContainer>
 </template>

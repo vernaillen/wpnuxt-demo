@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import type { Post } from '~/types/wordpress';
+import type { Post } from '#gql';
 const props = defineProps<{
     post: Post
 }>();
 </script>
 
 <template>
-    <NuxtLink :to='post.uri'>
+    <NuxtLink v-if="post.uri" :to='post.uri'>
         <UCard>
             <template #header>
                 <div class="h-[144px] sm:h-[257px] md:h-[167px] lg:h-[147px] xl:h-[179px] 2xl:h-[210px]">
@@ -20,7 +20,7 @@ const props = defineProps<{
             <h2 class="font-semibold text-2xl font-mic32">
                 {{ post.title }}
             </h2>
-            <p class="text-xs mt-2"><nuxt-time :datetime="post.date" month="long" day="numeric" year="numeric" locale="nl-BE" /></p>
+            <p v-if="post.date" class="text-xs mt-2"><nuxt-time :datetime="post.date" month="long" day="numeric" year="numeric" locale="nl-BE" /></p>
             <template #footer>
                 <div v-html="post.excerpt" />
             </template>
