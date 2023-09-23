@@ -10,6 +10,7 @@ const settings = await useSettings()
                     <h1><NuxtLink to="/">{{ settings.title }}</NuxtLink></h1>
                 </div>
                 <div class="col-span-2 text-right py-5 mx-0 px-0 align-top">
+                    <Navigation class="inline-flex"/>
                     <ColorModeSwitcher class="mr-4" />
                 </div>
             </div>

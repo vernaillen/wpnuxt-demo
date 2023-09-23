@@ -23,5 +23,12 @@ query PostByUri($uri: String!) {
       content
       blocks
     }
+    ... on Page {
+      id
+      title
+      date
+      content
+      blocks
+    }
   }
 }

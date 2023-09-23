@@ -5,9 +5,9 @@ const _usePost = async (uri: string) => {
     const cacheKey = computed(() => `post-${uri}`)
     const cachedPost = useNuxtData(cacheKey.value)
 
-    if (cachedPost.data.value) {
+    /*if (cachedPost.data.value) {
         post.value = cachedPost.data.value
-    } else {
+    } else {*/
         const { data, pending, refresh, error } = await useFetch("/api/postByUri/" + uri, {
             key: cacheKey.value,
             method: 'get',
@@ -16,7 +16,7 @@ const _usePost = async (uri: string) => {
             }
         })
         post.value = data.value
-    }
+    //}
     return {
         data: post.value
     }
