@@ -23,4 +23,4 @@ const _useSettings = async () => {
     }
 }
 
-export const useSettings = createSharedComposable(_useSettings)
+export const useSettings = _useSettings

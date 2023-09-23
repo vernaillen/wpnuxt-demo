@@ -9,4 +9,4 @@ const _useMenu = async () => {
     }
 }
 
-export const useMenu = createSharedComposable(_useMenu)
+export const useMenu = _useMenu

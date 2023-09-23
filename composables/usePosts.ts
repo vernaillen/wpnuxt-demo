@@ -22,4 +22,4 @@ const _usePosts = async () => {
     }
 }
 
-export const usePosts = createSharedComposable(_usePosts)
+export const usePosts = _usePosts
