@@ -1,22 +1,8 @@
 query Pages($limit: Int = 10) {
   pages(first: $limit) {
     nodes {
-      slug
-      status
-      title
-      uri
-      isFrontPage
-      isPostsPage
-      isPreview
-      isPrivacyPage
-      isRestricted
-      isRevision
-      featuredImage {
-        node {
-          uri
-          sourceUrl
-        }
-      }
+      ...Page
+      ...NodeWithFeaturedImage
     }
   }
 }

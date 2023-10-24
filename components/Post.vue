@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { Post } from '#gql';
-const props = defineProps<{
+defineProps<{
     post: Post
 }>();
 </script>

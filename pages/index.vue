@@ -1,7 +1,7 @@
 <script setup lang="ts">
 //const posts = await usePosts()
-const { data } = useAsyncGql('getPosts')
-const posts = data.value?.posts?.nodes
+const { data } = await useAsyncGql('getPosts')
+const posts = ref(data.value?.posts?.nodes)
 
 useHead({
   title: "Home"

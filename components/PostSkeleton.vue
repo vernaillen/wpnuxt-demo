@@ -1,12 +1,12 @@
 <template>
-    <UCard class="opacity-70">
+    <UCard>
         <template #header>
             <div class="h-[144px] sm:h-[257px] md:h-[167px] lg:h-[147px] xl:h-[179px] 2xl:h-[210px]">
                 
             </div>
         </template>
         <div class="w-full">
-            <USkeleton class="h-6 w-2/3 my-3" />
+            <USkeleton class="color-gray-700 h-6 w-2/3 my-3" />
             <USkeleton class="h-2 w-1/4 my-1" />
         </div>
         <template #footer>

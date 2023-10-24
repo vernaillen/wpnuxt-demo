@@ -9,6 +9,7 @@ export default defineNuxtConfig({
     ],
     runtimeConfig: {
         public: {
+            showBlockInfo: false,
             wordpressUrl: 'https://wpnuxt.vernaillen.com',
             wpGraphQLUrl: 'https://wpnuxt.vernaillen.com/graphql',
             GQL_HOST: 'https://wpnuxt.vernaillen.com/graphql'
@@ -38,7 +39,7 @@ export default defineNuxtConfig({
             baseURL: 'https://vernaillen.twic.pics/nuxt-wordpress-poc'
         }
     },
-    routeRules:  {
+    /*routeRules:  {
         '/**': {
             swr: 60 * 60,
             // or
@@ -46,5 +47,5 @@ export default defineNuxtConfig({
                 maxAge: 60 * 60
             }
         }
-    }
+    }*/
 })

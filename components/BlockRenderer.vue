@@ -6,5 +6,5 @@ defineProps<{
 </script>
 
 <template>
-    <Block v-for="block, index in blocks" :key="index" :block="block"></Block><br>
+    <Block v-for="block, index in blocks" :key="index" :block="block"></Block>
 </template>

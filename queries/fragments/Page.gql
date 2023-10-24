@@ -1,0 +1,18 @@
+fragment Page on Page {
+  ...ContentNode
+  content
+  isFrontPage
+  isPostsPage
+  isPreview
+  isPrivacyPage
+  isRestricted
+  isRevision
+  editorBlocks {
+    name
+    ...CoreGallery
+    ...CoreImage
+    ...CoreParagraph
+    ...CoreQuote
+    ...EditorBlock
+  }
+}

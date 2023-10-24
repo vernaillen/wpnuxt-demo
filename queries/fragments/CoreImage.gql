@@ -1,12 +1,28 @@
 fragment CoreImage on CoreImage {
   ...EditorBlock
   attributes {
-    anchor
+    align
     alt
+    anchor
+    aspectRatio
+    borderColor
     caption
+    className
+    cssClassName
+    height
     href
-    url
-    title
+    id
+    linkClass
+    linkDestination
+    linkTarget
+    lock
+    rel
+    scale
+    sizeSlug
     src
+    style
+    title
+    url
+    width
   }
 }

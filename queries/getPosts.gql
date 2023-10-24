@@ -2,15 +2,8 @@
 query getPosts($limit: Int = 10) {
   posts(first: $limit) {
     nodes {
-      title
-      date
-      excerpt
-      uri
-      featuredImage {
-        node {
-          sourceUrl
-        }
-      }
+      ...Post
+      ...NodeWithExcerpt
     }
   }
 }

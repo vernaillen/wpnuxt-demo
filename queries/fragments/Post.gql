@@ -1,0 +1,13 @@
+fragment Post on Post {
+  ...ContentNode
+  ...NodeWithFeaturedImage
+  content
+  editorBlocks {
+    name
+    ...CoreGallery
+    ...CoreImage
+    ...CoreParagraph
+    ...CoreQuote
+    ...EditorBlock
+  }
+}
