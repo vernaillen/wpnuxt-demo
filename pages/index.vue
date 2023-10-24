@@ -1,8 +1,5 @@
 <script setup lang="ts">
-//const posts = await usePosts()
-const { data } = await useAsyncGql('getPosts')
-const posts = ref(data.value?.posts?.nodes)
-
+const posts = await usePosts()
 useHead({
   title: "Home"
 })
@@ -44,7 +41,7 @@ const items = [{
       </UAccordion>
     </div>
     <div v-show="posts" class="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-      <Post v-for="post in posts" :key="post.uri" :post="post"></Post>
+      <Post v-for="post in posts.data" :key="post.uri" :post="post"></Post>
     </div>
     <div v-show="!posts" class="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
       <PostSkeleton v-for="i in [1,2,3,4]"/>

@@ -1,6 +1,0 @@
-fragment CoreGallery on CoreGallery {
-  ...EditorBlock
-  innerBlocks {
-    ...CoreImage
-  }
-}

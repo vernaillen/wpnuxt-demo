@@ -1,9 +1,0 @@
-
-query getPosts($limit: Int = 10) {
-  posts(first: $limit) {
-    nodes {
-      ...Post
-      ...NodeWithExcerpt
-    }
-  }
-}

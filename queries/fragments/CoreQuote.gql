@@ -1,3 +1,0 @@
-fragment CoreQuote on CoreQuote {
-  ...EditorBlock
-}

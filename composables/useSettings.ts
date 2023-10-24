@@ -8,11 +8,10 @@ const _useSettings = async () => {
     if (cachedSettings.data.value) {
         settings.value = cachedSettings.data.value
     } else {
-        const { data, refresh, pending } = await useFetch("/api/settings", {
+        const { data, refresh, pending } = await useFetch("/api/graphql_middleware/query/Settings", {
             key: cacheKey,
-            method: 'get',
             transform (data: any) {
-                return data.generalSettings;
+                return data.data.generalSettings;
             }
         });
         settings.value = data.value

@@ -6,14 +6,21 @@ const _usePost = async (uri: string) => {
 
     if (cachedPost.data.value) {
         post.value = cachedPost.data.value
+        console.log('cached post', cachedPost.data.value)
     } else {
-        const { data, pending, refresh, error } = await useFetch("/api/postByUri/" + uri, {
+        const { data, pending, refresh, error } = await useFetch("/api/graphql_middleware/query/PostByUri/", {
             key: cacheKey.value,
-            method: 'get',
+            params: {
+                uri: uri
+            },
             transform (data) {
                 return data.data.nodeByUri;
             }
         })
+        if (error.value) {
+            throw createError({ statusCode: 500, message: 'Error fetching PostByUri', fatal: true })
+        }
+        console.log('newly fetched Post', data.value)
         post.value = data.value
     }
     return {

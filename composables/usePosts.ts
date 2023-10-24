@@ -1,23 +1,23 @@
-import { GqlOps } from '#gql'
-
 const _usePosts = async () => {
     const cacheKey = 'allPosts'
     const cachedPosts = useNuxtData(cacheKey)
     const posts = ref()
 
     if (cachedPosts.data.value) {
+        console.log('cachedPosts', cachedPosts.data.value)
         posts.value = cachedPosts.data.value
     } else {
-        /*const { data, refresh, pending } = await useFetch("/api/posts", {
+        const { data, refresh, pending, error } = await useFetch("/api/graphql_middleware/query/Posts", {
             key: cacheKey,
-            method: 'get',
             transform (data: any) {
                 return data.data.posts.nodes;
             }
-        });*/
-        
-        const { data } = useAsyncGql('getPosts')
-        posts.value = data.value?.posts?.nodes
+        });
+        if (error.value) {
+            throw createError({ statusCode: 500, message: 'Error fetching menu', fatal: true })
+        }
+        console.log('newly fetched Posts', data.value)
+        posts.value = data.value
     }
     return {
         data: posts.value

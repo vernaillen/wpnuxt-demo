@@ -1,6 +1,0 @@
-query getPostByUri($uri: String!) {
-  nodeByUri(uri: $uri) {
-    ...Post
-    ...Page
-  }
-}
