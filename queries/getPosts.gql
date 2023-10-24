@@ -6,12 +6,6 @@ query getPosts($limit: Int = 10) {
       date
       excerpt
       uri
-      editorBlocks {
-        name
-        ...CoreImage
-        ...CoreParagraph
-        ...CoreQuote
-      }
       featuredImage {
         node {
           sourceUrl

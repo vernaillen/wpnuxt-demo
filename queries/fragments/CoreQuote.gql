@@ -1,6 +1,5 @@
 fragment CoreQuote on CoreQuote {
-  name
-  renderedHtml
+  ...EditorBlock
   innerBlocks {
     name
     renderedHtml

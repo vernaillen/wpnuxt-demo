@@ -1,7 +1,5 @@
 fragment CoreImage on CoreImage {
-  anchor
-  apiVersion
-  renderedHtml
+  ...EditorBlock
   attributes {
     anchor
     alt

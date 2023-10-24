@@ -1,8 +1,6 @@
 fragment CoreParagraph on CoreParagraph {
-  anchor
-  apiVersion
+  ...EditorBlock
   attributes {
     content
   }
-  renderedHtml
 }
