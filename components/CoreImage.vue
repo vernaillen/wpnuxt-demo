@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { CoreImage } from '../types/wordpress-blocks'
+import type { CoreImage } from '#gql';
 const props = defineProps<{
     block: CoreImage
 }>();
@@ -12,5 +12,5 @@ const props = defineProps<{
         :alt="block?.attributes?.alt" 
         :width="block?.attributes?.width"
         :height="block?.attributes?.height" />
-    <div v-else v-html="block?.originalContent"/>
+    <div v-else v-html="block?.renderedHtml"/>
 </template>

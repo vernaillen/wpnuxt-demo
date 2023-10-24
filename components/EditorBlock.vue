@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import type { EditorBlock } from '#gql';
 defineProps<{
-    blocks: EditorBlock[]
+    block: EditorBlock
 }>();
 </script>
 
 <template>
-    <Block v-for="block, index in blocks" :key="index" :block="block"></Block><br>
+    <p v-html="block.renderedHtml"></p>
 </template>

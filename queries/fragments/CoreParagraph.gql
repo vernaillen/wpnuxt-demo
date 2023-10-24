@@ -1,0 +1,8 @@
+fragment CoreParagraph on CoreParagraph {
+  anchor
+  apiVersion
+  attributes {
+    content
+  }
+  renderedHtml
+}

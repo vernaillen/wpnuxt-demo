@@ -1,8 +1,6 @@
 query Pages($limit: Int = 10) {
   pages(first: $limit) {
     nodes {
-      blocks
-      pageId
       slug
       status
       title

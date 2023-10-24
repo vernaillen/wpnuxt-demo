@@ -1,0 +1,8 @@
+fragment CoreQuote on CoreQuote {
+  name
+  renderedHtml
+  innerBlocks {
+    name
+    renderedHtml
+  }
+}

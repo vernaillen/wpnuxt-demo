@@ -1,0 +1,4 @@
+fragment EditorBlock on EditorBlock {
+  name
+  renderedHtml
+}

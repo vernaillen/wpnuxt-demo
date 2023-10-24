@@ -1,23 +1,23 @@
 <script setup lang="ts">
-import CoreParagraph from './CoreParagraph.vue';
-import CoreImage from './CoreImage.vue';
-import CoreGallery from './CoreGallery.vue';
-import CoreQuote from './CoreQuote.vue';
-import CoreUnknown from './CoreUnknown.vue';
-import type { Block } from '../types/wordpress-blocks'
+import CoreParagraphComponent from './CoreParagraph.vue';
+import CoreImageComponent from './CoreImage.vue';
+import CoreGalleryComponent from './CoreGallery.vue';
+import CoreQuoteComponent from './CoreQuote.vue';
+import EditorBlockComponent from './EditorBlock.vue';
+import type { EditorBlock } from '#gql';
 const props = defineProps<{
-    block: Block
+    block: EditorBlock
 }>();
 const blockName= computed(() => {
-    if (props.block.name === 'core/paragraph') return CoreParagraph
-    else if (props.block.name === 'core/image') return CoreImage
-    else if (props.block.name === 'core/gallery') return CoreGallery
-    else if (props.block.name === 'core/quote') return CoreQuote
-    else return CoreUnknown
+    if (props.block.name === 'core/paragraph') return CoreParagraphComponent
+    else if (props.block.name === 'core/image') return CoreImageComponent
+    else if (props.block.name === 'core/gallery') return CoreGalleryComponent
+    else if (props.block.name === 'core/quote') return CoreQuoteComponent
+    else return EditorBlockComponent
 })
 
 </script>
 
 <template>
-    <component :is="blockName" :block="props.block" />
+    <component :is="blockName" :block="block" />
 </template>

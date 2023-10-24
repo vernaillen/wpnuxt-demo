@@ -1,7 +1,6 @@
 query Menu($id: ID! = "dGVybTo0") {
   menu(id: $id) {
     id
-    menuId
     menuItems {
       nodes {
         label

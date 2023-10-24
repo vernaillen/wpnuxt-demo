@@ -1,4 +1,4 @@
-import { createSharedComposable } from '@vueuse/core'
+import { GqlOps } from '#gql'
 
 const _usePosts = async () => {
     const cacheKey = 'allPosts'
@@ -8,14 +8,16 @@ const _usePosts = async () => {
     if (cachedPosts.data.value) {
         posts.value = cachedPosts.data.value
     } else {
-        const { data, refresh, pending } = await useFetch("/api/posts", {
+        /*const { data, refresh, pending } = await useFetch("/api/posts", {
             key: cacheKey,
             method: 'get',
             transform (data: any) {
                 return data.data.posts.nodes;
             }
-        });
-        posts.value = data.value
+        });*/
+        
+        const { data } = useAsyncGql('getPosts')
+        posts.value = data.value?.posts?.nodes
     }
     return {
         data: posts.value

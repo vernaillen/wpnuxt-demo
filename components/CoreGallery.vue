@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { CoreGallery } from '../types/wordpress-blocks'
+import type { CoreGallery, CoreImage } from '#gql';
 const img = useImage()
 const config = useRuntimeConfig();
 const wpUrl = config.public.wordpressUrl
@@ -8,13 +8,12 @@ const props = defineProps<{
 }>();
 const lightbox = useLightbox()
 const images: string[] = []
-props.block?.innerBlocks.forEach((imgBlock) => {
-    if (imgBlock.name === 'core/image') {
+props.block?.innerBlocks?.forEach((innerBlock) => {
+    if (innerBlock && innerBlock.name === 'core/image') {
+        const imgBlock = innerBlock as CoreImage
         if (imgBlock.attributes?.url && imgBlock.attributes.url.indexOf(wpUrl) > -1) {
             const imgUrl = img(imgBlock.attributes.url.replace(wpUrl, ''))
             images.push(imgUrl)
-        } else {
-            images.push(imgBlock.attributes.url)
         }
     }
 })

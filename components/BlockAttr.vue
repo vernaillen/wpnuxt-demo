@@ -1,7 +1,8 @@
 <script setup lang="ts">
-import type { Block } from '../types/wordpress-blocks'
+import type { EditorBlock } from '#gql';
+
 defineProps<{
-    block: Block
+    block: EditorBlock
 }>();
 </script>
 

@@ -1,0 +1,22 @@
+
+query getPosts($limit: Int = 10) {
+  posts(first: $limit) {
+    nodes {
+      title
+      date
+      excerpt
+      uri
+      editorBlocks {
+        name
+        ...CoreImage
+        ...CoreParagraph
+        ...CoreQuote
+      }
+      featuredImage {
+        node {
+          sourceUrl
+        }
+      }
+    }
+  }
+}

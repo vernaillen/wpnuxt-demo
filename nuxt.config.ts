@@ -23,7 +23,8 @@ export default defineNuxtConfig({
             onlyOperationTypes: false,
             avoidOptionals: false,
             disableOnBuild: false
-        }
+        },
+        preferGETQueries: false
     },
     app: {
         pageTransition: { name: 'page', mode: 'out-in' }
@@ -39,7 +40,11 @@ export default defineNuxtConfig({
     },
     routeRules:  {
         '/**': {
-            swr: true
+            swr: 60 * 60,
+            // or
+            cache: {
+                maxAge: 60 * 60
+            }
         }
     }
 })

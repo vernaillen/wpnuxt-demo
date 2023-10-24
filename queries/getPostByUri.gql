@@ -1,0 +1,32 @@
+query getPostByUri($uri: String = "/hello-world/") {
+  nodeByUri(uri: $uri) {
+    ... on Post {
+      id
+      title
+      date
+      content
+      editorBlocks {
+        name
+        ...CoreGallery
+        ...CoreImage
+        ...CoreParagraph
+        ...CoreQuote
+        ...EditorBlock
+      }
+    }
+    ... on Page {
+      id
+      title
+      date
+      content
+      editorBlocks {
+        name
+        ...CoreGallery
+        ...CoreImage
+        ...CoreParagraph
+        ...CoreQuote
+        ...EditorBlock
+      }
+    }
+  }
+}

@@ -7,7 +7,7 @@ export default defineEventHandler(async (event) => {
     if (event.path.lastIndexOf('/') > 0) {
         uri = event.path.substring(event.path.lastIndexOf('/') + 1)
     }
-    const data = await GqlPostByUri({ uri })
+    const data = await GqlGetPostByUri({ uri })
     return {
         "data": data,
     }
