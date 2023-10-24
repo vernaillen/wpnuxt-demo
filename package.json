@@ -11,16 +11,16 @@
     "start": "node .output/server/index.mjs"
   },
   "devDependencies": {
-    "@nuxt/devtools": "^0.8.3",
-    "@nuxt/kit": "^3.7.3",
-    "@nuxt/ui": "^2.8.1",
-    "@vueuse/core": "^10.4.1",
-    "nuxt": "^3.2.3",
+    "@nuxt/devtools": "^1.0.0",
+    "@nuxt/kit": "^3.8.0",
+    "@nuxt/ui": "^2.9.0",
+    "@vueuse/core": "^10.5.0",
+    "nuxt": "^3.8.0",
     "nuxt-graphql-client": "^0.2.30",
     "nuxt-time": "^0.1.1"
   },
   "dependencies": {
-    "@nuxt/image": "1.0.0-rc.2",
+    "@nuxt/image": "1.0.0",
     "vue-easy-lightbox": "^1.16.0"
   }
 }
