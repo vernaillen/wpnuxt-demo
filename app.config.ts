@@ -26,10 +26,10 @@ export default defineAppConfig({
       base: 'overflow-hidden hover:rounded-2xl',
       background: 'bg-avocado-100 dark:bg-avocado-900 !bg-opacity-20 transition-all',
       rounded: 'rounded-xl',
-      shadow: 'shadow-sm',
+      shadow: 'shadow-md',
       header: {
         base: 'overflow-hidden',
-        padding: 'p-0'
+        padding: 'p-0 sm:p-0'
       }
     },
     dropdown: {

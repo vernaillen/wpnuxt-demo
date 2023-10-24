@@ -9,7 +9,7 @@ const props = defineProps<{
     <NuxtLink v-if="post.uri" :to='post.uri'>
         <UCard>
             <template #header>
-                <div class="h-[144px] sm:h-[257px] md:h-[167px] lg:h-[147px] xl:h-[179px] 2xl:h-[210px]">
+                <div class="w-full h-[144px] sm:h-[257px] md:h-[167px] lg:h-[147px] xl:h-[179px] 2xl:h-[210px]">
                     <Image 
                         v-if="post.featuredImage?.node?.sourceUrl" 
                         :url="post.featuredImage?.node?.sourceUrl" 
