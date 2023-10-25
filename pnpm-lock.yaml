@@ -38,7 +38,7 @@ devDependencies:
     specifier: ^3.8.0
     version: 3.8.0(vite@4.5.0)
   nuxt-graphql-middleware:
-    specifier: 4.0.0-beta.9
+    specifier: ^4.0.0-beta.9
     version: 4.0.0-beta.9(graphql-tag@2.12.6)(graphql@16.8.1)(nuxt@3.8.0)(vite@4.5.0)
   nuxt-time:
     specifier: ^0.1.1
