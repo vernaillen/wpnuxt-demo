@@ -4,10 +4,6 @@ dotenv.config()
 
 const config: CodegenConfig = {
 	schema: {
-		[process.env.NUXT_GQL_HOST as string]: {
-			headers: {
-			},
-		},
 	} as any,
 
 	documents: ['!./graphql/**/*'],

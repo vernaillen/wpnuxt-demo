@@ -19,20 +19,11 @@ export default defineNuxtConfig({
         debug: true,
         graphqlEndpoint: 'https://wpnuxt.vernaillen.com/graphql',
         codegenConfig: {
-            /*constEnums: false,
-            enumsAsConst: false,
-            enumPrefix: true,
-            avoidOptionals: false,
-            preResolveTypes: true,
-            maybeValue: 'T',
-            flattenGeneratedTypes: false,*/
-            exportFragmentSpreadSubTypes: true,
-            skipTypeNameForRoot: true,
-            inlineFragmentTypes: 'combine',
-            dedupeFragments: true,
-            /*nonOptionalTypename: false,
-            skipTypename: true,*/
         },
+        outputDocuments: true,
+        autoImportPatterns: [
+            './queries/**/*.gql',
+        ],
     },
     /*'graphql-client': {
         codegen: {

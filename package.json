@@ -3,11 +3,10 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "run-p start:*",
-    "start:graphql": "graphql-codegen --watch",
-    "start:nuxt": "nuxt dev",
+    "dev": "run-p dev:*",
+    "dev:graphql": "graphql-codegen --watch",
+    "dev:nuxt": "nuxt dev",
     "build": "nuxt build",
-    "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
@@ -21,7 +20,7 @@
     "@vueuse/core": "^10.5.0",
     "npm-run-all": "^4.1.5",
     "nuxt": "^3.8.0",
-    "nuxt-graphql-middleware": "3.1.0-beta.3",
+    "nuxt-graphql-middleware": "^4.0.0-beta.9",
     "nuxt-time": "^0.1.1"
   },
   "dependencies": {
