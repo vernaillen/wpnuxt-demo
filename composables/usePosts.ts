@@ -4,7 +4,6 @@ const _usePosts = async () => {
     const posts = ref()
 
     if (cachedPosts.data.value) {
-        console.log('cachedPosts', cachedPosts.data.value)
         posts.value = cachedPosts.data.value
     } else {
         const { data, refresh, pending, error } = await useFetch("/api/graphql_middleware/query/Posts", {
@@ -16,7 +15,6 @@ const _usePosts = async () => {
         if (error.value) {
             throw createError({ statusCode: 500, message: 'Error fetching menu', fatal: true })
         }
-        console.log('newly fetched Posts', data.value)
         posts.value = data.value
     }
     return {

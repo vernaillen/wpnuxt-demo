@@ -44,7 +44,7 @@ if (post?.data?.title) {
     view-transition-name: post;
 }
 .post img.imgTransition {
-  view-transition-name: featured-image;
+    view-transition-name: featured-image;
 }
 
 </style>

@@ -52,7 +52,7 @@ onMounted(() => {
               v-show="!isMobileNavOpen"
               to="/"
               aria-label="Harmonics logo, click to go back to home"
-              class="headerTitle text-trance-500 dark:text-trance-200 border-transparent"
+              class="text-trance-500 dark:text-trance-200 border-transparent"
               @click="checkCurrentRoute('/')"
             >
             {{ settings.title }}
@@ -75,7 +75,7 @@ onMounted(() => {
           <NuxtLink
             to="/"
             aria-label="Harmonics logo, click to go back to home"
-            class="text-trance-500 dark:text-trance-200 border-transparent headerTitle"
+            class="text-trance-500 dark:text-trance-200 border-transparent"
             @click="checkCurrentRoute('/')"
           >
             {{ settings.title }}
@@ -111,13 +111,6 @@ onMounted(() => {
 </template>
 
 <style>
-.headerTitle {
-  view-transition-name: header;
-}
-::view-transition-old(header),
-::view-transition-new(header) {
-  width: auto;
-}
 .navbarTogglerActive > span:nth-child(1) {
   @apply transform rotate-45 top-[7px];
 }

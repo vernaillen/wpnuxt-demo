@@ -5,7 +5,6 @@ const _useMenu = async () => {
 
     if (cachedMenu.data.value) {
         menu.value = cachedMenu.data.value
-        console.log('cached menu', cachedMenu.data.value)
     } else {
         const { data, error } = await useFetch('/api/graphql_middleware/query/Menu', {
             key: cacheKey,
@@ -16,7 +15,6 @@ const _useMenu = async () => {
         if (error.value) {
             throw createError({ statusCode: 500, message: 'Error fetching menu', fatal: true })
         }
-        console.log('newly fetched menu', data.value)
         menu.value = data.value
     }
     return {

@@ -38,7 +38,6 @@ h1.active {
 }
 img.imgTransition.active {
   view-transition-name: featured-image;
-  contain: layout;
 }
 </style>
 
