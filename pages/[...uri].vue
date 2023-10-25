@@ -17,6 +17,11 @@ if (post?.data?.title) {
                 <UButton to="/">Back</UButton>
             </nav>
             <main class="prose dark:prose-invert p-6 rounded-lg">
+                <Image 
+                    v-if="post.data.featuredImage?.node?.sourceUrl" 
+                    :url="post.data.featuredImage?.node?.sourceUrl" 
+                    class="object-cover rounded-xl h-1/2 imgTransition"
+                />
                 <h1 class="text-4xl">{{ post.data.title }}</h1>
                 <div class="text-xs text-primary-500 my-2">
                     gepubliceerd op <nuxt-time :datetime="post.data.date" month="long" day="numeric" year="numeric" locale="nl-BE" />
@@ -31,3 +36,19 @@ if (post?.data?.title) {
         </UContainer>
     </div>
 </template>
+
+<style scoped>
+h1 {
+    view-transition-name: post;
+}
+img.imgTransition {
+  view-transition-name: selected-film;
+}
+</style>
+
+<style>
+::view-transition-old(post),
+::view-transition-new(post) {
+    width: auto;
+}
+</style>

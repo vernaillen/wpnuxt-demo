@@ -13,7 +13,7 @@ defineProps<{
                     <Image 
                         v-if="post.featuredImage?.node?.sourceUrl" 
                         :url="post.featuredImage?.node?.sourceUrl" 
-                        class="object-cover"
+                        class="object-cover imgTransition"
                     />
                 </div>
             </template>
@@ -27,3 +27,20 @@ defineProps<{
         </UCard>
     </NuxtLink>
 </template>
+
+<style scoped>
+h2 {
+    view-transition-name: post;
+}
+
+img.imgTransition {
+  view-transition-name: selected-film;
+}
+</style>
+
+<style>
+::view-transition-old(post),
+::view-transition-new(post) {
+    width: auto;
+}
+</style>

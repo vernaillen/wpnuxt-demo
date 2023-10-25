@@ -1,5 +1,10 @@
+const wordpressUrl = 'https://wpnuxt.vernaillen.com';
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+    experimental: {
+        viewTransition: true
+    },
     modules: [
         '@nuxt/devtools',
         '@nuxt/image',
@@ -11,13 +16,13 @@ export default defineNuxtConfig({
     runtimeConfig: {
         public: {
             showBlockInfo: false,
-            wordpressUrl: 'https://wpnuxt.vernaillen.com',
-            GQL_HOST: 'https://wpnuxt.vernaillen.com/graphql'
+            wordpressUrl: `${wordpressUrl}`,
+            GQL_HOST: `${wordpressUrl}/graphql`
         }
     },
     graphqlMiddleware: {
         debug: true,
-        graphqlEndpoint: 'https://wpnuxt.vernaillen.com/graphql',
+        graphqlEndpoint: `${wordpressUrl}/graphql`,
         codegenConfig: {
         },
         outputDocuments: true,
@@ -37,9 +42,6 @@ export default defineNuxtConfig({
         },
         preferGETQueries: false
     },*/
-    app: {
-        pageTransition: { name: 'page', mode: 'out-in' }
-    },
     css: [
         '~/assets/css/main.css',
     ],
