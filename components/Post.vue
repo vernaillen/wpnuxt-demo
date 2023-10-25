@@ -3,24 +3,28 @@ import type { Post } from '#gql';
 defineProps<{
     post: Post
 }>();
+const active = useState();
 </script>
 
 <template>
-    <NuxtLink v-if="post.uri" :to='post.uri'>
+    <NuxtLink v-if="post.uri" :to='post.uri' @click.native="active = post.id">
         <UCard>
             <template #header>
-                <div class="w-full h-[144px] sm:h-[257px] md:h-[167px] lg:h-[147px] xl:h-[179px] 2xl:h-[210px]">
+                <div class="w-full">
                     <Image 
                         v-if="post.featuredImage?.node?.sourceUrl" 
                         :url="post.featuredImage?.node?.sourceUrl" 
                         class="object-cover imgTransition"
+                        :class="{ active: active === post.id }"
                     />
                 </div>
             </template>
-            <h2 class="font-semibold text-2xl font-mic32">
+            <h1 class="font-semibold text-2xl font-mic32" :class="{ active: active === post.id }">
                 {{ post.title }}
-            </h2>
-            <p v-if="post.date" class="text-xs mt-2"><nuxt-time :datetime="post.date" month="long" day="numeric" year="numeric" locale="nl-BE" /></p>
+            </h1>
+            <p v-if="post.date" class="text-xs mt-2">
+                <nuxt-time :datetime="post.date" month="long" day="numeric" year="numeric" locale="nl-BE" />
+            </p>
             <template #footer>
                 <div v-html="post.excerpt" />
             </template>
@@ -29,12 +33,12 @@ defineProps<{
 </template>
 
 <style scoped>
-h2 {
+h1.active {
     view-transition-name: post;
 }
-
-img.imgTransition {
-  view-transition-name: selected-film;
+img.imgTransition.active {
+  view-transition-name: featured-image;
+  contain: layout;
 }
 </style>
 
