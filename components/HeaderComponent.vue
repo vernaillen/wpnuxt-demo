@@ -30,7 +30,7 @@ onMounted(() => {
 
 <template>
   <header
-    class="header fixed h-[68px] sm:h-[72px] bg-opacity-0 w-full flex z-40 transition-colors duration-300"
+    class="header h-[68px] sm:h-[72px] w-full flex z-40 transition-colors duration-300"
   >
     <div class="w-full container mx-auto">
       <div class="grid grid-cols-5">
