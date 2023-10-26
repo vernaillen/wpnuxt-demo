@@ -10,25 +10,18 @@ export default defineNuxtConfig({
         '@nuxt/image',
         '@nuxt/ui',
         // 'nuxt-graphql-client',
-        'nuxt-graphql-middleware',
         'nuxt-time',
+        'nuxt-payload-analyzer',
+        //'../wpnuxt-module/src/module',
+        '@vernaillen/wpnuxt'
     ],
+    wpNuxt: {},
     runtimeConfig: {
         public: {
             showBlockInfo: false,
             wordpressUrl: `${wordpressUrl}`,
             GQL_HOST: `${wordpressUrl}/graphql`
         }
-    },
-    graphqlMiddleware: {
-        debug: true,
-        graphqlEndpoint: `${wordpressUrl}/graphql`,
-        codegenConfig: {
-        },
-        outputDocuments: true,
-        autoImportPatterns: [
-            './queries/**/*.gql',
-        ],
     },
     /*'graphql-client': {
         codegen: {

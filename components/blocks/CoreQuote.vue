@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { CoreQuote } from '#gql';
+import type { CoreQuote } from '#graphql-operations';
 defineProps<{
     block: CoreQuote
 }>();

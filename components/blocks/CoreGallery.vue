@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { CoreGallery, CoreImage } from '#gql';
+import type { CoreGallery, CoreImage } from '#graphql-operations';
 const img = useImage()
 const config = useRuntimeConfig();
 const wpUrl = config.public.wordpressUrl

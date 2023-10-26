@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { CoreImage } from '#gql';
+import type { CoreImage } from '#graphql-operations';
 const props = defineProps<{
     block: CoreImage
 }>();

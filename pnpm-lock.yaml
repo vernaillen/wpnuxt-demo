@@ -13,12 +13,6 @@ dependencies:
     version: 1.16.0(vue@3.3.6)
 
 devDependencies:
-  '@graphql-codegen/cli':
-    specifier: ^5.0.0
-    version: 5.0.0(graphql@16.8.1)
-  '@graphql-codegen/client-preset':
-    specifier: ^4.1.0
-    version: 4.1.0(graphql@16.8.1)
   '@nuxt/devtools':
     specifier: ^1.0.0
     version: 1.0.0(nuxt@3.8.0)(vite@4.5.0)
@@ -28,6 +22,9 @@ devDependencies:
   '@nuxt/ui':
     specifier: ^2.9.0
     version: 2.9.0(vue@3.3.6)(webpack@5.89.0)
+  '@vernaillen/wpnuxt':
+    specifier: ^0.0.2
+    version: 0.0.2(graphql-tag@2.12.6)(graphql@16.8.1)(nuxt@3.8.0)(vite@4.5.0)
   '@vueuse/core':
     specifier: ^10.5.0
     version: 10.5.0(vue@3.3.6)
@@ -37,9 +34,9 @@ devDependencies:
   nuxt:
     specifier: ^3.8.0
     version: 3.8.0(vite@4.5.0)
-  nuxt-graphql-middleware:
-    specifier: ^4.0.0-beta.9
-    version: 4.0.0-beta.9(graphql-tag@2.12.6)(graphql@16.8.1)(nuxt@3.8.0)(vite@4.5.0)
+  nuxt-payload-analyzer:
+    specifier: ^0.1.2
+    version: 0.1.2
   nuxt-time:
     specifier: ^0.1.1
     version: 0.1.1
@@ -1732,7 +1729,7 @@ packages:
       graphql: ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
     dependencies:
       graphql: 16.8.1
-      tslib: 2.5.3
+      tslib: 2.6.2
     dev: true
 
   /@graphql-tools/prisma-loader@8.0.1(graphql@16.8.1):
@@ -1791,7 +1788,7 @@ packages:
       '@ardatan/relay-compiler': 12.0.0(graphql@16.8.1)
       '@graphql-tools/utils': 10.0.7(graphql@16.8.1)
       graphql: 16.8.1
-      tslib: 2.5.3
+      tslib: 2.6.2
     transitivePeerDependencies:
       - encoding
       - supports-color
@@ -3065,6 +3062,30 @@ packages:
     transitivePeerDependencies:
       - encoding
       - supports-color
+    dev: true
+
+  /@vernaillen/wpnuxt@0.0.2(graphql-tag@2.12.6)(graphql@16.8.1)(nuxt@3.8.0)(vite@4.5.0):
+    resolution: {integrity: sha512-hcoPT+mLETEGmXWjpW+Xz5XgbvnzV8uyQSIK7URZPQUj2+3JO8DVNt1bWwhoBbL93e3hTLObhzC4BzStM9YyRg==}
+    dependencies:
+      '@graphql-codegen/cli': 5.0.0(graphql@16.8.1)
+      '@graphql-codegen/client-preset': 4.1.0(graphql@16.8.1)
+      '@nuxt/kit': 3.8.0
+      nuxt-graphql-middleware: 4.0.0-beta.9(graphql-tag@2.12.6)(graphql@16.8.1)(nuxt@3.8.0)(vite@4.5.0)
+    transitivePeerDependencies:
+      - '@parcel/watcher'
+      - '@types/node'
+      - bufferutil
+      - cosmiconfig-toml-loader
+      - encoding
+      - enquirer
+      - graphql
+      - graphql-tag
+      - nuxt
+      - rollup
+      - supports-color
+      - typescript
+      - utf-8-validate
+      - vite
     dev: true
 
   /@vitejs/plugin-vue-jsx@3.0.2(vite@4.5.0)(vue@3.3.6):
@@ -5719,7 +5740,7 @@ packages:
       graphql: ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
     dependencies:
       graphql: 16.8.1
-      tslib: 2.5.3
+      tslib: 2.6.2
     dev: true
 
   /graphql-ws@5.14.2(graphql@16.8.1):
@@ -7693,6 +7714,19 @@ packages:
       - typescript
       - utf-8-validate
       - vite
+    dev: true
+
+  /nuxt-payload-analyzer@0.1.2:
+    resolution: {integrity: sha512-GUdf4WEqJ2+nnZLoTizBp6E7+sKzC3gIbEUs1ayOrKNH1pyfvYRziAtc0EifizXaRT4HzDLvFq9q7xN2ed+6Zw==}
+    hasBin: true
+    dependencies:
+      '@nuxt/kit': 3.8.0
+      citty: 0.1.4
+      consola: 3.2.3
+      pathe: 1.1.1
+    transitivePeerDependencies:
+      - rollup
+      - supports-color
     dev: true
 
   /nuxt-time@0.1.1:

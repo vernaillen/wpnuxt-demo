@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Post } from '#gql';
+import type { Post } from '#graphql-operations';
 const { isMobileNavOpen } = useMobileNav()
 defineProps<{
     post: Post

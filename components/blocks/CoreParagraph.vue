@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { CoreParagraph } from '#gql';
+import type { CoreParagraph } from '#graphql-operations';
 defineProps<{
     block: CoreParagraph
 }>();

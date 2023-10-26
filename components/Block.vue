@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { EditorBlock } from '#gql';
+import type { EditorBlock } from '#graphql-operations';
 import CoreParagraphComponent from './blocks/CoreParagraph.vue';
 import CoreImageComponent from './blocks/CoreImage.vue';
 import CoreGalleryComponent from './blocks/CoreGallery.vue';
