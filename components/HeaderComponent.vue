@@ -30,7 +30,7 @@ onMounted(() => {
 
 <template>
   <header
-    class="header h-[68px] sm:h-[72px] w-full flex z-40 transition-colors duration-300"
+    class="header fixed bg-white dark:bg-dark shadow-sm h-[68px] sm:h-[72px] w-full flex z-40 transition-colors duration-300"
   >
     <div class="w-full container mx-auto">
       <div class="grid grid-cols-5">
@@ -82,7 +82,7 @@ onMounted(() => {
           </NuxtLink>
         </div>
         <ul>
-          <li class="prose text-center p-0 my-4 sm:my-6 lg:my-8">
+          <li class="prose dark:prose-invert  text-center p-0 my-4 sm:my-6 lg:my-8">
             <NuxtLink
               to="/"
               class="text-2xl sm:text-3xl text-center border-transparent"
@@ -94,7 +94,7 @@ onMounted(() => {
           <li
             v-for="link of menu.menu.value"
             :key="link.uri"
-            class="prose text-center p-0 my-4 sm:my-6 lg:my-8"
+            class="prose dark:prose-invert text-center p-0 my-4 sm:my-6 lg:my-8"
           >
             <NuxtLink
               :to="link.uri"
