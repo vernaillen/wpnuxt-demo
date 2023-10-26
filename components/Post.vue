@@ -4,9 +4,9 @@ defineProps<{
     post: Post
 }>();
 const active = useState();
-onMounted(() => {
+/*onMounted(() => {
     active.value = undefined;
-});
+});*/
 </script>
 
 <template>
