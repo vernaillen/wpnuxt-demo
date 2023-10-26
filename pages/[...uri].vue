@@ -48,10 +48,3 @@ if (post?.data?.title) {
 }
 
 </style>
-
-<style>
-::view-transition-old(post),
-::view-transition-new(post) {
-    width: auto;
-}
-</style>

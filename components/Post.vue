@@ -1,12 +1,13 @@
 <script setup lang="ts">
 import type { Post } from '#gql';
+const { isMobileNavOpen } = useMobileNav()
 defineProps<{
     post: Post
 }>();
 const active = useState();
-/*onMounted(() => {
-    active.value = undefined;
-});*/
+watch(() => isMobileNavOpen.value, () => {
+    if (isMobileNavOpen.value) active.value = undefined;
+});
 </script>
 
 <template>
@@ -40,7 +41,7 @@ h1.active {
     view-transition-name: post;
 }
 img.imgTransition.active {
-  view-transition-name: featured-image;
+    view-transition-name: featured-image;
 }
 </style>
 
