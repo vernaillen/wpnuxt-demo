@@ -5,11 +5,11 @@ export default defineNuxtConfig({
     experimental: {
         viewTransition: true
     },
+    extends: ['@nuxt/ui-pro'],
     modules: [
         '@nuxt/devtools',
         '@nuxt/image',
         '@nuxt/ui',
-        // 'nuxt-graphql-client',
         'nuxt-time',
         'nuxt-payload-analyzer',
         //'../wpnuxt-module/src/module',
@@ -23,18 +23,6 @@ export default defineNuxtConfig({
             GQL_HOST: `${wordpressUrl}/graphql`
         }
     },
-    /*'graphql-client': {
-        codegen: {
-            silent: false,
-            skipTypename: true,
-            useTypeImports: true,
-            dedupeFragments: true,
-            onlyOperationTypes: false,
-            avoidOptionals: false,
-            disableOnBuild: false
-        },
-        preferGETQueries: false
-    },*/
     css: [
         '~/assets/css/main.css',
     ],
