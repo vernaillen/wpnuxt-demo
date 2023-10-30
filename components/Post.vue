@@ -1,13 +1,9 @@
 <script setup lang="ts">
 import type { Post } from '#graphql-operations';
-const { isMobileNavOpen } = useMobileNav()
 defineProps<{
     post: Post
 }>();
 const active = useState();
-watch(() => isMobileNavOpen.value, () => {
-    if (isMobileNavOpen.value) active.value = undefined;
-});
 </script>
 
 <template>
@@ -18,12 +14,12 @@ watch(() => isMobileNavOpen.value, () => {
                     <Image 
                         v-if="post.featuredImage?.node?.sourceUrl" 
                         :url="post.featuredImage?.node?.sourceUrl" 
-                        class="object-cover imgTransition"
+                        class="object-cover rounded-t-lg imgTransition"
                         :class="{ active: active === post.id }"
                     />
                 </div>
             </template>
-            <h1 class="font-semibold text-2xl font-mic32" :class="{ active: active === post.id }">
+            <h1 class="font-semibold text-2xl" :class="{ active: active === post.id }">
                 {{ post.title }}
             </h1>
             <p v-if="post.date" class="text-xs mt-2">

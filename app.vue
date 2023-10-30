@@ -1,38 +1,40 @@
+<script setup lang="ts">
+const menu = await useMenu()
+const settings = await useSettings()
+
+const links = computed(() => menu.menu.value.map((link) => ({
+  label: link.label,
+  to: link.uri
+})))
+</script>
+
 <template>
-  <NuxtLoadingIndicator id="pageTop" color="repeating-linear-gradient(to right,rgb(197 213 45/100%) 0%,rgb(170 168 87/100%) 33%,rgb(157 177 159/100%) 66%,rgb(0 71 69/100%) 100%)" />
-  <div>
-      <HeaderComponent />
-      <div class="pt-[86px] min-h-screen">
+  <UHeader :links="links"> 
+      <template #logo>
+        <h1 class="font-bold">
+            {{ settings.title }}
+        </h1>
+      </template>
+      <template #panel>
+        <LazyUNavigationTree :links="links" :multiple="false" />
+      </template>
+      <template #right>
+          <UColorModeButton v-if="!$colorMode.forced" />
+      </template>
+  </UHeader>
+  <UMain>
+    <UContainer>
+      <UPage class="pt-10">
         <NuxtPage />
+      </UPage>
+    </UContainer>
+  </UMain>
+  <UFooter :links="links" class="text-sm">
+    <template #right>
+      <div class="prose dark:prose-invert text-sm">
+        a Proof of Concept by <a href="https://vernaillen.dev">Wouter Vernaillen</a>
       </div>
-      <TheFooter />
-  </div>
+    </template>
+  </UFooter>
   <EasyLightbox />
 </template>
-
-
-<style scoped>
-/* You can customise the default animation here. */
-::view-transition-old(root) {
-  animation: 90ms cubic-bezier(0.4, 0, 1, 1) both fade-out; 
-}
-::view-transition-new(root) {
-  animation: 210ms cubic-bezier(0, 0, 0.2, 1) 90ms both fade-in;
-}
-</style>
-
-<style>
-.nuxt-loading-indicator {
-  @apply !opacity-100
-}
-
-.page-enter-active,
-.page-leave-active {
-  transition: all 0.2s;
-}
-
-.page-enter-from,
-.page-leave-to {
-  @apply opacity-70;
-}
-</style>

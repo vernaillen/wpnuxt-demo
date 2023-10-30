@@ -23,9 +23,6 @@ export default defineNuxtConfig({
             GQL_HOST: `${wordpressUrl}/graphql`
         }
     },
-    css: [
-        '~/assets/css/main.css',
-    ],
     image: {
         provider: 'twicpics',
         twicpics: {
