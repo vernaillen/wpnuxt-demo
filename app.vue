@@ -6,6 +6,10 @@ const links = computed(() => menu.menu.value.map((link) => ({
   label: link.label,
   to: link.uri
 })))
+
+useHead({
+  title: settings.title
+})
 </script>
 
 <template>
