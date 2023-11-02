@@ -2,7 +2,7 @@
 import type { CoreGallery, CoreImage } from '#graphql-operations';
 const img = useImage()
 const config = useRuntimeConfig();
-const wpUrl = config.public.wordpressUrl
+const wpUrl = config.public.wpNuxt.wordpressUrl
 const props = defineProps<{
     block: CoreGallery
 }>();
@@ -25,6 +25,7 @@ function openGallery (i: number) {
 </script>
 
 <template>
+    CoreGallery from demo
     <div class="columns-2 md:columns-3 lg:columns-4 mx-[-8px] mb-20">
         <div v-for="(imgBlock, index) in block?.innerBlocks" :key="index" class="px-0 md:px-1">
             <div v-if="imgBlock" class="galleryImgWrapper rounded-lg overflow-hidden relative mb-4 md:mb-6  shadow-md hover:shadow-xl">

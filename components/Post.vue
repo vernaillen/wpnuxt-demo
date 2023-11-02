@@ -11,7 +11,7 @@ const active = useState();
         <UCard>
             <template #header>
                 <div class="w-full">
-                    <Image 
+                    <ImageComponent 
                         v-if="post.featuredImage?.node?.sourceUrl" 
                         :url="post.featuredImage?.node?.sourceUrl" 
                         class="object-cover rounded-t-lg imgTransition"

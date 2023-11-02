@@ -10,19 +10,15 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@nuxt/devtools": "^1.0.0",
-    "@nuxt/kit": "^3.8.0",
-    "@nuxt/ui": "^2.9.0",
-    "@nuxt/ui-pro": "^0.3.1",
-    "@vernaillen/wpnuxt": "^0.0.3",
+    "@nuxt/image": "^1.0.0",
+    "@nuxt/ui-pro": "^0.4.0",
+    "@vernaillen/wpnuxt": "^0.0.6",
     "@vueuse/core": "^10.5.0",
-    "npm-run-all": "^4.1.5",
     "nuxt": "^3.8.0",
     "nuxt-payload-analyzer": "^0.1.2",
     "nuxt-time": "^0.1.1"
   },
   "dependencies": {
-    "@nuxt/image": "1.0.0",
     "vue-easy-lightbox": "^1.16.0"
   }
 }

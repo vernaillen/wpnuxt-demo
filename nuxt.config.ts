@@ -1,5 +1,3 @@
-const wordpressUrl = 'https://wpnuxt.vernaillen.com';
-
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
     experimental: {
@@ -12,21 +10,24 @@ export default defineNuxtConfig({
         '@nuxt/ui',
         'nuxt-time',
         'nuxt-payload-analyzer',
-        //'../wpnuxt-module/src/module',
-        '@vernaillen/wpnuxt'
+        '../wpnuxt-module/src/module',
+        //'@vernaillen/wpnuxt'
     ],
-    wpNuxt: {},
     runtimeConfig: {
         public: {
-            showBlockInfo: false,
-            wordpressUrl: `${wordpressUrl}`,
-            GQL_HOST: `${wordpressUrl}/graphql`
+            wpNuxt: {
+                wordpressUrl: 'https://wordpress.wpnuxt.com'
+            },
         }
+    },
+    wpNuxt: {
+        wordpressUrl: 'https://wordpress.wpnuxt.com',
+        showBlockInfo: false,
     },
     image: {
         provider: 'twicpics',
         twicpics: {
-            baseURL: 'https://vernaillen.twic.pics/nuxt-wordpress-poc'
+            baseURL: 'https://vernaillen.twic.pics/wpnuxt-demo'
         }
     },
     routeRules:  {

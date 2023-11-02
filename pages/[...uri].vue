@@ -12,7 +12,7 @@ if (post?.data?.title) {
 </script>
 <template>
     <main v-if="post?.data" :class="post?.data.contentTypeName" class="prose dark:prose-invert">
-        <Image 
+        <ImageComponent
             v-if="post.data.featuredImage?.node?.sourceUrl" 
             :url="post.data.featuredImage?.node?.sourceUrl" 
             class="object-cover rounded-xl w-1/2 imgTransition"
