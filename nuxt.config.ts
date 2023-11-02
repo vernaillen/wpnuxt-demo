@@ -10,8 +10,8 @@ export default defineNuxtConfig({
         '@nuxt/ui',
         'nuxt-time',
         'nuxt-payload-analyzer',
-        '../wpnuxt-module/src/module',
-        //'@vernaillen/wpnuxt'
+        //'../wpnuxt-module/src/module',
+        '@vernaillen/wpnuxt'
     ],
     runtimeConfig: {
         public: {
