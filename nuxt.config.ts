@@ -14,10 +14,9 @@ export default defineNuxtConfig({
         '@vernaillen/wpnuxt'
     ],
     runtimeConfig: {
+        faustSecretKey: '',
         public: {
-            wpNuxt: {
-                wordpressUrl: 'https://wordpress.wpnuxt.com'
-            },
+            frontendSiteUrl: 'https://demo.wpnuxt.com',
         }
     },
     wpNuxt: {
@@ -29,6 +28,9 @@ export default defineNuxtConfig({
         twicpics: {
             baseURL: 'https://vernaillen.twic.pics/wpnuxt-demo'
         }
+    },
+    ui: {
+        icons: ['mdi']
     },
     routeRules:  {
         '/**': {

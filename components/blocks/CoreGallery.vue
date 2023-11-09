@@ -29,7 +29,7 @@ function openGallery (i: number) {
     <div class="columns-2 md:columns-3 lg:columns-4 mx-[-8px] mb-20">
         <div v-for="(imgBlock, index) in block?.innerBlocks" :key="index" class="px-0 md:px-1">
             <div v-if="imgBlock" class="galleryImgWrapper rounded-lg overflow-hidden relative mb-4 md:mb-6  shadow-md hover:shadow-xl">
-                <Image 
+                <ImageComponent 
                     :url="imgBlock.attributes?.url" 
                     class="rounded-lg cursor-pointer w-full" 
                     @click="openGallery(index)" 

@@ -1,9 +1,14 @@
 <script setup lang="ts">
 const posts = await usePosts()
+const settings = await useSettings()
+
+useHead({
+  title: settings.title
+})
 </script>
 
 <template>
-  <main>
+  <UMain>
     <div class="pb-5 -ml-2 mr-1 prose dark:prose-invert">
       <h1>Blog</h1>
     </div>
@@ -13,5 +18,5 @@ const posts = await usePosts()
     <div v-show="!posts" class="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
       <PostSkeleton v-for="i in [1,2,3,4]"/>
     </div>
-  </main>
+  </UMain>
 </template>
