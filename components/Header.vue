@@ -12,10 +12,9 @@ const links = computed(() => menu.menu.value.map((link) => ({
 <template>
     <UHeader :links="links"> 
         <template #logo>
-            {{ settings.title }}
+            <WPNuxtLogo />
         </template>
         <template #right>
-            <UColorModeButton v-if="!$colorMode.forced" />
             <UButton
                 to="/auth"
                 icon="i-heroicons-user"
@@ -24,13 +23,13 @@ const links = computed(() => menu.menu.value.map((link) => ({
             >
                 <span
                 v-if="viewer?.username"
-                class="ml-2"
+                class="hidden sm:inline-block"
                 >
                 {{ viewer.username }}
                 </span>
                 <span
                 v-else
-                class="text-sm"
+                class="text-sm hidden sm:inline-block"
                 >Sign in</span>
             </UButton>
         </template>

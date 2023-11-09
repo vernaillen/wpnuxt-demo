@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const posts = await usePosts()
+const posts = ref(await usePosts())
 const settings = await useSettings()
 
 useHead({
@@ -8,15 +8,15 @@ useHead({
 </script>
 
 <template>
-  <UMain>
-    <div class="pb-5 -ml-2 mr-1 prose dark:prose-invert">
-      <h1>Blog</h1>
-    </div>
-    <div v-show="posts" class="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-      <Post v-for="post in posts.data" :key="post.uri" :post="post"></Post>
-    </div>
-    <div v-show="!posts" class="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-      <PostSkeleton v-for="i in [1,2,3,4]"/>
-    </div>
-  </UMain>
+    <ULandingSection
+      id="posts"
+      :title="settings.title"
+      :headline="settings.description"
+      description="WordPress posts are shown below as cards. WordPress pages are listed above in the header."
+    >
+      <UPageGrid>
+        <Post v-show="posts && posts?.data" v-for="post in posts?.data" :key="post.uri" :post="post"/>
+        <PostSkeleton v-show="!posts" v-for="i in [1, 2, 3, 4]"/>
+      </UPageGrid>
+    </ULandingSection>
 </template>

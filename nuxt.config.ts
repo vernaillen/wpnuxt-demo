@@ -5,18 +5,17 @@ export default defineNuxtConfig({
     },
     extends: ['@nuxt/ui-pro'],
     modules: [
-        '@nuxt/devtools',
         '@nuxt/image',
         '@nuxt/ui',
+        '@nuxtjs/google-fonts',
         'nuxt-time',
-        'nuxt-payload-analyzer',
-        //'../wpnuxt-module/src/module',
-        '@vernaillen/wpnuxt'
+        '../wpnuxt-module/src/module',
+        //'@vernaillen/wpnuxt'
     ],
     runtimeConfig: {
         faustSecretKey: '',
         public: {
-            frontendSiteUrl: 'https://demo.wpnuxt.com',
+            frontendSiteUrl: 'http://localhost:3000',
         }
     },
     wpNuxt: {
@@ -31,6 +30,13 @@ export default defineNuxtConfig({
     },
     ui: {
         icons: ['mdi']
+    },
+    googleFonts: {
+        display: 'swap',
+        download: true,
+        families: {
+            'DM+Sans': [400, 500, 600, 700]
+        }
     },
     routeRules:  {
         '/**': {

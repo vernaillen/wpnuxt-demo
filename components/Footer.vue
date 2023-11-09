@@ -29,6 +29,7 @@ const links = computed(() => [
               variant="ghost"
               :to="wpUri.admin" 
               class="mx-1" />
+            <UColorModeButton v-if="!$colorMode.forced" />
         </template>
       </UFooter>
 </template>
