@@ -9,13 +9,13 @@ export default defineNuxtConfig({
         '@nuxt/ui',
         '@nuxtjs/google-fonts',
         'nuxt-time',
-        '../wpnuxt-module/src/module',
-        //'@vernaillen/wpnuxt'
+        //'../wpnuxt-module/src/module',
+        '@vernaillen/wpnuxt'
     ],
     runtimeConfig: {
         faustSecretKey: '',
         public: {
-            frontendSiteUrl: 'http://localhost:3000',
+            frontendSiteUrl: 'https://demo.wpnuxt.com',
         }
     },
     wpNuxt: {
