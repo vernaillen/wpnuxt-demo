@@ -13,7 +13,7 @@
     "@iconify-json/mdi": "^1.1.55",
     "@nuxt/image": "^1.0.0",
     "@nuxt/ui-pro": "^0.4.2",
-    "@vernaillen/wpnuxt": "^0.1.3",
+    "@vernaillen/wpnuxt": "^0.1.4",
     "@vueuse/core": "^10.5.0",
     "nuxt": "^3.8.1",
     "nuxt-payload-analyzer": "^0.1.3",

@@ -20,8 +20,8 @@ devDependencies:
     specifier: ^0.4.2
     version: 0.4.2(nuxt@3.8.1)(vite@4.5.0)(vue@3.3.8)(webpack@5.89.0)
   '@vernaillen/wpnuxt':
-    specifier: ^0.1.3
-    version: 0.1.3(graphql-tag@2.12.6)(graphql@16.8.1)(nuxt@3.8.1)(vite@4.5.0)(vue@3.3.8)
+    specifier: ^0.1.4
+    version: 0.1.4(graphql-tag@2.12.6)(graphql@16.8.1)(nuxt@3.8.1)(vite@4.5.0)(vue@3.3.8)
   '@vueuse/core':
     specifier: ^10.5.0
     version: 10.5.0(vue@3.3.8)
@@ -3286,8 +3286,8 @@ packages:
       - supports-color
     dev: true
 
-  /@vernaillen/wpnuxt@0.1.3(graphql-tag@2.12.6)(graphql@16.8.1)(nuxt@3.8.1)(vite@4.5.0)(vue@3.3.8):
-    resolution: {integrity: sha512-HkTlnKhEDs5xF5x+jBKn24MOEj7t+gma9G4qpGjtMfcLkM3L24cRoJRosasANz2bVtNBtVlW9a+USihaxP+wSw==}
+  /@vernaillen/wpnuxt@0.1.4(graphql-tag@2.12.6)(graphql@16.8.1)(nuxt@3.8.1)(vite@4.5.0)(vue@3.3.8):
+    resolution: {integrity: sha512-A83NuZXAGkjROnCubJHSb4+zXonJnrBMyumx+Fdtut9K9zMNIzEg/+ODMbQoHpsRSYnaGGB+10neCIs7sPhK5Q==}
     dependencies:
       '@graphql-codegen/cli': 5.0.0(graphql@16.8.1)
       '@graphql-codegen/client-preset': 4.1.0(graphql@16.8.1)
