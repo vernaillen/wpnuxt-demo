@@ -7,14 +7,15 @@
     "build": "nuxt build",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "start": "nuxt start"
   },
   "devDependencies": {
     "@iconify-json/mdi": "^1.1.55",
     "@nuxt/image": "^1.0.0",
     "@nuxt/ui-pro": "^0.4.2",
-    "@vernaillen/wpnuxt": "^0.1.4",
-    "@vueuse/core": "^10.5.0",
+    "@vernaillen/wpnuxt": "^0.1.5",
+    "@vueuse/core": "^10.6.1",
     "nuxt": "^3.8.1",
     "nuxt-time": "^0.1.1"
   },
