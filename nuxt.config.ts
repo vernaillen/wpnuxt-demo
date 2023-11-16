@@ -9,8 +9,8 @@ export default defineNuxtConfig({
         '@nuxt/ui',
         '@nuxtjs/google-fonts',
         'nuxt-time',
-        //'../wpnuxt-module/src/module',
-        '@vernaillen/wpnuxt'
+        '../wpnuxt-module/src/module',
+        //'@vernaillen/wpnuxt'
     ],
     runtimeConfig: {
         faustSecretKey: '',
