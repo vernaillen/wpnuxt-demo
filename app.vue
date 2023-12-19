@@ -1,11 +1,7 @@
 <template>
   <Header />
   <UMain>
-    <UContainer>
-      <UPage class="pt-10">
-        <NuxtPage />
-      </UPage>
-    </UContainer>
+      <NuxtPage />
   </UMain>
   <Footer />
   <EasyLightbox />
