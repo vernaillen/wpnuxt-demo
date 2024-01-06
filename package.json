@@ -11,12 +11,12 @@
     "start": "nuxt start"
   },
   "devDependencies": {
-    "@iconify-json/mdi": "^1.1.63",
+    "@iconify-json/mdi": "^1.1.64",
     "@nuxt/image": "^1.1.0",
     "@nuxt/ui-pro": "^0.6.1",
-    "@vernaillen/wpnuxt": "^0.1.7",
+    "@vernaillen/wpnuxt": "^0.1.8",
     "@vueuse/core": "^10.7.1",
-    "nuxt": "^3.9.0",
+    "nuxt": "^3.9.1",
     "nuxt-time": "^0.1.1"
   },
   "dependencies": {
