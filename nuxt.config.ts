@@ -12,16 +12,16 @@ export default defineNuxtConfig({
         //'../wpnuxt-module/src/module',
         '@vernaillen/wpnuxt'
     ],
-    runtimeConfig: {
-        faustSecretKey: '',
-        public: {
-            frontendSiteUrl: 'https://demo.wpnuxt.com',
-        }
-    },
     wpNuxt: {
         wordpressUrl: 'https://wordpress.wpnuxt.com',
+        frontendUrl: 'https://demo.wpnuxt.com',
+        defaultMenuName: 'main',
         showBlockInfo: false,
+        debug: true
     },
+    css: [
+        'vue-json-pretty/lib/styles.css'
+    ],
     image: {
         provider: 'twicpics',
         twicpics: {

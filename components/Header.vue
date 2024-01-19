@@ -1,12 +1,18 @@
 <script setup lang="ts">
 const menu = await useMenu()
-const settings = await useSettings()
 const viewer = await useViewer()
 
-const links = computed(() => menu.menu.value.map((link) => ({
+const wpMenu = computed(() => menu.menu.value.map((link) => ({
     label: link.label,
     to: link.uri
 })))
+const links = computed(() => [
+    ...wpMenu.value,
+    {
+        label: 'Composables',
+        to: '/composables'
+    }
+])
 </script>
 
 <template>
