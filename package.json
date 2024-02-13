@@ -12,12 +12,12 @@
   },
   "devDependencies": {
     "@iconify-json/mdi": "^1.1.64",
-    "@nuxt/image": "^1.1.0",
-    "@nuxt/ui-pro": "^0.7.3",
-    "@vernaillen/wpnuxt": "^0.1.26",
+    "@nuxt/image": "^1.3.0",
+    "@nuxt/ui-pro": "^0.7.5",
+    "@vernaillen/wpnuxt": "^0.1.28",
     "@vueuse/core": "^10.7.2",
-    "nuxt": "^3.9.3",
-    "nuxt-time": "^0.1.1"
+    "nuxt": "^3.10.1",
+    "nuxt-time": "^0.1.2"
   },
   "dependencies": {
     "@nuxtjs/google-fonts": "^3.1.3",
