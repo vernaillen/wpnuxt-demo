@@ -13,6 +13,7 @@ if (post?.data?.title) {
 }
 </script>
 <template>
+    <StagingBanner v-if="post?.data && useWPNuxt().isStaging" :post="post?.data" />
     <UContainer>
         <UPage v-if="post?.data" :class="post?.data.contentTypeName" class="pt-10 prose dark:prose-invert">
             <ImageComponent

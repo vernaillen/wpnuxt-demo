@@ -2,7 +2,7 @@
 const menu = await useMenu()
 const viewer = await useViewer()
 
-const wpMenu = computed(() => menu.menu.value.map((link) => ({
+const wpMenu = computed(() => menu.data.map((link) => ({
     label: link.label,
     to: link.uri
 })))

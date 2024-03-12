@@ -2,7 +2,7 @@
 const menu = await useMenu()
 const wpUri = useWPUri()
 
-const wpMenu = computed(() => menu.menu.value.map((link) => ({
+const wpMenu = computed(() => menu.data.map((link) => ({
     label: link.label,
     to: link.uri
 })))
