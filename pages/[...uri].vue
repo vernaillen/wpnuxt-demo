@@ -4,6 +4,7 @@ const route = useRoute();
 const uri = route.params.uri
 const wpUri = useWPUri()
 const viewer = await useViewer()
+const { data: staging } = await isStaging()
 
 const post = await usePostByUri(uri[0])
 if (post?.data?.title) {
@@ -13,7 +14,7 @@ if (post?.data?.title) {
 }
 </script>
 <template>
-    <StagingBanner v-if="post?.data && useWPNuxt().isStaging" :post="post?.data" />
+    <StagingBanner v-if="post?.data && staging" :post="post?.data" />
     <UContainer>
         <UPage v-if="post?.data" :class="post?.data.contentTypeName" class="pt-10 prose dark:prose-invert">
             <ImageComponent

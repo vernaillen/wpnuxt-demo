@@ -11,7 +11,6 @@ export default defineNuxtConfig({
         '@nuxt/ui',
         '@nuxtjs/google-fonts',
         'nuxt-time',
-        //'../wpnuxt-module/src/module',
         '@vernaillen/wpnuxt'
     ],
     wpNuxt: {
@@ -19,7 +18,9 @@ export default defineNuxtConfig({
         frontendUrl: 'https://demo.wpnuxt.com',
         defaultMenuName: 'main',
         showBlockInfo: false,
-        debug: true
+        debug: true,
+        enableCache: true,
+        staging: false,
     },
     css: [
         'vue-json-pretty/lib/styles.css'

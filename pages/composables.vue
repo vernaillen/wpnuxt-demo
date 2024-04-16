@@ -18,8 +18,8 @@ const items = [{
   label: 'await usePosts()',
   content: await usePosts()
 }, {
-  label: 'await useWPNuxt()',
-  content: await useWPNuxt()
+  label: 'await isStaging()',
+  content: await isStaging()
 }]
 </script>
 
