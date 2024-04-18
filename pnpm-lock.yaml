@@ -26,8 +26,8 @@ devDependencies:
     specifier: ^1.1.0
     version: 1.1.0(nuxt@3.11.2)(vite@5.2.9)(vue@3.4.23)
   '@vernaillen/wpnuxt':
-    specifier: ^0.3.2
-    version: 0.3.2(graphql-tag@2.12.6)(graphql@16.8.1)(nuxt@3.11.2)(vite@5.2.9)(vue@3.4.23)
+    specifier: ^0.3.4
+    version: 0.3.4(graphql-tag@2.12.6)(graphql@16.8.1)(nuxt@3.11.2)(vite@5.2.9)(vue@3.4.23)
   '@vueuse/core':
     specifier: ^10.9.0
     version: 10.9.0(vue@3.4.23)
@@ -3145,7 +3145,7 @@ packages:
       colorette: 2.0.20
       consola: 3.2.3
       fast-glob: 3.3.2
-      magic-string: 0.30.9
+      magic-string: 0.30.10
       pathe: 1.1.2
       perfect-debounce: 1.0.0
     transitivePeerDependencies:
@@ -3190,7 +3190,7 @@ packages:
       '@unocss/rule-utils': 0.59.3
       css-tree: 2.3.1
       fast-glob: 3.3.2
-      magic-string: 0.30.9
+      magic-string: 0.30.10
       postcss: 8.4.38
     dev: true
 
@@ -3264,7 +3264,7 @@ packages:
     engines: {node: '>=14'}
     dependencies:
       '@unocss/core': 0.59.3
-      magic-string: 0.30.9
+      magic-string: 0.30.10
     dev: true
 
   /@unocss/scope@0.59.3:
@@ -3322,7 +3322,7 @@ packages:
       '@unocss/transformer-directives': 0.59.3
       chokidar: 3.6.0
       fast-glob: 3.3.2
-      magic-string: 0.30.9
+      magic-string: 0.30.10
       vite: 5.2.9
     transitivePeerDependencies:
       - rollup
@@ -3350,8 +3350,8 @@ packages:
       - supports-color
     dev: true
 
-  /@vernaillen/wpnuxt@0.3.2(graphql-tag@2.12.6)(graphql@16.8.1)(nuxt@3.11.2)(vite@5.2.9)(vue@3.4.23):
-    resolution: {integrity: sha512-cfGMlR/RGQWB71tY78D+9L/8Es/vywfbLSQslD5v5A7Tqv0O64PkLfLV2haL6Tc6bbIpME80itVUFes2Nir40g==}
+  /@vernaillen/wpnuxt@0.3.4(graphql-tag@2.12.6)(graphql@16.8.1)(nuxt@3.11.2)(vite@5.2.9)(vue@3.4.23):
+    resolution: {integrity: sha512-eKzEBbU1Ui8HWVza3P/qLoBSLGQ/8Qhkv22KxC/R2YWANXu6Q9jApxrEYqJoQ/9Wf2xCMSYDivs2QhUMFbwVDA==}
     dependencies:
       '@nuxt/kit': 3.11.2
       '@vueuse/nuxt': 10.9.0(nuxt@3.11.2)(vue@3.4.23)
@@ -4268,6 +4268,7 @@ packages:
 
   /buffer@5.7.1:
     resolution: {integrity: sha512-EHcyIPBQ4BSGlvjB16k5KgAJ27CIsHY/2JBmCRReo48y9rQ3MaUzWX3KVlBa4U7MyX02HdVj0K7C3WaB3ju7FQ==}
+    requiresBuild: true
     dependencies:
       base64-js: 1.5.1
       ieee754: 1.2.1
@@ -6928,6 +6929,12 @@ packages:
     engines: {node: '>=16.14.0'}
     dependencies:
       magic-string: 0.30.9
+    dev: true
+
+  /magic-string@0.30.10:
+    resolution: {integrity: sha512-iIRwTIf0QKV3UAnYK4PU8uiEc4SRh5jX0mwpIwETPpHdhVM4f53RSwS/vXvN1JhGX+Cs7B8qIq3d6AH49O5fAQ==}
+    dependencies:
+      '@jridgewell/sourcemap-codec': 1.4.15
     dev: true
 
   /magic-string@0.30.9:
