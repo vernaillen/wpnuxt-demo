@@ -15,9 +15,6 @@ const items = [{
   label: 'const settings: GeneralSettings = await useGeneralSettings()',
   content: settings
 }, {
-  label: 'const userName: string = await getCurrentUserName()',
-  content: userName
-}, {
   label: 'const pages: Page[] = await usePages()',
   content: pages
 }, {
@@ -26,6 +23,9 @@ const items = [{
 }, {
   label: 'const staging = await isStaging()',
   content: staging
+}, {
+  label: 'const userName: string = await getCurrentUserName()',
+  content: userName
 }]
 </script>
 
