@@ -1,8 +1,10 @@
 <script setup lang="ts">
-const menu = await useMenu()
+import type { Menu, ViewerQuery } from '#graphql-operations';
+
+const menu: Menu = await useMenu()
 const viewer = await useViewer()
 
-const wpMenu = computed(() => menu.data.map((link) => ({
+const wpMenu = computed(() => menu.map((link) => ({
     label: link.label,
     to: link.uri
 })))

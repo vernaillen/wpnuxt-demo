@@ -11,3 +11,12 @@ const { data: staging } = await isStaging()
   <Footer />
   <EasyLightbox />
 </template>
+
+<style scoped>
+/* this transition is here to fix the z-index issue as explaied here:
+  https://www.nicchan.me/blog/view-transitions-and-stacking-context/
+*/
+header {
+    view-transition-name: header;
+}
+</style>

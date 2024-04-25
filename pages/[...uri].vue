@@ -1,46 +1,51 @@
 
 <script setup lang="ts">
+import type { Page, Post } from '#graphql-operations';
+
 const route = useRoute();
 const uri = route.params.uri
 const wpUri = useWPUri()
 const viewer = await useViewer()
 const { data: staging } = await isStaging()
 
-const post = await usePostByUri(uri[0])
-if (post?.data?.title) {
+const post: Page | Post = await useNodeByUri(uri[0])
+console.log(post)
+if (post?.title) {
     useHead({
-        title: post.data.title
+        title: post.title
     })
 }
 </script>
 <template>
-    <StagingBanner v-if="post?.data && staging" :post="post?.data" />
+    <StagingBanner v-if="post && staging" :post="post" />
     <UContainer>
-        <UPage v-if="post?.data" :class="post?.data.contentTypeName" class="pt-10 prose dark:prose-invert">
+        <UPage v-if="post" :class="post.contentTypeName" class="pt-10 prose dark:prose-invert">
             <ImageComponent
-                v-if="post.data.featuredImage?.node?.sourceUrl" 
-                :url="post.data.featuredImage?.node?.sourceUrl" 
+                v-if="post.featuredImage?.node?.sourceUrl" 
+                :url="post.featuredImage?.node?.sourceUrl" 
                 class="object-cover rounded-xl w-1/2 imgTransition"
             />
-            <h1 class="text-4xl">{{ post.data.title }}</h1>
+            <h1 class="text-4xl">{{ post.title }}</h1>
             <div class="text-xs text-primary-500 my-2 postDate">
-                gepubliceerd op <nuxt-time :datetime="post.data.date" month="long" day="numeric" year="numeric" locale="nl-BE" />
+                <span v-if="post.date">
+                    gepubliceerd op <nuxt-time :datetime="post.date" month="long" day="numeric" year="numeric" locale="nl-BE" />
+                </span>
                 <UButton 
                     v-if="viewer?.username"
-                    :to="wpUri.postEdit(post.data.databaseId)"
+                    :to="wpUri.postEdit(''+post.databaseId)"
                     icon="i-mdi-pencil" 
                     size="2xs" 
                     variant="soft" 
                     class="mx-2 "/>
             </div>
             <div class="mt-5 postContent">
-                <BlockRenderer v-if="post.data.editorBlocks" :blocks="post.data.editorBlocks"/>
+                <BlockRenderer v-if="post.editorBlocks" :blocks="post.editorBlocks"/>
             </div>
-        <template #left>
-            <UAside>
-                <UButton to="/">Back</UButton>
-            </UAside>
-        </template>
+            <template #left>
+                <UAside>
+                    <UButton to="/">Back</UButton>
+                </UAside>
+            </template>
         </UPage>
     </UContainer>
 </template>

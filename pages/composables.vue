@@ -1,16 +1,16 @@
 <script setup lang="ts">
 import VueJsonPretty from 'vue-json-pretty';
-const viewer = await useViewer()
+const userName = await getCurrentUserName()
 
 const items = [{
   label: 'useWPUri()',
   content:  useWPUri()
 }, {
-  label: 'await useSettings()',
-  content: await useSettings()
+  label: 'await useGeneralSettings()',
+  content: await useGeneralSettings()
 }, {
-  label: 'await useViewer()',
-  content: viewer
+  label: 'await getCurrentUserName()',
+  content: userName
 }, {
   label: 'await usePages()',
   content: await usePages()
@@ -27,9 +27,8 @@ const items = [{
     <UMain>
         <UContainer class="prose dark:prose-invert mt-10">
             <h2>Authentication</h2>
-            <div v-if="viewer?.username">
-                Authenticated in WordPress as {{ viewer.username }}<br>
-                {{ viewer.email  }}<br>
+            <div v-if="userName">
+                Authenticated in WordPress as {{ userName }}<br>
                 <a href="/logout">Log out</a>
             </div>
             <div v-else>

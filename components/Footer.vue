@@ -1,8 +1,10 @@
 <script setup lang="ts">
-const menu = await useMenu()
+import type { Menu } from '#graphql-operations';
+
+const menu: Menu = await useMenu()
 const wpUri = useWPUri()
 
-const wpMenu = computed(() => menu.data.map((link) => ({
+const wpMenu = computed(() => menu.map((link) => ({
     label: link.label,
     to: link.uri
 })))
