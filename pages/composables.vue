@@ -41,6 +41,7 @@ const items = [{
             <a href="/login?redirect=/test">Log in</a>
         </div>
         <h2>Composables</h2>
+        <p>These are just some examples. Check the documentation for a <a href="https://wpnuxt.com/getting-started/composables" target="_blank">full list of all available composables</a>.</p>
         <div class="relative">
           <UAccordion 
             :items="items"
