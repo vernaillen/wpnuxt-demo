@@ -1,11 +1,8 @@
 <script setup lang="ts">
-import type { GeneralSettings, Post } from '#graphql-operations';
-
-const posts: Post[] = await usePosts()
-const settings: GeneralSettings = await useGeneralSettings()
-
+const { data: posts } = await usePosts()
+const { data: settings } = await useGeneralSettings()
 useHead({
-  title: settings.title
+  title: settings.value?.title
 })
 </script>
 
@@ -17,7 +14,7 @@ useHead({
       description="WordPress posts are shown below as cards. WordPress pages are listed above in the header."
     >
       <UPageGrid>
-        <Post v-show="posts && posts" v-for="post in posts" :key="post.uri" :post="post"/>
+        <Post v-show="posts && posts" v-for="post, index in posts" :key="index" :post="post"/>
         <PostSkeleton v-show="!posts" v-for="i in [1, 2, 3, 4]"/>
       </UPageGrid>
     </ULandingSection>

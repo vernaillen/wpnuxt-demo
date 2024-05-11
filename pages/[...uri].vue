@@ -5,14 +5,13 @@ import type { Page, Post } from '#graphql-operations';
 const route = useRoute();
 const uri = route.params.uri
 const wpUri = useWPUri()
-const viewer = await useViewer()
+const { data: viewer } = await useViewer()
 const { data: staging } = await isStaging()
 
-const post: Page | Post = await useNodeByUri(uri[0])
-console.log(post)
-if (post?.title) {
+const { data: post } = await useNodeByUri(uri[0])
+if (post.value?.title) {
     useHead({
-        title: post.title
+        title: post.value.title
     })
 }
 </script>

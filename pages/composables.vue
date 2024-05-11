@@ -1,30 +1,29 @@
 <script setup lang="ts">
-import type { GeneralSettings, Page, Post } from '#graphql-operations';
 import VueJsonPretty from 'vue-json-pretty';
 
-const settings: GeneralSettings = await useGeneralSettings()
-const userName: string = await getCurrentUserName()
-const pages: Page[] = await usePages()
-const posts: Post[] = await usePosts()
+const { data: settings } = await useGeneralSettings()
+const { data: pages } = await usePages()
+const { data: posts } = await usePosts()
 const staging = await isStaging()
+const userName: string = await getCurrentUserName()
 
 const items = [{
-  label: 'useWPUri()',
+  label: 'const { data: settings } = await useGeneralSettings()',
+  content: settings.value
+}, {
+  label: 'const { data: pages } = await usePages()',
+  content: pages.value
+}, {
+  label: 'const { data: posts } = await usePosts()',
+  content: posts.value
+}, {
+  label: 'const wpUri = useWPUri()',
   content:  useWPUri()
-}, {
-  label: 'const settings: GeneralSettings = await useGeneralSettings()',
-  content: settings
-}, {
-  label: 'const pages: Page[] = await usePages()',
-  content: pages
-}, {
-  label: 'const posts: Post[] = await usePosts()',
-  content: posts
 }, {
   label: 'const staging = await isStaging()',
   content: staging
 }, {
-  label: 'const userName: string = await getCurrentUserName()',
+  label: 'const userName = await getCurrentUserName()',
   content: userName
 }]
 </script>
