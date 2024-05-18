@@ -1,6 +1,6 @@
 {
   "name": "wpnuxt-demo",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "nuxt dev",
@@ -14,7 +14,7 @@
     "@iconify-json/mdi": "^1.1.66",
     "@nuxt/image": "^1.7.0",
     "@nuxt/ui-pro": "^1.2.0",
-    "@vernaillen/wpnuxt": "^0.3.10",
+    "@vernaillen/wpnuxt": "^0.4.1",
     "@vueuse/core": "^10.9.0",
     "nuxt": "^3.11.2",
     "nuxt-time": "^0.1.3"

@@ -18,9 +18,14 @@ export default defineNuxtConfig({
         frontendUrl: 'https://demo.wpnuxt.com',
         defaultMenuName: 'main',
         showBlockInfo: false,
-        debug: true,
         enableCache: true,
         staging: false,
+        logLevel: 4,
+        downloadSchema: true,
+        generateComposables: {
+          enabled: true,
+          prefix: 'wp'
+        }
     },
     css: [
         'vue-json-pretty/lib/styles.css'

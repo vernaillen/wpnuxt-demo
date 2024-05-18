@@ -31,6 +31,7 @@ const items = [{
 <template>
   <UMain>
     <UContainer class="prose dark:prose-invert mt-10">
+        <h1>Predefined composables</h1>
         <h2>Authentication</h2>
         <div v-if="userName">
             Authenticated in WordPress as {{ userName }}<br>

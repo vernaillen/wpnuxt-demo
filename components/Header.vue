@@ -11,7 +11,12 @@ const links = computed(() => [
     {
         label: 'Composables',
         to: '/composables'
-    }
+    },
+    {
+        label: 'Generated Composables',
+        to: '/generated-composables'
+    },
+    
 ])
 </script>
 

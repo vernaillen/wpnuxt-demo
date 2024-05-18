@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import { useRoute, usePageById, useWPUri, ref } from '#imports';
-import type { Page } from '#graphql-operations';
+import type { Page } from '#wpnum/types';
 const route = useRoute();
 const { preview_id: previewId } = route.query;
 
