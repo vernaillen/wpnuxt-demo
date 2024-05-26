@@ -1,9 +1,11 @@
 <script setup lang="ts">
-const { data: staging } = await isStaging()
+const staging = await isStaging()
 </script>
 
 <template>
-  <StagingBanner v-if="staging" />
+  <div v-if="staging">
+    <StagingBanner />
+  </div>
   <Header :class="staging ? 'mt-[34px]' : 'mt-0'" />
   <UMain>
       <NuxtPage />

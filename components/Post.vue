@@ -1,9 +1,10 @@
 <script setup lang="ts">
 import type { Post } from '#graphql-operations';
-defineProps<{
+const props = defineProps<{
     post: Post
 }>();
-const active = useState();
+const active = useState()
+const featuredImage = useFeaturedImage(props.post)
 </script>
 
 <template>
@@ -11,9 +12,9 @@ const active = useState();
         <UCard>
             <template #header>
                 <div class="w-full">
-                    <ImageComponent 
-                        v-if="post.featuredImage?.node?.sourceUrl" 
-                        :url="post.featuredImage?.node?.sourceUrl" 
+                    <NuxtImg 
+                        v-if="featuredImage" 
+                        :src="featuredImage" 
                         class="object-cover rounded-t-lg imgTransition"
                         :class="{ active: active === post.id }"
                     />

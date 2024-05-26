@@ -6,7 +6,7 @@ const route = useRoute();
 const uri = route.params.uri
 const wpUri = useWPUri()
 const { data: viewer } = await useViewer()
-const { data: staging } = await isStaging()
+const staging = await isStaging()
 
 const { data: post } = await useNodeByUri(uri[0])
 if (post.value?.title) {
@@ -14,14 +14,15 @@ if (post.value?.title) {
         title: post.value.title
     })
 }
+const featuredImage = useFeaturedImage(post.value)
 </script>
 <template>
     <StagingBanner v-if="post && staging" :post="post" />
     <UContainer>
         <UPage v-if="post" :class="post.contentTypeName" class="pt-10 prose dark:prose-invert">
-            <ImageComponent
-                v-if="post.featuredImage?.node?.sourceUrl" 
-                :url="post.featuredImage?.node?.sourceUrl" 
+            <NuxtImg
+                v-if="featuredImage" 
+                :src="featuredImage" 
                 class="object-cover rounded-xl w-1/2 imgTransition"
             />
             <h1 class="text-4xl">{{ post.title }}</h1>

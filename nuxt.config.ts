@@ -21,6 +21,7 @@ export default defineNuxtConfig({
       wordpressUrl: 'https://wordpress.wpnuxt.com',
       frontendUrl: 'https://demo.wpnuxt.com',
       defaultMenuName: 'main',
+      blocks: true,
       showBlockInfo: false,
       enableCache: true,
       staging: false,

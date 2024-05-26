@@ -14,8 +14,7 @@ useHead({
       description="WordPress posts are shown below as cards. WordPress pages are listed above in the header."
     >
       <UPageGrid>
-        <Post v-show="posts && posts" v-for="post, index in posts" :key="index" :post="post"/>
-        <PostSkeleton v-show="!posts" v-for="i in [1, 2, 3, 4]"/>
+        <Post v-for="post, index in posts" :key="index" :post="post"/>
       </UPageGrid>
     </ULandingSection>
 </template>
