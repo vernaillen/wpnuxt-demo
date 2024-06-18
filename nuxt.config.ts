@@ -1,9 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   experimental: {
-      viewTransition: true,
-      payloadExtraction: true,
-      renderJsonPayloads: false
+      viewTransition: true
   },
 
   extends: ['@nuxt/ui-pro'],
@@ -11,10 +9,9 @@ export default defineNuxtConfig({
   modules: [
       '@nuxt/image',
       '@nuxt/ui',
-      '@nuxtjs/google-fonts',
       '@nuxtjs/plausible',
+      '@vernaillen/wpnuxt',
       'nuxt-time',
-      '@vernaillen/wpnuxt'
   ],
 
   wpNuxt: {
@@ -48,22 +45,9 @@ export default defineNuxtConfig({
       icons: ['mdi']
   },
 
-  googleFonts: {
-      display: 'swap',
-      download: true,
-      families: {
-          'DM+Sans': [400, 500, 600, 700]
-      }
-  },
-
   routeRules:  {
       '/**': {
           prerender: true,
-          /*swr: 60 * 60,
-          // or
-          cache: {
-              maxAge: 60 * 60
-          }*/
       }
   },
 
