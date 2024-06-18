@@ -31,6 +31,7 @@ const links = computed(() => [
                 icon="i-heroicons-user"
                 variant="soft"
                 size="sm"
+                aria-label="Sign in"
             >
                 <span
                 v-if="viewer?.username"

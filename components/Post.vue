@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import type { Post } from '#graphql-operations';
+import type { PostFragment } from '#graphql-operations';
 const props = defineProps<{
-    post: Post
+    post: PostFragment
 }>();
 const active = useState()
 const featuredImage = useFeaturedImage(props.post)
@@ -18,6 +18,8 @@ const featuredImage = useFeaturedImage(props.post)
                         :alt="'Featured image for ' + post.title"
                         class="object-cover rounded-t-lg imgTransition"
                         :class="{ active: active === post.id }"
+                        :width="600"
+                        :height="400"
                     />
                 </div>
             </template>
