@@ -1,5 +1,12 @@
 <script setup lang="ts">
 const staging = await isStaging()
+useSeoMeta({
+  title: 'WPNuxt Demo',
+  ogTitle: 'WPNuxt Demo',
+  description: 'Nuxt with WordPress as a headless CMS',
+  ogDescription: 'Nuxt with WordPress as a headless CMS',
+})
+
 </script>
 
 <template>
