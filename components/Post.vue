@@ -18,8 +18,8 @@ const featuredImage = useFeaturedImage(props.post)
                         :alt="'Featured image for ' + post.title"
                         class="object-cover rounded-t-lg imgTransition"
                         :class="{ active: active === post.id }"
-                        :width="600"
-                        :height="400"
+                        :width="300"
+                        :height="200"
                     />
                 </div>
             </template>
