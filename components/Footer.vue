@@ -30,6 +30,7 @@ const links = computed(() => [
               size="xs"
               variant="ghost"
               :to="wpUri.admin" 
+              aria-label="WordPress admin"
               class="mx-1" />
             <UColorModeButton v-if="!$colorMode.forced" />
         </template>

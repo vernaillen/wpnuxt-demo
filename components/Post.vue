@@ -15,6 +15,7 @@ const featuredImage = useFeaturedImage(props.post)
                     <NuxtImg 
                         v-if="featuredImage" 
                         :src="featuredImage" 
+                        :alt="'Featured image for ' + post.title"
                         class="object-cover rounded-t-lg imgTransition"
                         :class="{ active: active === post.id }"
                     />
