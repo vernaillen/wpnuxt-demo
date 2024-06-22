@@ -1,17 +1,18 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   experimental: {
-      viewTransition: true
+    viewTransition: true
   },
 
   extends: ['@nuxt/ui-pro'],
 
   modules: [
-      '@nuxt/image',
-      '@nuxt/ui',
-      '@nuxtjs/plausible',
-      '@vernaillen/wpnuxt',
-      'nuxt-time',
+    '@nuxt/image',
+    '@nuxt/ui',
+    '@nuxtjs/plausible',
+    '@vernaillen/wpnuxt',
+    'nuxt-time',
+    '@nuxt/eslint'
   ],
 
   future: {
@@ -19,29 +20,42 @@ export default defineNuxtConfig({
   },
 
   wpNuxt: {
-      wordpressUrl: 'https://wordpress.wpnuxt.com',
-      frontendUrl: 'https://demo.wpnuxt.com',
-      defaultMenuName: 'main',
-      blocks: true,
-      showBlockInfo: false,
-      enableCache: true,
-      staging: false,
-      logLevel: 4,
-      downloadSchema: true,
-      generateComposables: {
-        enabled: true,
+    wordpressUrl: 'https://wordpress.wpnuxt.com',
+    frontendUrl: 'https://demo.wpnuxt.com',
+    defaultMenuName: 'main',
+    blocks: true,
+    showBlockInfo: false,
+    enableCache: true,
+    staging: false,
+    logLevel: 4,
+    downloadSchema: true,
+    generateComposables: {
+      enabled: true
+    }
+  },
+
+  eslint: {
+    config: {
+      stylistic: {
+        commaDangle: 'never',
+        braceStyle: '1tbs'
       }
+    },
+    checker: {
+      lintOnStart: true,
+      fix: true
+    }
   },
 
   css: [
-      'vue-json-pretty/lib/styles.css'
+    'vue-json-pretty/lib/styles.css'
   ],
 
   image: {
-      provider: 'twicpics',
-      twicpics: {
-          baseURL: 'https://vernaillen.twic.pics/wpnuxt-demo'
-      }
+    provider: 'twicpics',
+    twicpics: {
+      baseURL: 'https://vernaillen.twic.pics/wpnuxt-demo'
+    }
   },
 
   colorMode: {
@@ -49,13 +63,13 @@ export default defineNuxtConfig({
   },
 
   ui: {
-      icons: ['mdi']
+    icons: ['mdi']
   },
 
-  routeRules:  {
-      '/**': {
-          prerender: true,
-      }
+  routeRules: {
+    '/**': {
+      prerender: true
+    }
   },
 
   plausible: {

@@ -3,7 +3,7 @@ import defaultTheme from 'tailwindcss/defaultTheme'
 
 export default <Partial<Config>>{
   content: [
-    './node_modules/@vernaillen/wpnuxt/dist/runtime/components/**/*.vue',
+    './node_modules/@vernaillen/wpnuxt/dist/runtime/components/**/*.vue'
   ],
 
   theme: {
@@ -28,5 +28,5 @@ export default <Partial<Config>>{
         }
       }
     }
-  },
+  }
 }

@@ -1,38 +1,40 @@
 <script setup lang="ts">
-import type { Menu } from '#graphql-operations';
-
 const { data: menu } = await useWPMenu()
 const wpUri = useWPUri()
 
-const wpMenu = computed(() => menu.value?.map((link) => ({
-    label: link.label,
-    to: link.uri
+const wpMenu = computed(() => menu.value?.map(link => ({
+  label: link.label,
+  to: link.uri
 })))
 const links = computed(() => [
-    ...wpMenu.value,
-    {
-        label: 'Test',
-        to: '/test'
-    }
+  ...wpMenu.value,
+  {
+    label: 'Test',
+    to: '/test'
+  }
 ])
 </script>
 
 <template>
-      <UFooter :links="links" class="text-sm">
-        <template #left>
-          <div class="prose dark:prose-invert text-sm">
-              a Proof of Concept by <a href="https://vernaillen.dev">Wouter Vernaillen</a>
-            </div>
-        </template>
-        <template #right>
-          <UButton
-              icon="i-mdi-wordpress"
-              size="xs"
-              variant="ghost"
-              :to="wpUri.admin" 
-              aria-label="WordPress admin"
-              class="mx-1" />
-            <UColorModeButton v-if="!$colorMode.forced" />
-        </template>
-      </UFooter>
+  <UFooter
+    :links="links"
+    class="text-sm"
+  >
+    <template #left>
+      <div class="prose dark:prose-invert text-sm">
+        a Proof of Concept by <a href="https://vernaillen.dev">Wouter Vernaillen</a>
+      </div>
+    </template>
+    <template #right>
+      <UButton
+        icon="i-mdi-wordpress"
+        size="xs"
+        variant="ghost"
+        :to="wpUri.admin"
+        aria-label="WordPress admin"
+        class="mx-1"
+      />
+      <UColorModeButton v-if="!$colorMode.forced" />
+    </template>
+  </UFooter>
 </template>

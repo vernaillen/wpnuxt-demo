@@ -1,7 +1,6 @@
 <script setup lang="ts">
-
 const lightbox = useLightbox()
-function handleHide () {
+function handleHide() {
   lightbox.visible.value = false
 }
 </script>
