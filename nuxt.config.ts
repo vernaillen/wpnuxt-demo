@@ -14,6 +14,10 @@ export default defineNuxtConfig({
       'nuxt-time',
   ],
 
+  future: {
+    compatibilityVersion: 4
+  },
+
   wpNuxt: {
       wordpressUrl: 'https://wordpress.wpnuxt.com',
       frontendUrl: 'https://demo.wpnuxt.com',

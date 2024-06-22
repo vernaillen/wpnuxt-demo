@@ -1,7 +1,5 @@
 
 <script setup lang="ts">
-import type { Page, Post } from '#graphql-operations';
-
 const route = useRoute();
 const uri = route.params.uri
 const wpUri = useWPUri()

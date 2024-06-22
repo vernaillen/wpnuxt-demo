@@ -1,7 +1,0 @@
-#import "~/queries/fragments/GeneralSettings.fragment.gql"
-
-query GeneralSettings {
-  generalSettings {
-    ...GeneralSettings
-  }
-}
