@@ -1,6 +1,6 @@
 {
   "name": "wpnuxt-demo",
-  "version": "0.1.1",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "nuxt dev",
@@ -23,5 +23,6 @@
   "dependencies": {
     "vue-easy-lightbox": "^1.19.0",
     "vue-json-pretty": "^2.4.0"
-  }
+  },
+  "packageManager": "pnpm@9.4.0+sha512.f549b8a52c9d2b8536762f99c0722205efc5af913e77835dbccc3b0b0b2ca9e7dc8022b78062c17291c48e88749c70ce88eb5a74f1fa8c4bf5e18bb46c8bd83a"
 }

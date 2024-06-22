@@ -17,7 +17,8 @@ export default defineNuxtConfig({
   future: {
     compatibilityVersion: 4
   },
-
+  
+  // https://wpnuxt.com/getting-started/installation
   wpNuxt: {
       wordpressUrl: 'https://wordpress.wpnuxt.com',
       frontendUrl: 'https://demo.wpnuxt.com',
