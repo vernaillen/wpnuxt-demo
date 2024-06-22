@@ -1,1 +1,1 @@
-# Nuxt 3 WordPress Proof of Concept
+# Headless NuxtJS WordPress Proof of Concept using ([WPNuxt Module by @vernaillen](https://github.com/vernaillen/)) based on ([WPNuxt Demo] https://github.com/vernaillen/wpnuxt-demo)
