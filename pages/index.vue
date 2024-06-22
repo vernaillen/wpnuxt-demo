@@ -1,6 +1,6 @@
 <script setup lang="ts">
-const { data: posts } = await usePosts()
-const { data: settings } = await useGeneralSettings()
+const { data: posts } = await useWPPosts()
+const { data: settings } = await useWPGeneralSettings()
 useHead({
   title: settings.value?.title
 })

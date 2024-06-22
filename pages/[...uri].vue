@@ -5,10 +5,13 @@ import type { Page, Post } from '#graphql-operations';
 const route = useRoute();
 const uri = route.params.uri
 const wpUri = useWPUri()
-const { data: viewer } = await useViewer()
+const { data: viewer } = await useWPViewer()
 const staging = await isStaging()
 
-const { data: post } = await useNodeByUri(uri[0])
+const { data: post } = await useWPNodeByUri({ uri: uri[0] })
+if (!post.value) {
+  throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
+}
 if (post.value?.title) {
     useHead({
         title: post.value.title

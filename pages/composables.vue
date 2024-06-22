@@ -1,20 +1,20 @@
 <script setup lang="ts">
 import VueJsonPretty from 'vue-json-pretty';
 
-const { data: settings } = await useGeneralSettings()
-const { data: pages } = await usePages()
-const { data: posts } = await usePosts()
+const { data: settings } = await useWPGeneralSettings()
+const { data: pages } = await useWPPages()
+const { data: posts } = await useWPPosts()
 const staging = await isStaging()
 const userName: string = await getCurrentUserName()
 
 const items = [{
-  label: 'const { data: settings } = await useGeneralSettings()',
+  label: 'const { data: settings } = await useWPGeneralSettings()',
   content: settings.value
 }, {
-  label: 'const { data: pages } = await usePages()',
+  label: 'const { data: pages } = await useWPPages()',
   content: pages.value
 }, {
-  label: 'const { data: posts } = await usePosts()',
+  label: 'const { data: posts } = await useWPPosts()',
   content: posts.value
 }, {
   label: 'const wpUri = useWPUri()',

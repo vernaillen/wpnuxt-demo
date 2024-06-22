@@ -16,26 +16,26 @@ importers:
         version: 2.4.0(vue@3.4.29)
     devDependencies:
       '@iconify-json/mdi':
-        specifier: ^1.1.66
-        version: 1.1.66
+        specifier: ^1.1.67
+        version: 1.1.67
       '@nuxt/image':
         specifier: ^1.7.0
         version: 1.7.0(ioredis@5.4.1)(magicast@0.3.4)(rollup@4.18.0)
       '@nuxt/ui-pro':
         specifier: ^1.3.0
-        version: 1.3.0(change-case@4.1.2)(focus-trap@7.5.4)(magicast@0.3.4)(nuxt@3.12.2(@opentelemetry/api@1.9.0)(@parcel/watcher@2.4.1)(@types/node@20.14.4)(@unocss/reset@0.61.0)(change-case@4.1.2)(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.12.2(magicast@0.3.4)(rollup@4.18.0))(vue@3.4.29))(fuse.js@6.6.2)(ioredis@5.4.1)(magicast@0.3.4)(rollup@4.18.0)(terser@5.31.1)(unocss@0.61.0(postcss@8.4.38)(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1)))(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1)))(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1))(vue@3.4.29)
+        version: 1.3.0(change-case@4.1.2)(focus-trap@7.5.4)(magicast@0.3.4)(nuxt@3.12.2(@opentelemetry/api@1.9.0)(@parcel/watcher@2.4.1)(@types/node@20.14.8)(@unocss/reset@0.61.0)(change-case@4.1.2)(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.12.2(magicast@0.3.4)(rollup@4.18.0))(vue@3.4.29))(fuse.js@6.6.2)(ioredis@5.4.1)(magicast@0.3.4)(rollup@4.18.0)(terser@5.31.1)(unocss@0.61.0(postcss@8.4.38)(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1)))(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1)))(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1))(vue@3.4.29)
       '@nuxtjs/plausible':
         specifier: ^1.0.0
         version: 1.0.0(magicast@0.3.4)(rollup@4.18.0)
       '@vernaillen/wpnuxt':
-        specifier: 0.4.4
-        version: 0.4.4(@parcel/watcher@2.4.1)(@types/node@20.14.4)(consola@3.2.3)(encoding@0.1.13)(graphql-tag@2.12.6(graphql@16.8.2))(graphql@16.8.2)(ioredis@5.4.1)(knitwork@1.1.0)(magicast@0.3.4)(nuxt@3.12.2(@opentelemetry/api@1.9.0)(@parcel/watcher@2.4.1)(@types/node@20.14.4)(@unocss/reset@0.61.0)(change-case@4.1.2)(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.12.2(magicast@0.3.4)(rollup@4.18.0))(vue@3.4.29))(fuse.js@6.6.2)(ioredis@5.4.1)(magicast@0.3.4)(rollup@4.18.0)(terser@5.31.1)(unocss@0.61.0(postcss@8.4.38)(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1)))(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1)))(rollup@4.18.0)(scule@1.3.0)(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1))(vue@3.4.29)
+        specifier: 0.5.0-edge.0
+        version: 0.5.0-edge.0(@parcel/watcher@2.4.1)(@types/node@20.14.8)(consola@3.2.3)(encoding@0.1.13)(graphql-tag@2.12.6(graphql@16.9.0))(graphql@16.9.0)(ioredis@5.4.1)(knitwork@1.1.0)(magicast@0.3.4)(nuxt@3.12.2(@opentelemetry/api@1.9.0)(@parcel/watcher@2.4.1)(@types/node@20.14.8)(@unocss/reset@0.61.0)(change-case@4.1.2)(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.12.2(magicast@0.3.4)(rollup@4.18.0))(vue@3.4.29))(fuse.js@6.6.2)(ioredis@5.4.1)(magicast@0.3.4)(rollup@4.18.0)(terser@5.31.1)(unocss@0.61.0(postcss@8.4.38)(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1)))(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1)))(rollup@4.18.0)(scule@1.3.0)(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1))(vue@3.4.29)
       '@vueuse/core':
         specifier: ^10.11.0
         version: 10.11.0(vue@3.4.29)
       nuxt:
         specifier: ^3.12.2
-        version: 3.12.2(@opentelemetry/api@1.9.0)(@parcel/watcher@2.4.1)(@types/node@20.14.4)(@unocss/reset@0.61.0)(change-case@4.1.2)(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.12.2(magicast@0.3.4)(rollup@4.18.0))(vue@3.4.29))(fuse.js@6.6.2)(ioredis@5.4.1)(magicast@0.3.4)(rollup@4.18.0)(terser@5.31.1)(unocss@0.61.0(postcss@8.4.38)(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1)))(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1))
+        version: 3.12.2(@opentelemetry/api@1.9.0)(@parcel/watcher@2.4.1)(@types/node@20.14.8)(@unocss/reset@0.61.0)(change-case@4.1.2)(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.12.2(magicast@0.3.4)(rollup@4.18.0))(vue@3.4.29))(fuse.js@6.6.2)(ioredis@5.4.1)(magicast@0.3.4)(rollup@4.18.0)(terser@5.31.1)(unocss@0.61.0(postcss@8.4.38)(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1)))(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1))
       nuxt-time:
         specifier: ^0.1.3
         version: 0.1.3(magicast@0.3.4)(rollup@4.18.0)
@@ -986,8 +986,8 @@ packages:
   '@iconify-json/heroicons@1.1.21':
     resolution: {integrity: sha512-A+3L4KN+TjH3V8fQ2N2dkOOnLLxMgMBzO8RDT0P9YL+YzvLMIbe/lkDLSB8NB8x0DKWmkvTimoo1l4DKMwi7Zg==}
 
-  '@iconify-json/mdi@1.1.66':
-    resolution: {integrity: sha512-7KPF2RVUUWav/hXCM8Ti/smqu3cmgePJpiX9CSkldiL+80+eBRBeKlc4vPOc9jhAItlqIU1vKsbKoPP0JIfgbg==}
+  '@iconify-json/mdi@1.1.67':
+    resolution: {integrity: sha512-00nllHES8hyACwIfgySlQgAE6MKgpr2wsKfpifMiZWZ9aXC5l4Jb0lR3lJSWwXgOW6kzAOdzC3T+2VOfBBZ13A==}
 
   '@iconify/collections@1.0.432':
     resolution: {integrity: sha512-YP3l4wIGicEa4pNCbEWi88pMHCc+5kAsS70xlYb4llmNKmmNP7RnaVscoULBxiv6J1/SnlYF2Xf5HlrrrRvsLQ==}
@@ -997,6 +997,9 @@ packages:
 
   '@iconify/utils@2.1.24':
     resolution: {integrity: sha512-H8r2KpL5uKyrkb3z9/3HD/22JcxqW3BJyjEWZhX2T7DehnYVZthEap1cNsEl/UtCDC3TlpNmwiPX8wg3y8E4dg==}
+
+  '@iconify/utils@2.1.25':
+    resolution: {integrity: sha512-Y+iGko8uv/Fz5bQLLJyNSZGOdMW0G7cnlEX1CiNcKsRXX9cq/y/vwxrIAtLCZhKHr3m0VJmsjVPsvnM4uX8YLg==}
 
   '@iconify/vue@4.1.2':
     resolution: {integrity: sha512-CQnYqLiQD5LOAaXhBrmj1mdL2/NCJvwcC4jtW2Z8ukhThiFkLDkutarTOV2trfc9EXqUqRs0KqXOL9pZ/IyysA==}
@@ -1603,6 +1606,9 @@ packages:
   '@types/node@20.14.4':
     resolution: {integrity: sha512-1ChboN+57suCT2t/f8lwtPY/k3qTpuD/qnqQuYoBg6OQOcPyaw7PiZVdGpaZYAvhDDtqrt0oAaM8+oSu1xsUGw==}
 
+  '@types/node@20.14.8':
+    resolution: {integrity: sha512-DO+2/jZinXfROG7j7WKFn/3C6nFwxy2lLpgLjEXJz+0XKphZlTLJ14mo8Vfg8X5BWN6XjyESXq+LcYdT7tR3bA==}
+
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
 
@@ -1723,8 +1729,8 @@ packages:
     engines: {node: '>=16'}
     hasBin: true
 
-  '@vernaillen/wpnuxt@0.4.4':
-    resolution: {integrity: sha512-yw4+2MhU9YdWY71/8HNTV03V0dtqdzPQ5ocs0r8eemGOPCYLohR6oRLwzkJcJTN+i6cUBOC1ITRmrX4i9BDDaw==}
+  '@vernaillen/wpnuxt@0.5.0-edge.0':
+    resolution: {integrity: sha512-HkEsl12AQ6NK31AQNriijYZNq1vUZg/GJj5NopSAcjuyN/D4GVfrYofKxL8RcS0/gBgIpWnwFv3ohacWEeiDlA==}
     peerDependencies:
       consola: ^3.2.3
       graphql: ^16.8.2
@@ -3040,8 +3046,8 @@ packages:
     peerDependencies:
       graphql: '>=0.11 <=16'
 
-  graphql@16.8.2:
-    resolution: {integrity: sha512-cvVIBILwuoSyD54U4cF/UXDh5yAobhNV/tPygI4lZhgOIJQE/WLWC4waBRb4I6bDVYb3OVx3lfHbaQOEoUD5sg==}
+  graphql@16.9.0:
+    resolution: {integrity: sha512-GGTKBX4SD7Wdb8mqeDLni2oaRGYQWjWHGKPQ24ZMnUtKfcsVoiv4uX8+LJr1K6U5VW2Lu1BwJnj7uiori0YtRw==}
     engines: {node: ^12.22.0 || ^14.16.0 || ^16.0.0 || >=17.0.0}
 
   gzip-size@6.0.0:
@@ -5556,7 +5562,7 @@ snapshots:
 
   '@antfu/utils@0.7.8': {}
 
-  '@ardatan/relay-compiler@12.0.0(encoding@0.1.13)(graphql@16.8.2)':
+  '@ardatan/relay-compiler@12.0.0(encoding@0.1.13)(graphql@16.9.0)':
     dependencies:
       '@babel/core': 7.24.7
       '@babel/generator': 7.24.7
@@ -5569,7 +5575,7 @@ snapshots:
       fb-watchman: 2.0.2
       fbjs: 3.0.5(encoding@0.1.13)
       glob: 7.2.3
-      graphql: 16.8.2
+      graphql: 16.9.0
       immutable: 3.7.6
       invariant: 2.2.4
       nullthrows: 1.1.1
@@ -6175,37 +6181,37 @@ snapshots:
 
   '@floating-ui/utils@0.2.2': {}
 
-  '@graphql-codegen/add@5.0.3(graphql@16.8.2)':
+  '@graphql-codegen/add@5.0.3(graphql@16.9.0)':
     dependencies:
-      '@graphql-codegen/plugin-helpers': 5.0.4(graphql@16.8.2)
-      graphql: 16.8.2
+      '@graphql-codegen/plugin-helpers': 5.0.4(graphql@16.9.0)
+      graphql: 16.9.0
       tslib: 2.6.3
 
-  '@graphql-codegen/cli@5.0.2(@parcel/watcher@2.4.1)(@types/node@20.14.4)(encoding@0.1.13)(graphql@16.8.2)':
+  '@graphql-codegen/cli@5.0.2(@parcel/watcher@2.4.1)(@types/node@20.14.8)(encoding@0.1.13)(graphql@16.9.0)':
     dependencies:
       '@babel/generator': 7.24.7
       '@babel/template': 7.24.7
       '@babel/types': 7.24.7
-      '@graphql-codegen/client-preset': 4.3.0(encoding@0.1.13)(graphql@16.8.2)
-      '@graphql-codegen/core': 4.0.2(graphql@16.8.2)
-      '@graphql-codegen/plugin-helpers': 5.0.4(graphql@16.8.2)
-      '@graphql-tools/apollo-engine-loader': 8.0.1(encoding@0.1.13)(graphql@16.8.2)
-      '@graphql-tools/code-file-loader': 8.1.2(graphql@16.8.2)
-      '@graphql-tools/git-loader': 8.0.6(graphql@16.8.2)
-      '@graphql-tools/github-loader': 8.0.1(@types/node@20.14.4)(encoding@0.1.13)(graphql@16.8.2)
-      '@graphql-tools/graphql-file-loader': 8.0.1(graphql@16.8.2)
-      '@graphql-tools/json-file-loader': 8.0.1(graphql@16.8.2)
-      '@graphql-tools/load': 8.0.2(graphql@16.8.2)
-      '@graphql-tools/prisma-loader': 8.0.4(@types/node@20.14.4)(encoding@0.1.13)(graphql@16.8.2)
-      '@graphql-tools/url-loader': 8.0.2(@types/node@20.14.4)(encoding@0.1.13)(graphql@16.8.2)
-      '@graphql-tools/utils': 10.2.2(graphql@16.8.2)
+      '@graphql-codegen/client-preset': 4.3.0(encoding@0.1.13)(graphql@16.9.0)
+      '@graphql-codegen/core': 4.0.2(graphql@16.9.0)
+      '@graphql-codegen/plugin-helpers': 5.0.4(graphql@16.9.0)
+      '@graphql-tools/apollo-engine-loader': 8.0.1(encoding@0.1.13)(graphql@16.9.0)
+      '@graphql-tools/code-file-loader': 8.1.2(graphql@16.9.0)
+      '@graphql-tools/git-loader': 8.0.6(graphql@16.9.0)
+      '@graphql-tools/github-loader': 8.0.1(@types/node@20.14.8)(encoding@0.1.13)(graphql@16.9.0)
+      '@graphql-tools/graphql-file-loader': 8.0.1(graphql@16.9.0)
+      '@graphql-tools/json-file-loader': 8.0.1(graphql@16.9.0)
+      '@graphql-tools/load': 8.0.2(graphql@16.9.0)
+      '@graphql-tools/prisma-loader': 8.0.4(@types/node@20.14.8)(encoding@0.1.13)(graphql@16.9.0)
+      '@graphql-tools/url-loader': 8.0.2(@types/node@20.14.8)(encoding@0.1.13)(graphql@16.9.0)
+      '@graphql-tools/utils': 10.2.2(graphql@16.9.0)
       '@whatwg-node/fetch': 0.8.8
       chalk: 4.1.2
       cosmiconfig: 8.3.6
       debounce: 1.2.1
       detect-indent: 6.1.0
-      graphql: 16.8.2
-      graphql-config: 5.0.3(@types/node@20.14.4)(encoding@0.1.13)(graphql@16.8.2)
+      graphql: 16.9.0
+      graphql-config: 5.0.3(@types/node@20.14.8)(encoding@0.1.13)(graphql@16.9.0)
       inquirer: 8.2.6
       is-glob: 4.0.3
       jiti: 1.21.6
@@ -6231,159 +6237,159 @@ snapshots:
       - typescript
       - utf-8-validate
 
-  '@graphql-codegen/client-preset@4.3.0(encoding@0.1.13)(graphql@16.8.2)':
+  '@graphql-codegen/client-preset@4.3.0(encoding@0.1.13)(graphql@16.9.0)':
     dependencies:
       '@babel/helper-plugin-utils': 7.24.7
       '@babel/template': 7.24.7
-      '@graphql-codegen/add': 5.0.3(graphql@16.8.2)
-      '@graphql-codegen/gql-tag-operations': 4.0.7(encoding@0.1.13)(graphql@16.8.2)
-      '@graphql-codegen/plugin-helpers': 5.0.4(graphql@16.8.2)
-      '@graphql-codegen/typed-document-node': 5.0.7(encoding@0.1.13)(graphql@16.8.2)
-      '@graphql-codegen/typescript': 4.0.7(encoding@0.1.13)(graphql@16.8.2)
-      '@graphql-codegen/typescript-operations': 4.2.1(encoding@0.1.13)(graphql@16.8.2)
-      '@graphql-codegen/visitor-plugin-common': 5.2.0(encoding@0.1.13)(graphql@16.8.2)
-      '@graphql-tools/documents': 1.0.1(graphql@16.8.2)
-      '@graphql-tools/utils': 10.2.2(graphql@16.8.2)
-      '@graphql-typed-document-node/core': 3.2.0(graphql@16.8.2)
-      graphql: 16.8.2
+      '@graphql-codegen/add': 5.0.3(graphql@16.9.0)
+      '@graphql-codegen/gql-tag-operations': 4.0.7(encoding@0.1.13)(graphql@16.9.0)
+      '@graphql-codegen/plugin-helpers': 5.0.4(graphql@16.9.0)
+      '@graphql-codegen/typed-document-node': 5.0.7(encoding@0.1.13)(graphql@16.9.0)
+      '@graphql-codegen/typescript': 4.0.7(encoding@0.1.13)(graphql@16.9.0)
+      '@graphql-codegen/typescript-operations': 4.2.1(encoding@0.1.13)(graphql@16.9.0)
+      '@graphql-codegen/visitor-plugin-common': 5.2.0(encoding@0.1.13)(graphql@16.9.0)
+      '@graphql-tools/documents': 1.0.1(graphql@16.9.0)
+      '@graphql-tools/utils': 10.2.2(graphql@16.9.0)
+      '@graphql-typed-document-node/core': 3.2.0(graphql@16.9.0)
+      graphql: 16.9.0
       tslib: 2.6.3
     transitivePeerDependencies:
       - encoding
       - supports-color
 
-  '@graphql-codegen/core@4.0.2(graphql@16.8.2)':
+  '@graphql-codegen/core@4.0.2(graphql@16.9.0)':
     dependencies:
-      '@graphql-codegen/plugin-helpers': 5.0.4(graphql@16.8.2)
-      '@graphql-tools/schema': 10.0.4(graphql@16.8.2)
-      '@graphql-tools/utils': 10.2.2(graphql@16.8.2)
-      graphql: 16.8.2
+      '@graphql-codegen/plugin-helpers': 5.0.4(graphql@16.9.0)
+      '@graphql-tools/schema': 10.0.4(graphql@16.9.0)
+      '@graphql-tools/utils': 10.2.2(graphql@16.9.0)
+      graphql: 16.9.0
       tslib: 2.6.3
 
-  '@graphql-codegen/gql-tag-operations@4.0.7(encoding@0.1.13)(graphql@16.8.2)':
+  '@graphql-codegen/gql-tag-operations@4.0.7(encoding@0.1.13)(graphql@16.9.0)':
     dependencies:
-      '@graphql-codegen/plugin-helpers': 5.0.4(graphql@16.8.2)
-      '@graphql-codegen/visitor-plugin-common': 5.2.0(encoding@0.1.13)(graphql@16.8.2)
-      '@graphql-tools/utils': 10.2.2(graphql@16.8.2)
+      '@graphql-codegen/plugin-helpers': 5.0.4(graphql@16.9.0)
+      '@graphql-codegen/visitor-plugin-common': 5.2.0(encoding@0.1.13)(graphql@16.9.0)
+      '@graphql-tools/utils': 10.2.2(graphql@16.9.0)
       auto-bind: 4.0.0
-      graphql: 16.8.2
+      graphql: 16.9.0
       tslib: 2.6.3
     transitivePeerDependencies:
       - encoding
       - supports-color
 
-  '@graphql-codegen/plugin-helpers@2.7.2(graphql@16.8.2)':
+  '@graphql-codegen/plugin-helpers@2.7.2(graphql@16.9.0)':
     dependencies:
-      '@graphql-tools/utils': 8.13.1(graphql@16.8.2)
+      '@graphql-tools/utils': 8.13.1(graphql@16.9.0)
       change-case-all: 1.0.14
       common-tags: 1.8.2
-      graphql: 16.8.2
+      graphql: 16.9.0
       import-from: 4.0.0
       lodash: 4.17.21
       tslib: 2.4.1
 
-  '@graphql-codegen/plugin-helpers@3.1.2(graphql@16.8.2)':
+  '@graphql-codegen/plugin-helpers@3.1.2(graphql@16.9.0)':
     dependencies:
-      '@graphql-tools/utils': 9.2.1(graphql@16.8.2)
+      '@graphql-tools/utils': 9.2.1(graphql@16.9.0)
       change-case-all: 1.0.15
       common-tags: 1.8.2
-      graphql: 16.8.2
+      graphql: 16.9.0
       import-from: 4.0.0
       lodash: 4.17.21
       tslib: 2.4.1
 
-  '@graphql-codegen/plugin-helpers@5.0.4(graphql@16.8.2)':
+  '@graphql-codegen/plugin-helpers@5.0.4(graphql@16.9.0)':
     dependencies:
-      '@graphql-tools/utils': 10.2.2(graphql@16.8.2)
+      '@graphql-tools/utils': 10.2.2(graphql@16.9.0)
       change-case-all: 1.0.15
       common-tags: 1.8.2
-      graphql: 16.8.2
+      graphql: 16.9.0
       import-from: 4.0.0
       lodash: 4.17.21
       tslib: 2.6.3
 
-  '@graphql-codegen/schema-ast@4.0.2(graphql@16.8.2)':
+  '@graphql-codegen/schema-ast@4.0.2(graphql@16.9.0)':
     dependencies:
-      '@graphql-codegen/plugin-helpers': 5.0.4(graphql@16.8.2)
-      '@graphql-tools/utils': 10.2.2(graphql@16.8.2)
-      graphql: 16.8.2
+      '@graphql-codegen/plugin-helpers': 5.0.4(graphql@16.9.0)
+      '@graphql-tools/utils': 10.2.2(graphql@16.9.0)
+      graphql: 16.9.0
       tslib: 2.6.3
 
-  '@graphql-codegen/typed-document-node@5.0.7(encoding@0.1.13)(graphql@16.8.2)':
+  '@graphql-codegen/typed-document-node@5.0.7(encoding@0.1.13)(graphql@16.9.0)':
     dependencies:
-      '@graphql-codegen/plugin-helpers': 5.0.4(graphql@16.8.2)
-      '@graphql-codegen/visitor-plugin-common': 5.2.0(encoding@0.1.13)(graphql@16.8.2)
+      '@graphql-codegen/plugin-helpers': 5.0.4(graphql@16.9.0)
+      '@graphql-codegen/visitor-plugin-common': 5.2.0(encoding@0.1.13)(graphql@16.9.0)
       auto-bind: 4.0.0
       change-case-all: 1.0.15
-      graphql: 16.8.2
+      graphql: 16.9.0
       tslib: 2.6.3
     transitivePeerDependencies:
       - encoding
       - supports-color
 
-  '@graphql-codegen/typescript-generic-sdk@4.0.1(encoding@0.1.13)(graphql-tag@2.12.6(graphql@16.8.2))(graphql@16.8.2)':
+  '@graphql-codegen/typescript-generic-sdk@4.0.1(encoding@0.1.13)(graphql-tag@2.12.6(graphql@16.9.0))(graphql@16.9.0)':
     dependencies:
-      '@graphql-codegen/plugin-helpers': 3.1.2(graphql@16.8.2)
-      '@graphql-codegen/visitor-plugin-common': 2.13.1(encoding@0.1.13)(graphql@16.8.2)
+      '@graphql-codegen/plugin-helpers': 3.1.2(graphql@16.9.0)
+      '@graphql-codegen/visitor-plugin-common': 2.13.1(encoding@0.1.13)(graphql@16.9.0)
       auto-bind: 4.0.0
-      graphql: 16.8.2
-      graphql-tag: 2.12.6(graphql@16.8.2)
+      graphql: 16.9.0
+      graphql-tag: 2.12.6(graphql@16.9.0)
       tslib: 2.6.3
     transitivePeerDependencies:
       - encoding
       - supports-color
 
-  '@graphql-codegen/typescript-operations@4.2.1(encoding@0.1.13)(graphql@16.8.2)':
+  '@graphql-codegen/typescript-operations@4.2.1(encoding@0.1.13)(graphql@16.9.0)':
     dependencies:
-      '@graphql-codegen/plugin-helpers': 5.0.4(graphql@16.8.2)
-      '@graphql-codegen/typescript': 4.0.7(encoding@0.1.13)(graphql@16.8.2)
-      '@graphql-codegen/visitor-plugin-common': 5.2.0(encoding@0.1.13)(graphql@16.8.2)
+      '@graphql-codegen/plugin-helpers': 5.0.4(graphql@16.9.0)
+      '@graphql-codegen/typescript': 4.0.7(encoding@0.1.13)(graphql@16.9.0)
+      '@graphql-codegen/visitor-plugin-common': 5.2.0(encoding@0.1.13)(graphql@16.9.0)
       auto-bind: 4.0.0
-      graphql: 16.8.2
+      graphql: 16.9.0
       tslib: 2.6.3
     transitivePeerDependencies:
       - encoding
       - supports-color
 
-  '@graphql-codegen/typescript@4.0.7(encoding@0.1.13)(graphql@16.8.2)':
+  '@graphql-codegen/typescript@4.0.7(encoding@0.1.13)(graphql@16.9.0)':
     dependencies:
-      '@graphql-codegen/plugin-helpers': 5.0.4(graphql@16.8.2)
-      '@graphql-codegen/schema-ast': 4.0.2(graphql@16.8.2)
-      '@graphql-codegen/visitor-plugin-common': 5.2.0(encoding@0.1.13)(graphql@16.8.2)
+      '@graphql-codegen/plugin-helpers': 5.0.4(graphql@16.9.0)
+      '@graphql-codegen/schema-ast': 4.0.2(graphql@16.9.0)
+      '@graphql-codegen/visitor-plugin-common': 5.2.0(encoding@0.1.13)(graphql@16.9.0)
       auto-bind: 4.0.0
-      graphql: 16.8.2
+      graphql: 16.9.0
       tslib: 2.6.3
     transitivePeerDependencies:
       - encoding
       - supports-color
 
-  '@graphql-codegen/visitor-plugin-common@2.13.1(encoding@0.1.13)(graphql@16.8.2)':
+  '@graphql-codegen/visitor-plugin-common@2.13.1(encoding@0.1.13)(graphql@16.9.0)':
     dependencies:
-      '@graphql-codegen/plugin-helpers': 2.7.2(graphql@16.8.2)
-      '@graphql-tools/optimize': 1.4.0(graphql@16.8.2)
-      '@graphql-tools/relay-operation-optimizer': 6.5.18(encoding@0.1.13)(graphql@16.8.2)
-      '@graphql-tools/utils': 8.13.1(graphql@16.8.2)
+      '@graphql-codegen/plugin-helpers': 2.7.2(graphql@16.9.0)
+      '@graphql-tools/optimize': 1.4.0(graphql@16.9.0)
+      '@graphql-tools/relay-operation-optimizer': 6.5.18(encoding@0.1.13)(graphql@16.9.0)
+      '@graphql-tools/utils': 8.13.1(graphql@16.9.0)
       auto-bind: 4.0.0
       change-case-all: 1.0.14
       dependency-graph: 0.11.0
-      graphql: 16.8.2
-      graphql-tag: 2.12.6(graphql@16.8.2)
+      graphql: 16.9.0
+      graphql-tag: 2.12.6(graphql@16.9.0)
       parse-filepath: 1.0.2
       tslib: 2.4.1
     transitivePeerDependencies:
       - encoding
       - supports-color
 
-  '@graphql-codegen/visitor-plugin-common@5.2.0(encoding@0.1.13)(graphql@16.8.2)':
+  '@graphql-codegen/visitor-plugin-common@5.2.0(encoding@0.1.13)(graphql@16.9.0)':
     dependencies:
-      '@graphql-codegen/plugin-helpers': 5.0.4(graphql@16.8.2)
-      '@graphql-tools/optimize': 2.0.0(graphql@16.8.2)
-      '@graphql-tools/relay-operation-optimizer': 7.0.1(encoding@0.1.13)(graphql@16.8.2)
-      '@graphql-tools/utils': 10.2.2(graphql@16.8.2)
+      '@graphql-codegen/plugin-helpers': 5.0.4(graphql@16.9.0)
+      '@graphql-tools/optimize': 2.0.0(graphql@16.9.0)
+      '@graphql-tools/relay-operation-optimizer': 7.0.1(encoding@0.1.13)(graphql@16.9.0)
+      '@graphql-tools/utils': 10.2.2(graphql@16.9.0)
       auto-bind: 4.0.0
       change-case-all: 1.0.15
       dependency-graph: 0.11.0
-      graphql: 16.8.2
-      graphql-tag: 2.12.6(graphql@16.8.2)
+      graphql: 16.9.0
+      graphql-tag: 2.12.6(graphql@16.9.0)
       parse-filepath: 1.0.2
       tslib: 2.6.3
     transitivePeerDependencies:
@@ -6399,57 +6405,57 @@ snapshots:
       terminal-link: 2.1.1
       walk-sync: 2.2.0
 
-  '@graphql-tools/apollo-engine-loader@8.0.1(encoding@0.1.13)(graphql@16.8.2)':
+  '@graphql-tools/apollo-engine-loader@8.0.1(encoding@0.1.13)(graphql@16.9.0)':
     dependencies:
       '@ardatan/sync-fetch': 0.0.1(encoding@0.1.13)
-      '@graphql-tools/utils': 10.2.2(graphql@16.8.2)
+      '@graphql-tools/utils': 10.2.2(graphql@16.9.0)
       '@whatwg-node/fetch': 0.9.18
-      graphql: 16.8.2
+      graphql: 16.9.0
       tslib: 2.6.3
     transitivePeerDependencies:
       - encoding
 
-  '@graphql-tools/batch-execute@9.0.4(graphql@16.8.2)':
+  '@graphql-tools/batch-execute@9.0.4(graphql@16.9.0)':
     dependencies:
-      '@graphql-tools/utils': 10.2.2(graphql@16.8.2)
+      '@graphql-tools/utils': 10.2.2(graphql@16.9.0)
       dataloader: 2.2.2
-      graphql: 16.8.2
+      graphql: 16.9.0
       tslib: 2.6.3
       value-or-promise: 1.0.12
 
-  '@graphql-tools/code-file-loader@8.1.2(graphql@16.8.2)':
+  '@graphql-tools/code-file-loader@8.1.2(graphql@16.9.0)':
     dependencies:
-      '@graphql-tools/graphql-tag-pluck': 8.3.1(graphql@16.8.2)
-      '@graphql-tools/utils': 10.2.2(graphql@16.8.2)
+      '@graphql-tools/graphql-tag-pluck': 8.3.1(graphql@16.9.0)
+      '@graphql-tools/utils': 10.2.2(graphql@16.9.0)
       globby: 11.1.0
-      graphql: 16.8.2
+      graphql: 16.9.0
       tslib: 2.6.3
       unixify: 1.0.0
     transitivePeerDependencies:
       - supports-color
 
-  '@graphql-tools/delegate@10.0.11(graphql@16.8.2)':
+  '@graphql-tools/delegate@10.0.11(graphql@16.9.0)':
     dependencies:
-      '@graphql-tools/batch-execute': 9.0.4(graphql@16.8.2)
-      '@graphql-tools/executor': 1.2.6(graphql@16.8.2)
-      '@graphql-tools/schema': 10.0.4(graphql@16.8.2)
-      '@graphql-tools/utils': 10.2.2(graphql@16.8.2)
+      '@graphql-tools/batch-execute': 9.0.4(graphql@16.9.0)
+      '@graphql-tools/executor': 1.2.6(graphql@16.9.0)
+      '@graphql-tools/schema': 10.0.4(graphql@16.9.0)
+      '@graphql-tools/utils': 10.2.2(graphql@16.9.0)
       dataloader: 2.2.2
-      graphql: 16.8.2
+      graphql: 16.9.0
       tslib: 2.6.3
 
-  '@graphql-tools/documents@1.0.1(graphql@16.8.2)':
+  '@graphql-tools/documents@1.0.1(graphql@16.9.0)':
     dependencies:
-      graphql: 16.8.2
+      graphql: 16.9.0
       lodash.sortby: 4.7.0
       tslib: 2.6.3
 
-  '@graphql-tools/executor-graphql-ws@1.1.2(graphql@16.8.2)':
+  '@graphql-tools/executor-graphql-ws@1.1.2(graphql@16.9.0)':
     dependencies:
-      '@graphql-tools/utils': 10.2.2(graphql@16.8.2)
+      '@graphql-tools/utils': 10.2.2(graphql@16.9.0)
       '@types/ws': 8.5.10
-      graphql: 16.8.2
-      graphql-ws: 5.16.0(graphql@16.8.2)
+      graphql: 16.9.0
+      graphql-ws: 5.16.0(graphql@16.9.0)
       isomorphic-ws: 5.0.0(ws@8.17.1)
       tslib: 2.6.3
       ws: 8.17.1
@@ -6457,24 +6463,24 @@ snapshots:
       - bufferutil
       - utf-8-validate
 
-  '@graphql-tools/executor-http@1.0.9(@types/node@20.14.4)(graphql@16.8.2)':
+  '@graphql-tools/executor-http@1.0.9(@types/node@20.14.8)(graphql@16.9.0)':
     dependencies:
-      '@graphql-tools/utils': 10.2.2(graphql@16.8.2)
+      '@graphql-tools/utils': 10.2.2(graphql@16.9.0)
       '@repeaterjs/repeater': 3.0.6
       '@whatwg-node/fetch': 0.9.18
       extract-files: 11.0.0
-      graphql: 16.8.2
-      meros: 1.3.0(@types/node@20.14.4)
+      graphql: 16.9.0
+      meros: 1.3.0(@types/node@20.14.8)
       tslib: 2.6.3
       value-or-promise: 1.0.12
     transitivePeerDependencies:
       - '@types/node'
 
-  '@graphql-tools/executor-legacy-ws@1.0.6(graphql@16.8.2)':
+  '@graphql-tools/executor-legacy-ws@1.0.6(graphql@16.9.0)':
     dependencies:
-      '@graphql-tools/utils': 10.2.2(graphql@16.8.2)
+      '@graphql-tools/utils': 10.2.2(graphql@16.9.0)
       '@types/ws': 8.5.10
-      graphql: 16.8.2
+      graphql: 16.9.0
       isomorphic-ws: 5.0.0(ws@8.17.1)
       tslib: 2.6.3
       ws: 8.17.1
@@ -6482,20 +6488,20 @@ snapshots:
       - bufferutil
       - utf-8-validate
 
-  '@graphql-tools/executor@1.2.6(graphql@16.8.2)':
+  '@graphql-tools/executor@1.2.6(graphql@16.9.0)':
     dependencies:
-      '@graphql-tools/utils': 10.2.2(graphql@16.8.2)
-      '@graphql-typed-document-node/core': 3.2.0(graphql@16.8.2)
+      '@graphql-tools/utils': 10.2.2(graphql@16.9.0)
+      '@graphql-typed-document-node/core': 3.2.0(graphql@16.9.0)
       '@repeaterjs/repeater': 3.0.6
-      graphql: 16.8.2
+      graphql: 16.9.0
       tslib: 2.6.3
       value-or-promise: 1.0.12
 
-  '@graphql-tools/git-loader@8.0.6(graphql@16.8.2)':
+  '@graphql-tools/git-loader@8.0.6(graphql@16.9.0)':
     dependencies:
-      '@graphql-tools/graphql-tag-pluck': 8.3.1(graphql@16.8.2)
-      '@graphql-tools/utils': 10.2.2(graphql@16.8.2)
-      graphql: 16.8.2
+      '@graphql-tools/graphql-tag-pluck': 8.3.1(graphql@16.9.0)
+      '@graphql-tools/utils': 10.2.2(graphql@16.9.0)
+      graphql: 16.9.0
       is-glob: 4.0.3
       micromatch: 4.0.7
       tslib: 2.6.3
@@ -6503,14 +6509,14 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@graphql-tools/github-loader@8.0.1(@types/node@20.14.4)(encoding@0.1.13)(graphql@16.8.2)':
+  '@graphql-tools/github-loader@8.0.1(@types/node@20.14.8)(encoding@0.1.13)(graphql@16.9.0)':
     dependencies:
       '@ardatan/sync-fetch': 0.0.1(encoding@0.1.13)
-      '@graphql-tools/executor-http': 1.0.9(@types/node@20.14.4)(graphql@16.8.2)
-      '@graphql-tools/graphql-tag-pluck': 8.3.1(graphql@16.8.2)
-      '@graphql-tools/utils': 10.2.2(graphql@16.8.2)
+      '@graphql-tools/executor-http': 1.0.9(@types/node@20.14.8)(graphql@16.9.0)
+      '@graphql-tools/graphql-tag-pluck': 8.3.1(graphql@16.9.0)
+      '@graphql-tools/utils': 10.2.2(graphql@16.9.0)
       '@whatwg-node/fetch': 0.9.18
-      graphql: 16.8.2
+      graphql: 16.9.0
       tslib: 2.6.3
       value-or-promise: 1.0.12
     transitivePeerDependencies:
@@ -6518,78 +6524,78 @@ snapshots:
       - encoding
       - supports-color
 
-  '@graphql-tools/graphql-file-loader@8.0.1(graphql@16.8.2)':
+  '@graphql-tools/graphql-file-loader@8.0.1(graphql@16.9.0)':
     dependencies:
-      '@graphql-tools/import': 7.0.1(graphql@16.8.2)
-      '@graphql-tools/utils': 10.2.2(graphql@16.8.2)
+      '@graphql-tools/import': 7.0.1(graphql@16.9.0)
+      '@graphql-tools/utils': 10.2.2(graphql@16.9.0)
       globby: 11.1.0
-      graphql: 16.8.2
+      graphql: 16.9.0
       tslib: 2.6.3
       unixify: 1.0.0
 
-  '@graphql-tools/graphql-tag-pluck@8.3.1(graphql@16.8.2)':
+  '@graphql-tools/graphql-tag-pluck@8.3.1(graphql@16.9.0)':
     dependencies:
       '@babel/core': 7.24.7
       '@babel/parser': 7.24.7
       '@babel/plugin-syntax-import-assertions': 7.24.7(@babel/core@7.24.7)
       '@babel/traverse': 7.24.7
       '@babel/types': 7.24.7
-      '@graphql-tools/utils': 10.2.2(graphql@16.8.2)
-      graphql: 16.8.2
+      '@graphql-tools/utils': 10.2.2(graphql@16.9.0)
+      graphql: 16.9.0
       tslib: 2.6.3
     transitivePeerDependencies:
       - supports-color
 
-  '@graphql-tools/import@7.0.1(graphql@16.8.2)':
+  '@graphql-tools/import@7.0.1(graphql@16.9.0)':
     dependencies:
-      '@graphql-tools/utils': 10.2.2(graphql@16.8.2)
-      graphql: 16.8.2
+      '@graphql-tools/utils': 10.2.2(graphql@16.9.0)
+      graphql: 16.9.0
       resolve-from: 5.0.0
       tslib: 2.6.3
 
-  '@graphql-tools/json-file-loader@8.0.1(graphql@16.8.2)':
+  '@graphql-tools/json-file-loader@8.0.1(graphql@16.9.0)':
     dependencies:
-      '@graphql-tools/utils': 10.2.2(graphql@16.8.2)
+      '@graphql-tools/utils': 10.2.2(graphql@16.9.0)
       globby: 11.1.0
-      graphql: 16.8.2
+      graphql: 16.9.0
       tslib: 2.6.3
       unixify: 1.0.0
 
-  '@graphql-tools/load@8.0.2(graphql@16.8.2)':
+  '@graphql-tools/load@8.0.2(graphql@16.9.0)':
     dependencies:
-      '@graphql-tools/schema': 10.0.4(graphql@16.8.2)
-      '@graphql-tools/utils': 10.2.2(graphql@16.8.2)
-      graphql: 16.8.2
+      '@graphql-tools/schema': 10.0.4(graphql@16.9.0)
+      '@graphql-tools/utils': 10.2.2(graphql@16.9.0)
+      graphql: 16.9.0
       p-limit: 3.1.0
       tslib: 2.6.3
 
-  '@graphql-tools/merge@9.0.4(graphql@16.8.2)':
+  '@graphql-tools/merge@9.0.4(graphql@16.9.0)':
     dependencies:
-      '@graphql-tools/utils': 10.2.2(graphql@16.8.2)
-      graphql: 16.8.2
+      '@graphql-tools/utils': 10.2.2(graphql@16.9.0)
+      graphql: 16.9.0
       tslib: 2.6.3
 
-  '@graphql-tools/optimize@1.4.0(graphql@16.8.2)':
+  '@graphql-tools/optimize@1.4.0(graphql@16.9.0)':
     dependencies:
-      graphql: 16.8.2
+      graphql: 16.9.0
       tslib: 2.6.3
 
-  '@graphql-tools/optimize@2.0.0(graphql@16.8.2)':
+  '@graphql-tools/optimize@2.0.0(graphql@16.9.0)':
     dependencies:
-      graphql: 16.8.2
+      graphql: 16.9.0
       tslib: 2.6.3
 
-  '@graphql-tools/prisma-loader@8.0.4(@types/node@20.14.4)(encoding@0.1.13)(graphql@16.8.2)':
+  '@graphql-tools/prisma-loader@8.0.4(@types/node@20.14.8)(encoding@0.1.13)(graphql@16.9.0)':
     dependencies:
-      '@graphql-tools/url-loader': 8.0.2(@types/node@20.14.4)(encoding@0.1.13)(graphql@16.8.2)
-      '@graphql-tools/utils': 10.2.2(graphql@16.8.2)
+      '@graphql-tools/url-loader': 8.0.2(@types/node@20.14.8)(encoding@0.1.13)(graphql@16.9.0)
+      '@graphql-tools/utils': 10.2.2(graphql@16.9.0)
       '@types/js-yaml': 4.0.9
       '@whatwg-node/fetch': 0.9.18
       chalk: 4.1.2
       debug: 4.3.5
       dotenv: 16.4.5
-      graphql: 16.8.2
-      graphql-request: 6.1.0(encoding@0.1.13)(graphql@16.8.2)
+      graphql: 16.9.0
+      graphql-request: 6.1.0(encoding@0.1.13)(graphql@16.9.0)
       http-proxy-agent: 7.0.2
       https-proxy-agent: 7.0.4
       jose: 5.4.0
@@ -6605,46 +6611,46 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@graphql-tools/relay-operation-optimizer@6.5.18(encoding@0.1.13)(graphql@16.8.2)':
+  '@graphql-tools/relay-operation-optimizer@6.5.18(encoding@0.1.13)(graphql@16.9.0)':
     dependencies:
-      '@ardatan/relay-compiler': 12.0.0(encoding@0.1.13)(graphql@16.8.2)
-      '@graphql-tools/utils': 9.2.1(graphql@16.8.2)
-      graphql: 16.8.2
+      '@ardatan/relay-compiler': 12.0.0(encoding@0.1.13)(graphql@16.9.0)
+      '@graphql-tools/utils': 9.2.1(graphql@16.9.0)
+      graphql: 16.9.0
       tslib: 2.6.3
     transitivePeerDependencies:
       - encoding
       - supports-color
 
-  '@graphql-tools/relay-operation-optimizer@7.0.1(encoding@0.1.13)(graphql@16.8.2)':
+  '@graphql-tools/relay-operation-optimizer@7.0.1(encoding@0.1.13)(graphql@16.9.0)':
     dependencies:
-      '@ardatan/relay-compiler': 12.0.0(encoding@0.1.13)(graphql@16.8.2)
-      '@graphql-tools/utils': 10.2.2(graphql@16.8.2)
-      graphql: 16.8.2
+      '@ardatan/relay-compiler': 12.0.0(encoding@0.1.13)(graphql@16.9.0)
+      '@graphql-tools/utils': 10.2.2(graphql@16.9.0)
+      graphql: 16.9.0
       tslib: 2.6.3
     transitivePeerDependencies:
       - encoding
       - supports-color
 
-  '@graphql-tools/schema@10.0.4(graphql@16.8.2)':
+  '@graphql-tools/schema@10.0.4(graphql@16.9.0)':
     dependencies:
-      '@graphql-tools/merge': 9.0.4(graphql@16.8.2)
-      '@graphql-tools/utils': 10.2.2(graphql@16.8.2)
-      graphql: 16.8.2
+      '@graphql-tools/merge': 9.0.4(graphql@16.9.0)
+      '@graphql-tools/utils': 10.2.2(graphql@16.9.0)
+      graphql: 16.9.0
       tslib: 2.6.3
       value-or-promise: 1.0.12
 
-  '@graphql-tools/url-loader@8.0.2(@types/node@20.14.4)(encoding@0.1.13)(graphql@16.8.2)':
+  '@graphql-tools/url-loader@8.0.2(@types/node@20.14.8)(encoding@0.1.13)(graphql@16.9.0)':
     dependencies:
       '@ardatan/sync-fetch': 0.0.1(encoding@0.1.13)
-      '@graphql-tools/delegate': 10.0.11(graphql@16.8.2)
-      '@graphql-tools/executor-graphql-ws': 1.1.2(graphql@16.8.2)
-      '@graphql-tools/executor-http': 1.0.9(@types/node@20.14.4)(graphql@16.8.2)
-      '@graphql-tools/executor-legacy-ws': 1.0.6(graphql@16.8.2)
-      '@graphql-tools/utils': 10.2.2(graphql@16.8.2)
-      '@graphql-tools/wrap': 10.0.5(graphql@16.8.2)
+      '@graphql-tools/delegate': 10.0.11(graphql@16.9.0)
+      '@graphql-tools/executor-graphql-ws': 1.1.2(graphql@16.9.0)
+      '@graphql-tools/executor-http': 1.0.9(@types/node@20.14.8)(graphql@16.9.0)
+      '@graphql-tools/executor-legacy-ws': 1.0.6(graphql@16.9.0)
+      '@graphql-tools/utils': 10.2.2(graphql@16.9.0)
+      '@graphql-tools/wrap': 10.0.5(graphql@16.9.0)
       '@types/ws': 8.5.10
       '@whatwg-node/fetch': 0.9.18
-      graphql: 16.8.2
+      graphql: 16.9.0
       isomorphic-ws: 5.0.0(ws@8.17.1)
       tslib: 2.6.3
       value-or-promise: 1.0.12
@@ -6655,37 +6661,37 @@ snapshots:
       - encoding
       - utf-8-validate
 
-  '@graphql-tools/utils@10.2.2(graphql@16.8.2)':
+  '@graphql-tools/utils@10.2.2(graphql@16.9.0)':
     dependencies:
-      '@graphql-typed-document-node/core': 3.2.0(graphql@16.8.2)
+      '@graphql-typed-document-node/core': 3.2.0(graphql@16.9.0)
       cross-inspect: 1.0.0
       dset: 3.1.3
-      graphql: 16.8.2
+      graphql: 16.9.0
       tslib: 2.6.3
 
-  '@graphql-tools/utils@8.13.1(graphql@16.8.2)':
+  '@graphql-tools/utils@8.13.1(graphql@16.9.0)':
     dependencies:
-      graphql: 16.8.2
+      graphql: 16.9.0
       tslib: 2.6.3
 
-  '@graphql-tools/utils@9.2.1(graphql@16.8.2)':
+  '@graphql-tools/utils@9.2.1(graphql@16.9.0)':
     dependencies:
-      '@graphql-typed-document-node/core': 3.2.0(graphql@16.8.2)
-      graphql: 16.8.2
+      '@graphql-typed-document-node/core': 3.2.0(graphql@16.9.0)
+      graphql: 16.9.0
       tslib: 2.6.3
 
-  '@graphql-tools/wrap@10.0.5(graphql@16.8.2)':
+  '@graphql-tools/wrap@10.0.5(graphql@16.9.0)':
     dependencies:
-      '@graphql-tools/delegate': 10.0.11(graphql@16.8.2)
-      '@graphql-tools/schema': 10.0.4(graphql@16.8.2)
-      '@graphql-tools/utils': 10.2.2(graphql@16.8.2)
-      graphql: 16.8.2
+      '@graphql-tools/delegate': 10.0.11(graphql@16.9.0)
+      '@graphql-tools/schema': 10.0.4(graphql@16.9.0)
+      '@graphql-tools/utils': 10.2.2(graphql@16.9.0)
+      graphql: 16.9.0
       tslib: 2.6.3
       value-or-promise: 1.0.12
 
-  '@graphql-typed-document-node/core@3.2.0(graphql@16.8.2)':
+  '@graphql-typed-document-node/core@3.2.0(graphql@16.9.0)':
     dependencies:
-      graphql: 16.8.2
+      graphql: 16.9.0
 
   '@headlessui/tailwindcss@0.2.1(tailwindcss@3.4.4)':
     dependencies:
@@ -6700,7 +6706,7 @@ snapshots:
     dependencies:
       '@iconify/types': 2.0.0
 
-  '@iconify-json/mdi@1.1.66':
+  '@iconify-json/mdi@1.1.67':
     dependencies:
       '@iconify/types': 2.0.0
 
@@ -6711,6 +6717,18 @@ snapshots:
   '@iconify/types@2.0.0': {}
 
   '@iconify/utils@2.1.24':
+    dependencies:
+      '@antfu/install-pkg': 0.1.1
+      '@antfu/utils': 0.7.8
+      '@iconify/types': 2.0.0
+      debug: 4.3.5
+      kolorist: 1.8.0
+      local-pkg: 0.5.0
+      mlly: 1.7.1
+    transitivePeerDependencies:
+      - supports-color
+
+  '@iconify/utils@2.1.25':
     dependencies:
       '@antfu/install-pkg': 0.1.1
       '@antfu/utils': 0.7.8
@@ -6899,25 +6917,25 @@ snapshots:
 
   '@nuxt/devalue@2.0.2': {}
 
-  '@nuxt/devtools-kit@1.0.8(magicast@0.3.4)(nuxt@3.12.2(@opentelemetry/api@1.9.0)(@parcel/watcher@2.4.1)(@types/node@20.14.4)(@unocss/reset@0.61.0)(change-case@4.1.2)(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.12.2(magicast@0.3.4)(rollup@4.18.0))(vue@3.4.29))(fuse.js@6.6.2)(ioredis@5.4.1)(magicast@0.3.4)(rollup@4.18.0)(terser@5.31.1)(unocss@0.61.0(postcss@8.4.38)(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1)))(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1)))(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1))':
+  '@nuxt/devtools-kit@1.0.8(magicast@0.3.4)(nuxt@3.12.2(@opentelemetry/api@1.9.0)(@parcel/watcher@2.4.1)(@types/node@20.14.8)(@unocss/reset@0.61.0)(change-case@4.1.2)(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.12.2(magicast@0.3.4)(rollup@4.18.0))(vue@3.4.29))(fuse.js@6.6.2)(ioredis@5.4.1)(magicast@0.3.4)(rollup@4.18.0)(terser@5.31.1)(unocss@0.61.0(postcss@8.4.38)(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1)))(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1)))(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1))':
     dependencies:
       '@nuxt/kit': 3.12.2(magicast@0.3.4)(rollup@4.18.0)
       '@nuxt/schema': 3.12.2(rollup@4.18.0)
       execa: 7.2.0
-      nuxt: 3.12.2(@opentelemetry/api@1.9.0)(@parcel/watcher@2.4.1)(@types/node@20.14.4)(@unocss/reset@0.61.0)(change-case@4.1.2)(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.12.2(magicast@0.3.4)(rollup@4.18.0))(vue@3.4.29))(fuse.js@6.6.2)(ioredis@5.4.1)(magicast@0.3.4)(rollup@4.18.0)(terser@5.31.1)(unocss@0.61.0(postcss@8.4.38)(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1)))(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1))
-      vite: 5.3.1(@types/node@20.14.4)(terser@5.31.1)
+      nuxt: 3.12.2(@opentelemetry/api@1.9.0)(@parcel/watcher@2.4.1)(@types/node@20.14.8)(@unocss/reset@0.61.0)(change-case@4.1.2)(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.12.2(magicast@0.3.4)(rollup@4.18.0))(vue@3.4.29))(fuse.js@6.6.2)(ioredis@5.4.1)(magicast@0.3.4)(rollup@4.18.0)(terser@5.31.1)(unocss@0.61.0(postcss@8.4.38)(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1)))(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1))
+      vite: 5.3.1(@types/node@20.14.8)(terser@5.31.1)
     transitivePeerDependencies:
       - magicast
       - rollup
       - supports-color
 
-  '@nuxt/devtools-kit@1.3.3(magicast@0.3.4)(nuxt@3.12.2(@opentelemetry/api@1.9.0)(@parcel/watcher@2.4.1)(@types/node@20.14.4)(@unocss/reset@0.61.0)(change-case@4.1.2)(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.12.2(magicast@0.3.4)(rollup@4.18.0))(vue@3.4.29))(fuse.js@6.6.2)(ioredis@5.4.1)(magicast@0.3.4)(rollup@4.18.0)(terser@5.31.1)(unocss@0.61.0(postcss@8.4.38)(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1)))(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1)))(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1))':
+  '@nuxt/devtools-kit@1.3.3(magicast@0.3.4)(nuxt@3.12.2(@opentelemetry/api@1.9.0)(@parcel/watcher@2.4.1)(@types/node@20.14.8)(@unocss/reset@0.61.0)(change-case@4.1.2)(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.12.2(magicast@0.3.4)(rollup@4.18.0))(vue@3.4.29))(fuse.js@6.6.2)(ioredis@5.4.1)(magicast@0.3.4)(rollup@4.18.0)(terser@5.31.1)(unocss@0.61.0(postcss@8.4.38)(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1)))(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1)))(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1))':
     dependencies:
       '@nuxt/kit': 3.12.2(magicast@0.3.4)(rollup@4.18.0)
       '@nuxt/schema': 3.12.2(rollup@4.18.0)
       execa: 7.2.0
-      nuxt: 3.12.2(@opentelemetry/api@1.9.0)(@parcel/watcher@2.4.1)(@types/node@20.14.4)(@unocss/reset@0.61.0)(change-case@4.1.2)(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.12.2(magicast@0.3.4)(rollup@4.18.0))(vue@3.4.29))(fuse.js@6.6.2)(ioredis@5.4.1)(magicast@0.3.4)(rollup@4.18.0)(terser@5.31.1)(unocss@0.61.0(postcss@8.4.38)(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1)))(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1))
-      vite: 5.3.1(@types/node@20.14.4)(terser@5.31.1)
+      nuxt: 3.12.2(@opentelemetry/api@1.9.0)(@parcel/watcher@2.4.1)(@types/node@20.14.8)(@unocss/reset@0.61.0)(change-case@4.1.2)(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.12.2(magicast@0.3.4)(rollup@4.18.0))(vue@3.4.29))(fuse.js@6.6.2)(ioredis@5.4.1)(magicast@0.3.4)(rollup@4.18.0)(terser@5.31.1)(unocss@0.61.0(postcss@8.4.38)(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1)))(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1))
+      vite: 5.3.1(@types/node@20.14.8)(terser@5.31.1)
     transitivePeerDependencies:
       - magicast
       - rollup
@@ -6936,14 +6954,14 @@ snapshots:
       rc9: 2.1.2
       semver: 7.6.2
 
-  '@nuxt/devtools@1.3.3(@unocss/reset@0.61.0)(change-case@4.1.2)(floating-vue@5.2.2(@nuxt/kit@3.12.2(magicast@0.3.4)(rollup@4.18.0))(vue@3.4.29))(fuse.js@6.6.2)(nuxt@3.12.2(@opentelemetry/api@1.9.0)(@parcel/watcher@2.4.1)(@types/node@20.14.4)(@unocss/reset@0.61.0)(change-case@4.1.2)(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.12.2(magicast@0.3.4)(rollup@4.18.0))(vue@3.4.29))(fuse.js@6.6.2)(ioredis@5.4.1)(magicast@0.3.4)(rollup@4.18.0)(terser@5.31.1)(unocss@0.61.0(postcss@8.4.38)(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1)))(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1)))(rollup@4.18.0)(unocss@0.61.0(postcss@8.4.38)(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1)))(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1))(vue@3.4.29)':
+  '@nuxt/devtools@1.3.3(@unocss/reset@0.61.0)(change-case@4.1.2)(floating-vue@5.2.2(@nuxt/kit@3.12.2(magicast@0.3.4)(rollup@4.18.0))(vue@3.4.29))(fuse.js@6.6.2)(nuxt@3.12.2(@opentelemetry/api@1.9.0)(@parcel/watcher@2.4.1)(@types/node@20.14.8)(@unocss/reset@0.61.0)(change-case@4.1.2)(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.12.2(magicast@0.3.4)(rollup@4.18.0))(vue@3.4.29))(fuse.js@6.6.2)(ioredis@5.4.1)(magicast@0.3.4)(rollup@4.18.0)(terser@5.31.1)(unocss@0.61.0(postcss@8.4.38)(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1)))(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1)))(rollup@4.18.0)(unocss@0.61.0(postcss@8.4.38)(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1)))(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1))(vue@3.4.29)':
     dependencies:
       '@antfu/utils': 0.7.8
-      '@nuxt/devtools-kit': 1.3.3(magicast@0.3.4)(nuxt@3.12.2(@opentelemetry/api@1.9.0)(@parcel/watcher@2.4.1)(@types/node@20.14.4)(@unocss/reset@0.61.0)(change-case@4.1.2)(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.12.2(magicast@0.3.4)(rollup@4.18.0))(vue@3.4.29))(fuse.js@6.6.2)(ioredis@5.4.1)(magicast@0.3.4)(rollup@4.18.0)(terser@5.31.1)(unocss@0.61.0(postcss@8.4.38)(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1)))(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1)))(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1))
+      '@nuxt/devtools-kit': 1.3.3(magicast@0.3.4)(nuxt@3.12.2(@opentelemetry/api@1.9.0)(@parcel/watcher@2.4.1)(@types/node@20.14.8)(@unocss/reset@0.61.0)(change-case@4.1.2)(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.12.2(magicast@0.3.4)(rollup@4.18.0))(vue@3.4.29))(fuse.js@6.6.2)(ioredis@5.4.1)(magicast@0.3.4)(rollup@4.18.0)(terser@5.31.1)(unocss@0.61.0(postcss@8.4.38)(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1)))(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1)))(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1))
       '@nuxt/devtools-wizard': 1.3.3
       '@nuxt/kit': 3.12.2(magicast@0.3.4)(rollup@4.18.0)
-      '@vue/devtools-applet': 7.1.3(@unocss/reset@0.61.0)(change-case@4.1.2)(floating-vue@5.2.2(@nuxt/kit@3.12.2(magicast@0.3.4)(rollup@4.18.0))(vue@3.4.29))(fuse.js@6.6.2)(unocss@0.61.0(postcss@8.4.38)(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1)))(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1))(vue@3.4.29)
-      '@vue/devtools-core': 7.1.3(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1))(vue@3.4.29)
+      '@vue/devtools-applet': 7.1.3(@unocss/reset@0.61.0)(change-case@4.1.2)(floating-vue@5.2.2(@nuxt/kit@3.12.2(magicast@0.3.4)(rollup@4.18.0))(vue@3.4.29))(fuse.js@6.6.2)(unocss@0.61.0(postcss@8.4.38)(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1)))(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1))(vue@3.4.29)
+      '@vue/devtools-core': 7.1.3(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1))(vue@3.4.29)
       '@vue/devtools-kit': 7.1.3(vue@3.4.29)
       birpc: 0.2.17
       consola: 3.2.3
@@ -6960,7 +6978,7 @@ snapshots:
       launch-editor: 2.7.0
       local-pkg: 0.5.0
       magicast: 0.3.4
-      nuxt: 3.12.2(@opentelemetry/api@1.9.0)(@parcel/watcher@2.4.1)(@types/node@20.14.4)(@unocss/reset@0.61.0)(change-case@4.1.2)(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.12.2(magicast@0.3.4)(rollup@4.18.0))(vue@3.4.29))(fuse.js@6.6.2)(ioredis@5.4.1)(magicast@0.3.4)(rollup@4.18.0)(terser@5.31.1)(unocss@0.61.0(postcss@8.4.38)(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1)))(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1))
+      nuxt: 3.12.2(@opentelemetry/api@1.9.0)(@parcel/watcher@2.4.1)(@types/node@20.14.8)(@unocss/reset@0.61.0)(change-case@4.1.2)(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.12.2(magicast@0.3.4)(rollup@4.18.0))(vue@3.4.29))(fuse.js@6.6.2)(ioredis@5.4.1)(magicast@0.3.4)(rollup@4.18.0)(terser@5.31.1)(unocss@0.61.0(postcss@8.4.38)(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1)))(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1))
       nypm: 0.3.8
       ohash: 1.1.3
       pacote: 18.0.6
@@ -6973,9 +6991,9 @@ snapshots:
       simple-git: 3.25.0
       sirv: 2.0.4
       unimport: 3.7.2(rollup@4.18.0)
-      vite: 5.3.1(@types/node@20.14.4)(terser@5.31.1)
-      vite-plugin-inspect: 0.8.4(@nuxt/kit@3.12.2(magicast@0.3.4)(rollup@4.18.0))(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1))
-      vite-plugin-vue-inspector: 5.1.2(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1))
+      vite: 5.3.1(@types/node@20.14.8)(terser@5.31.1)
+      vite-plugin-inspect: 0.8.4(@nuxt/kit@3.12.2(magicast@0.3.4)(rollup@4.18.0))(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1))
+      vite-plugin-vue-inspector: 5.1.2(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1))
       which: 3.0.1
       ws: 8.17.1
     transitivePeerDependencies:
@@ -7103,9 +7121,9 @@ snapshots:
       - rollup
       - supports-color
 
-  '@nuxt/ui-pro@1.3.0(change-case@4.1.2)(focus-trap@7.5.4)(magicast@0.3.4)(nuxt@3.12.2(@opentelemetry/api@1.9.0)(@parcel/watcher@2.4.1)(@types/node@20.14.4)(@unocss/reset@0.61.0)(change-case@4.1.2)(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.12.2(magicast@0.3.4)(rollup@4.18.0))(vue@3.4.29))(fuse.js@6.6.2)(ioredis@5.4.1)(magicast@0.3.4)(rollup@4.18.0)(terser@5.31.1)(unocss@0.61.0(postcss@8.4.38)(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1)))(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1)))(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1))(vue@3.4.29)':
+  '@nuxt/ui-pro@1.3.0(change-case@4.1.2)(focus-trap@7.5.4)(magicast@0.3.4)(nuxt@3.12.2(@opentelemetry/api@1.9.0)(@parcel/watcher@2.4.1)(@types/node@20.14.8)(@unocss/reset@0.61.0)(change-case@4.1.2)(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.12.2(magicast@0.3.4)(rollup@4.18.0))(vue@3.4.29))(fuse.js@6.6.2)(ioredis@5.4.1)(magicast@0.3.4)(rollup@4.18.0)(terser@5.31.1)(unocss@0.61.0(postcss@8.4.38)(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1)))(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1)))(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1))(vue@3.4.29)':
     dependencies:
-      '@nuxt/ui': 2.17.0(change-case@4.1.2)(focus-trap@7.5.4)(magicast@0.3.4)(nuxt@3.12.2(@opentelemetry/api@1.9.0)(@parcel/watcher@2.4.1)(@types/node@20.14.4)(@unocss/reset@0.61.0)(change-case@4.1.2)(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.12.2(magicast@0.3.4)(rollup@4.18.0))(vue@3.4.29))(fuse.js@6.6.2)(ioredis@5.4.1)(magicast@0.3.4)(rollup@4.18.0)(terser@5.31.1)(unocss@0.61.0(postcss@8.4.38)(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1)))(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1)))(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1))(vue@3.4.29)
+      '@nuxt/ui': 2.17.0(change-case@4.1.2)(focus-trap@7.5.4)(magicast@0.3.4)(nuxt@3.12.2(@opentelemetry/api@1.9.0)(@parcel/watcher@2.4.1)(@types/node@20.14.8)(@unocss/reset@0.61.0)(change-case@4.1.2)(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.12.2(magicast@0.3.4)(rollup@4.18.0))(vue@3.4.29))(fuse.js@6.6.2)(ioredis@5.4.1)(magicast@0.3.4)(rollup@4.18.0)(terser@5.31.1)(unocss@0.61.0(postcss@8.4.38)(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1)))(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1)))(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1))(vue@3.4.29)
       '@vueuse/core': 10.11.0(vue@3.4.29)
       defu: 6.1.4
       git-url-parse: 14.0.0
@@ -7137,7 +7155,7 @@ snapshots:
       - vite
       - vue
 
-  '@nuxt/ui@2.17.0(change-case@4.1.2)(focus-trap@7.5.4)(magicast@0.3.4)(nuxt@3.12.2(@opentelemetry/api@1.9.0)(@parcel/watcher@2.4.1)(@types/node@20.14.4)(@unocss/reset@0.61.0)(change-case@4.1.2)(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.12.2(magicast@0.3.4)(rollup@4.18.0))(vue@3.4.29))(fuse.js@6.6.2)(ioredis@5.4.1)(magicast@0.3.4)(rollup@4.18.0)(terser@5.31.1)(unocss@0.61.0(postcss@8.4.38)(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1)))(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1)))(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1))(vue@3.4.29)':
+  '@nuxt/ui@2.17.0(change-case@4.1.2)(focus-trap@7.5.4)(magicast@0.3.4)(nuxt@3.12.2(@opentelemetry/api@1.9.0)(@parcel/watcher@2.4.1)(@types/node@20.14.8)(@unocss/reset@0.61.0)(change-case@4.1.2)(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.12.2(magicast@0.3.4)(rollup@4.18.0))(vue@3.4.29))(fuse.js@6.6.2)(ioredis@5.4.1)(magicast@0.3.4)(rollup@4.18.0)(terser@5.31.1)(unocss@0.61.0(postcss@8.4.38)(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1)))(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1)))(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1))(vue@3.4.29)':
     dependencies:
       '@egoist/tailwindcss-icons': 1.8.1(tailwindcss@3.4.4)
       '@headlessui/tailwindcss': 0.2.1(tailwindcss@3.4.4)
@@ -7156,7 +7174,7 @@ snapshots:
       '@vueuse/math': 10.11.0(vue@3.4.29)
       defu: 6.1.4
       fuse.js: 6.6.2
-      nuxt-icon: 0.6.10(magicast@0.3.4)(nuxt@3.12.2(@opentelemetry/api@1.9.0)(@parcel/watcher@2.4.1)(@types/node@20.14.4)(@unocss/reset@0.61.0)(change-case@4.1.2)(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.12.2(magicast@0.3.4)(rollup@4.18.0))(vue@3.4.29))(fuse.js@6.6.2)(ioredis@5.4.1)(magicast@0.3.4)(rollup@4.18.0)(terser@5.31.1)(unocss@0.61.0(postcss@8.4.38)(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1)))(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1)))(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1))(vue@3.4.29)
+      nuxt-icon: 0.6.10(magicast@0.3.4)(nuxt@3.12.2(@opentelemetry/api@1.9.0)(@parcel/watcher@2.4.1)(@types/node@20.14.8)(@unocss/reset@0.61.0)(change-case@4.1.2)(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.12.2(magicast@0.3.4)(rollup@4.18.0))(vue@3.4.29))(fuse.js@6.6.2)(ioredis@5.4.1)(magicast@0.3.4)(rollup@4.18.0)(terser@5.31.1)(unocss@0.61.0(postcss@8.4.38)(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1)))(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1)))(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1))(vue@3.4.29)
       ohash: 1.1.3
       pathe: 1.1.2
       scule: 1.3.0
@@ -7184,12 +7202,12 @@ snapshots:
       - vite
       - vue
 
-  '@nuxt/vite-builder@3.12.2(@types/node@20.14.4)(magicast@0.3.4)(rollup@4.18.0)(terser@5.31.1)(vue@3.4.29)':
+  '@nuxt/vite-builder@3.12.2(@types/node@20.14.8)(magicast@0.3.4)(rollup@4.18.0)(terser@5.31.1)(vue@3.4.29)':
     dependencies:
       '@nuxt/kit': 3.12.2(magicast@0.3.4)(rollup@4.18.0)
       '@rollup/plugin-replace': 5.0.7(rollup@4.18.0)
-      '@vitejs/plugin-vue': 5.0.5(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1))(vue@3.4.29)
-      '@vitejs/plugin-vue-jsx': 4.0.0(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1))(vue@3.4.29)
+      '@vitejs/plugin-vue': 5.0.5(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1))(vue@3.4.29)
+      '@vitejs/plugin-vue-jsx': 4.0.0(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1))(vue@3.4.29)
       autoprefixer: 10.4.19(postcss@8.4.38)
       clear: 0.1.0
       consola: 3.2.3
@@ -7216,9 +7234,9 @@ snapshots:
       ufo: 1.5.3
       unenv: 1.9.0
       unplugin: 1.10.1
-      vite: 5.3.1(@types/node@20.14.4)(terser@5.31.1)
-      vite-node: 1.6.0(@types/node@20.14.4)(terser@5.31.1)
-      vite-plugin-checker: 0.6.4(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1))
+      vite: 5.3.1(@types/node@20.14.8)(terser@5.31.1)
+      vite-node: 1.6.0(@types/node@20.14.8)(terser@5.31.1)
+      vite-plugin-checker: 0.6.4(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1))
       vue: 3.4.29
       vue-bundle-renderer: 2.1.0
     transitivePeerDependencies:
@@ -7649,6 +7667,10 @@ snapshots:
     dependencies:
       undici-types: 5.26.5
 
+  '@types/node@20.14.8':
+    dependencies:
+      undici-types: 5.26.5
+
   '@types/normalize-package-data@2.4.4': {}
 
   '@types/resolve@1.20.2': {}
@@ -7657,7 +7679,7 @@ snapshots:
 
   '@types/ws@8.5.10':
     dependencies:
-      '@types/node': 20.14.4
+      '@types/node': 20.14.8
 
   '@unhead/dom@1.9.13':
     dependencies:
@@ -7686,13 +7708,13 @@ snapshots:
       unhead: 1.9.13
       vue: 3.4.29
 
-  '@unocss/astro@0.61.0(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1))':
+  '@unocss/astro@0.61.0(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1))':
     dependencies:
       '@unocss/core': 0.61.0
       '@unocss/reset': 0.61.0
-      '@unocss/vite': 0.61.0(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1))
+      '@unocss/vite': 0.61.0(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1))
     optionalDependencies:
-      vite: 5.3.1(@types/node@20.14.4)(terser@5.31.1)
+      vite: 5.3.1(@types/node@20.14.8)(terser@5.31.1)
     transitivePeerDependencies:
       - rollup
 
@@ -7748,7 +7770,7 @@ snapshots:
 
   '@unocss/preset-icons@0.61.0':
     dependencies:
-      '@iconify/utils': 2.1.24
+      '@iconify/utils': 2.1.25
       '@unocss/core': 0.61.0
       ofetch: 1.3.4
     transitivePeerDependencies:
@@ -7823,7 +7845,7 @@ snapshots:
     dependencies:
       '@unocss/core': 0.61.0
 
-  '@unocss/vite@0.61.0(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1))':
+  '@unocss/vite@0.61.0(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1))':
     dependencies:
       '@ampproject/remapping': 2.3.0
       '@rollup/pluginutils': 5.1.0(rollup@4.18.0)
@@ -7835,7 +7857,7 @@ snapshots:
       chokidar: 3.6.0
       fast-glob: 3.3.2
       magic-string: 0.30.10
-      vite: 5.3.1(@types/node@20.14.4)(terser@5.31.1)
+      vite: 5.3.1(@types/node@20.14.8)(terser@5.31.1)
     transitivePeerDependencies:
       - rollup
 
@@ -7857,15 +7879,15 @@ snapshots:
       - encoding
       - supports-color
 
-  '@vernaillen/wpnuxt@0.4.4(@parcel/watcher@2.4.1)(@types/node@20.14.4)(consola@3.2.3)(encoding@0.1.13)(graphql-tag@2.12.6(graphql@16.8.2))(graphql@16.8.2)(ioredis@5.4.1)(knitwork@1.1.0)(magicast@0.3.4)(nuxt@3.12.2(@opentelemetry/api@1.9.0)(@parcel/watcher@2.4.1)(@types/node@20.14.4)(@unocss/reset@0.61.0)(change-case@4.1.2)(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.12.2(magicast@0.3.4)(rollup@4.18.0))(vue@3.4.29))(fuse.js@6.6.2)(ioredis@5.4.1)(magicast@0.3.4)(rollup@4.18.0)(terser@5.31.1)(unocss@0.61.0(postcss@8.4.38)(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1)))(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1)))(rollup@4.18.0)(scule@1.3.0)(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1))(vue@3.4.29)':
+  '@vernaillen/wpnuxt@0.5.0-edge.0(@parcel/watcher@2.4.1)(@types/node@20.14.8)(consola@3.2.3)(encoding@0.1.13)(graphql-tag@2.12.6(graphql@16.9.0))(graphql@16.9.0)(ioredis@5.4.1)(knitwork@1.1.0)(magicast@0.3.4)(nuxt@3.12.2(@opentelemetry/api@1.9.0)(@parcel/watcher@2.4.1)(@types/node@20.14.8)(@unocss/reset@0.61.0)(change-case@4.1.2)(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.12.2(magicast@0.3.4)(rollup@4.18.0))(vue@3.4.29))(fuse.js@6.6.2)(ioredis@5.4.1)(magicast@0.3.4)(rollup@4.18.0)(terser@5.31.1)(unocss@0.61.0(postcss@8.4.38)(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1)))(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1)))(rollup@4.18.0)(scule@1.3.0)(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1))(vue@3.4.29)':
     dependencies:
       '@nuxt/kit': 3.12.2(magicast@0.3.4)(rollup@4.18.0)
-      '@vueuse/nuxt': 10.11.0(magicast@0.3.4)(nuxt@3.12.2(@opentelemetry/api@1.9.0)(@parcel/watcher@2.4.1)(@types/node@20.14.4)(@unocss/reset@0.61.0)(change-case@4.1.2)(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.12.2(magicast@0.3.4)(rollup@4.18.0))(vue@3.4.29))(fuse.js@6.6.2)(ioredis@5.4.1)(magicast@0.3.4)(rollup@4.18.0)(terser@5.31.1)(unocss@0.61.0(postcss@8.4.38)(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1)))(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1)))(rollup@4.18.0)(vue@3.4.29)
+      '@vueuse/nuxt': 10.11.0(magicast@0.3.4)(nuxt@3.12.2(@opentelemetry/api@1.9.0)(@parcel/watcher@2.4.1)(@types/node@20.14.8)(@unocss/reset@0.61.0)(change-case@4.1.2)(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.12.2(magicast@0.3.4)(rollup@4.18.0))(vue@3.4.29))(fuse.js@6.6.2)(ioredis@5.4.1)(magicast@0.3.4)(rollup@4.18.0)(terser@5.31.1)(unocss@0.61.0(postcss@8.4.38)(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1)))(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1)))(rollup@4.18.0)(vue@3.4.29)
       consola: 3.2.3
       defu: 6.1.4
-      graphql: 16.8.2
+      graphql: 16.9.0
       knitwork: 1.1.0
-      nuxt-graphql-middleware: 4.0.0(@parcel/watcher@2.4.1)(@types/node@20.14.4)(encoding@0.1.13)(graphql-tag@2.12.6(graphql@16.8.2))(graphql@16.8.2)(magicast@0.3.4)(nuxt@3.12.2(@opentelemetry/api@1.9.0)(@parcel/watcher@2.4.1)(@types/node@20.14.4)(@unocss/reset@0.61.0)(change-case@4.1.2)(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.12.2(magicast@0.3.4)(rollup@4.18.0))(vue@3.4.29))(fuse.js@6.6.2)(ioredis@5.4.1)(magicast@0.3.4)(rollup@4.18.0)(terser@5.31.1)(unocss@0.61.0(postcss@8.4.38)(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1)))(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1)))(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1))
+      nuxt-graphql-middleware: 4.0.0(@parcel/watcher@2.4.1)(@types/node@20.14.8)(encoding@0.1.13)(graphql-tag@2.12.6(graphql@16.9.0))(graphql@16.9.0)(magicast@0.3.4)(nuxt@3.12.2(@opentelemetry/api@1.9.0)(@parcel/watcher@2.4.1)(@types/node@20.14.8)(@unocss/reset@0.61.0)(change-case@4.1.2)(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.12.2(magicast@0.3.4)(rollup@4.18.0))(vue@3.4.29))(fuse.js@6.6.2)(ioredis@5.4.1)(magicast@0.3.4)(rollup@4.18.0)(terser@5.31.1)(unocss@0.61.0(postcss@8.4.38)(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1)))(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1)))(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1))
       ohash: 1.1.3
       scule: 1.3.0
       unstorage: 1.10.2(ioredis@5.4.1)
@@ -7901,19 +7923,19 @@ snapshots:
       - vite
       - vue
 
-  '@vitejs/plugin-vue-jsx@4.0.0(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1))(vue@3.4.29)':
+  '@vitejs/plugin-vue-jsx@4.0.0(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1))(vue@3.4.29)':
     dependencies:
       '@babel/core': 7.24.7
       '@babel/plugin-transform-typescript': 7.24.7(@babel/core@7.24.7)
       '@vue/babel-plugin-jsx': 1.2.2(@babel/core@7.24.7)
-      vite: 5.3.1(@types/node@20.14.4)(terser@5.31.1)
+      vite: 5.3.1(@types/node@20.14.8)(terser@5.31.1)
       vue: 3.4.29
     transitivePeerDependencies:
       - supports-color
 
-  '@vitejs/plugin-vue@5.0.5(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1))(vue@3.4.29)':
+  '@vitejs/plugin-vue@5.0.5(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1))(vue@3.4.29)':
     dependencies:
-      vite: 5.3.1(@types/node@20.14.4)(terser@5.31.1)
+      vite: 5.3.1(@types/node@20.14.8)(terser@5.31.1)
       vue: 3.4.29
 
   '@vue-macros/common@1.10.4(rollup@4.18.0)(vue@3.4.29)':
@@ -7990,12 +8012,12 @@ snapshots:
 
   '@vue/devtools-api@6.6.3': {}
 
-  '@vue/devtools-applet@7.1.3(@unocss/reset@0.61.0)(change-case@4.1.2)(floating-vue@5.2.2(@nuxt/kit@3.12.2(magicast@0.3.4)(rollup@4.18.0))(vue@3.4.29))(fuse.js@6.6.2)(unocss@0.61.0(postcss@8.4.38)(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1)))(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1))(vue@3.4.29)':
+  '@vue/devtools-applet@7.1.3(@unocss/reset@0.61.0)(change-case@4.1.2)(floating-vue@5.2.2(@nuxt/kit@3.12.2(magicast@0.3.4)(rollup@4.18.0))(vue@3.4.29))(fuse.js@6.6.2)(unocss@0.61.0(postcss@8.4.38)(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1)))(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1))(vue@3.4.29)':
     dependencies:
-      '@vue/devtools-core': 7.1.3(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1))(vue@3.4.29)
+      '@vue/devtools-core': 7.1.3(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1))(vue@3.4.29)
       '@vue/devtools-kit': 7.1.3(vue@3.4.29)
       '@vue/devtools-shared': 7.3.1
-      '@vue/devtools-ui': 7.3.1(@unocss/reset@0.61.0)(change-case@4.1.2)(floating-vue@5.2.2(@nuxt/kit@3.12.2(magicast@0.3.4)(rollup@4.18.0))(vue@3.4.29))(fuse.js@6.6.2)(unocss@0.61.0(postcss@8.4.38)(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1)))(vue@3.4.29)
+      '@vue/devtools-ui': 7.3.1(@unocss/reset@0.61.0)(change-case@4.1.2)(floating-vue@5.2.2(@nuxt/kit@3.12.2(magicast@0.3.4)(rollup@4.18.0))(vue@3.4.29))(fuse.js@6.6.2)(unocss@0.61.0(postcss@8.4.38)(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1)))(vue@3.4.29)
       lodash-es: 4.17.21
       perfect-debounce: 1.0.0
       shiki: 1.3.0
@@ -8020,14 +8042,14 @@ snapshots:
       - unocss
       - vite
 
-  '@vue/devtools-core@7.1.3(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1))(vue@3.4.29)':
+  '@vue/devtools-core@7.1.3(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1))(vue@3.4.29)':
     dependencies:
       '@vue/devtools-kit': 7.1.3(vue@3.4.29)
       '@vue/devtools-shared': 7.3.1
       mitt: 3.0.1
       nanoid: 3.3.7
       pathe: 1.1.2
-      vite-hot-client: 0.2.3(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1))
+      vite-hot-client: 0.2.3(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1))
     transitivePeerDependencies:
       - vite
       - vue
@@ -8045,7 +8067,7 @@ snapshots:
     dependencies:
       rfdc: 1.4.1
 
-  '@vue/devtools-ui@7.3.1(@unocss/reset@0.61.0)(change-case@4.1.2)(floating-vue@5.2.2(@nuxt/kit@3.12.2(magicast@0.3.4)(rollup@4.18.0))(vue@3.4.29))(fuse.js@6.6.2)(unocss@0.61.0(postcss@8.4.38)(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1)))(vue@3.4.29)':
+  '@vue/devtools-ui@7.3.1(@unocss/reset@0.61.0)(change-case@4.1.2)(floating-vue@5.2.2(@nuxt/kit@3.12.2(magicast@0.3.4)(rollup@4.18.0))(vue@3.4.29))(fuse.js@6.6.2)(unocss@0.61.0(postcss@8.4.38)(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1)))(vue@3.4.29)':
     dependencies:
       '@unocss/reset': 0.61.0
       '@vue/devtools-shared': 7.3.1
@@ -8055,7 +8077,7 @@ snapshots:
       colord: 2.9.3
       floating-vue: 5.2.2(@nuxt/kit@3.12.2(magicast@0.3.4)(rollup@4.18.0))(vue@3.4.29)
       focus-trap: 7.5.4
-      unocss: 0.61.0(postcss@8.4.38)(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1))
+      unocss: 0.61.0(postcss@8.4.38)(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1))
       vue: 3.4.29
     transitivePeerDependencies:
       - '@vue/composition-api'
@@ -8137,13 +8159,13 @@ snapshots:
 
   '@vueuse/metadata@10.11.0': {}
 
-  '@vueuse/nuxt@10.11.0(magicast@0.3.4)(nuxt@3.12.2(@opentelemetry/api@1.9.0)(@parcel/watcher@2.4.1)(@types/node@20.14.4)(@unocss/reset@0.61.0)(change-case@4.1.2)(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.12.2(magicast@0.3.4)(rollup@4.18.0))(vue@3.4.29))(fuse.js@6.6.2)(ioredis@5.4.1)(magicast@0.3.4)(rollup@4.18.0)(terser@5.31.1)(unocss@0.61.0(postcss@8.4.38)(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1)))(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1)))(rollup@4.18.0)(vue@3.4.29)':
+  '@vueuse/nuxt@10.11.0(magicast@0.3.4)(nuxt@3.12.2(@opentelemetry/api@1.9.0)(@parcel/watcher@2.4.1)(@types/node@20.14.8)(@unocss/reset@0.61.0)(change-case@4.1.2)(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.12.2(magicast@0.3.4)(rollup@4.18.0))(vue@3.4.29))(fuse.js@6.6.2)(ioredis@5.4.1)(magicast@0.3.4)(rollup@4.18.0)(terser@5.31.1)(unocss@0.61.0(postcss@8.4.38)(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1)))(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1)))(rollup@4.18.0)(vue@3.4.29)':
     dependencies:
       '@nuxt/kit': 3.12.2(magicast@0.3.4)(rollup@4.18.0)
       '@vueuse/core': 10.11.0(vue@3.4.29)
       '@vueuse/metadata': 10.11.0
       local-pkg: 0.5.0
-      nuxt: 3.12.2(@opentelemetry/api@1.9.0)(@parcel/watcher@2.4.1)(@types/node@20.14.4)(@unocss/reset@0.61.0)(change-case@4.1.2)(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.12.2(magicast@0.3.4)(rollup@4.18.0))(vue@3.4.29))(fuse.js@6.6.2)(ioredis@5.4.1)(magicast@0.3.4)(rollup@4.18.0)(terser@5.31.1)(unocss@0.61.0(postcss@8.4.38)(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1)))(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1))
+      nuxt: 3.12.2(@opentelemetry/api@1.9.0)(@parcel/watcher@2.4.1)(@types/node@20.14.8)(@unocss/reset@0.61.0)(change-case@4.1.2)(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.12.2(magicast@0.3.4)(rollup@4.18.0))(vue@3.4.29))(fuse.js@6.6.2)(ioredis@5.4.1)(magicast@0.3.4)(rollup@4.18.0)(terser@5.31.1)(unocss@0.61.0(postcss@8.4.38)(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1)))(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1))
       vue-demi: 0.14.8(vue@3.4.29)
     transitivePeerDependencies:
       - '@vue/composition-api'
@@ -9417,16 +9439,16 @@ snapshots:
 
   graceful-fs@4.2.11: {}
 
-  graphql-config@5.0.3(@types/node@20.14.4)(encoding@0.1.13)(graphql@16.8.2):
+  graphql-config@5.0.3(@types/node@20.14.8)(encoding@0.1.13)(graphql@16.9.0):
     dependencies:
-      '@graphql-tools/graphql-file-loader': 8.0.1(graphql@16.8.2)
-      '@graphql-tools/json-file-loader': 8.0.1(graphql@16.8.2)
-      '@graphql-tools/load': 8.0.2(graphql@16.8.2)
-      '@graphql-tools/merge': 9.0.4(graphql@16.8.2)
-      '@graphql-tools/url-loader': 8.0.2(@types/node@20.14.4)(encoding@0.1.13)(graphql@16.8.2)
-      '@graphql-tools/utils': 10.2.2(graphql@16.8.2)
+      '@graphql-tools/graphql-file-loader': 8.0.1(graphql@16.9.0)
+      '@graphql-tools/json-file-loader': 8.0.1(graphql@16.9.0)
+      '@graphql-tools/load': 8.0.2(graphql@16.9.0)
+      '@graphql-tools/merge': 9.0.4(graphql@16.9.0)
+      '@graphql-tools/url-loader': 8.0.2(@types/node@20.14.8)(encoding@0.1.13)(graphql@16.9.0)
+      '@graphql-tools/utils': 10.2.2(graphql@16.9.0)
       cosmiconfig: 8.3.6
-      graphql: 16.8.2
+      graphql: 16.9.0
       jiti: 1.21.6
       minimatch: 4.2.3
       string-env-interpolation: 1.0.1
@@ -9438,24 +9460,24 @@ snapshots:
       - typescript
       - utf-8-validate
 
-  graphql-request@6.1.0(encoding@0.1.13)(graphql@16.8.2):
+  graphql-request@6.1.0(encoding@0.1.13)(graphql@16.9.0):
     dependencies:
-      '@graphql-typed-document-node/core': 3.2.0(graphql@16.8.2)
+      '@graphql-typed-document-node/core': 3.2.0(graphql@16.9.0)
       cross-fetch: 3.1.8(encoding@0.1.13)
-      graphql: 16.8.2
+      graphql: 16.9.0
     transitivePeerDependencies:
       - encoding
 
-  graphql-tag@2.12.6(graphql@16.8.2):
+  graphql-tag@2.12.6(graphql@16.9.0):
     dependencies:
-      graphql: 16.8.2
+      graphql: 16.9.0
       tslib: 2.6.3
 
-  graphql-ws@5.16.0(graphql@16.8.2):
+  graphql-ws@5.16.0(graphql@16.9.0):
     dependencies:
-      graphql: 16.8.2
+      graphql: 16.9.0
 
-  graphql@16.8.2: {}
+  graphql@16.9.0: {}
 
   gzip-size@6.0.0:
     dependencies:
@@ -10127,9 +10149,9 @@ snapshots:
 
   merge2@1.4.1: {}
 
-  meros@1.3.0(@types/node@20.14.4):
+  meros@1.3.0(@types/node@20.14.8):
     optionalDependencies:
-      '@types/node': 20.14.4
+      '@types/node': 20.14.8
 
   methods@1.1.2: {}
 
@@ -10506,16 +10528,16 @@ snapshots:
     optionalDependencies:
       fsevents: 2.3.3
 
-  nuxt-graphql-middleware@4.0.0(@parcel/watcher@2.4.1)(@types/node@20.14.4)(encoding@0.1.13)(graphql-tag@2.12.6(graphql@16.8.2))(graphql@16.8.2)(magicast@0.3.4)(nuxt@3.12.2(@opentelemetry/api@1.9.0)(@parcel/watcher@2.4.1)(@types/node@20.14.4)(@unocss/reset@0.61.0)(change-case@4.1.2)(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.12.2(magicast@0.3.4)(rollup@4.18.0))(vue@3.4.29))(fuse.js@6.6.2)(ioredis@5.4.1)(magicast@0.3.4)(rollup@4.18.0)(terser@5.31.1)(unocss@0.61.0(postcss@8.4.38)(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1)))(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1)))(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1)):
+  nuxt-graphql-middleware@4.0.0(@parcel/watcher@2.4.1)(@types/node@20.14.8)(encoding@0.1.13)(graphql-tag@2.12.6(graphql@16.9.0))(graphql@16.9.0)(magicast@0.3.4)(nuxt@3.12.2(@opentelemetry/api@1.9.0)(@parcel/watcher@2.4.1)(@types/node@20.14.8)(@unocss/reset@0.61.0)(change-case@4.1.2)(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.12.2(magicast@0.3.4)(rollup@4.18.0))(vue@3.4.29))(fuse.js@6.6.2)(ioredis@5.4.1)(magicast@0.3.4)(rollup@4.18.0)(terser@5.31.1)(unocss@0.61.0(postcss@8.4.38)(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1)))(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1)))(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1)):
     dependencies:
-      '@graphql-codegen/cli': 5.0.2(@parcel/watcher@2.4.1)(@types/node@20.14.4)(encoding@0.1.13)(graphql@16.8.2)
-      '@graphql-codegen/schema-ast': 4.0.2(graphql@16.8.2)
-      '@graphql-codegen/typescript': 4.0.7(encoding@0.1.13)(graphql@16.8.2)
-      '@graphql-codegen/typescript-generic-sdk': 4.0.1(encoding@0.1.13)(graphql-tag@2.12.6(graphql@16.8.2))(graphql@16.8.2)
-      '@graphql-codegen/typescript-operations': 4.2.1(encoding@0.1.13)(graphql@16.8.2)
+      '@graphql-codegen/cli': 5.0.2(@parcel/watcher@2.4.1)(@types/node@20.14.8)(encoding@0.1.13)(graphql@16.9.0)
+      '@graphql-codegen/schema-ast': 4.0.2(graphql@16.9.0)
+      '@graphql-codegen/typescript': 4.0.7(encoding@0.1.13)(graphql@16.9.0)
+      '@graphql-codegen/typescript-generic-sdk': 4.0.1(encoding@0.1.13)(graphql-tag@2.12.6(graphql@16.9.0))(graphql@16.9.0)
+      '@graphql-codegen/typescript-operations': 4.2.1(encoding@0.1.13)(graphql@16.9.0)
       '@graphql-fragment-import/lib': 3.0.0
-      '@graphql-tools/utils': 10.2.2(graphql@16.8.2)
-      '@nuxt/devtools-kit': 1.0.8(magicast@0.3.4)(nuxt@3.12.2(@opentelemetry/api@1.9.0)(@parcel/watcher@2.4.1)(@types/node@20.14.4)(@unocss/reset@0.61.0)(change-case@4.1.2)(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.12.2(magicast@0.3.4)(rollup@4.18.0))(vue@3.4.29))(fuse.js@6.6.2)(ioredis@5.4.1)(magicast@0.3.4)(rollup@4.18.0)(terser@5.31.1)(unocss@0.61.0(postcss@8.4.38)(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1)))(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1)))(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1))
+      '@graphql-tools/utils': 10.2.2(graphql@16.9.0)
+      '@nuxt/devtools-kit': 1.0.8(magicast@0.3.4)(nuxt@3.12.2(@opentelemetry/api@1.9.0)(@parcel/watcher@2.4.1)(@types/node@20.14.8)(@unocss/reset@0.61.0)(change-case@4.1.2)(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.12.2(magicast@0.3.4)(rollup@4.18.0))(vue@3.4.29))(fuse.js@6.6.2)(ioredis@5.4.1)(magicast@0.3.4)(rollup@4.18.0)(terser@5.31.1)(unocss@0.61.0(postcss@8.4.38)(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1)))(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1)))(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1))
       '@nuxt/kit': 3.12.2(magicast@0.3.4)(rollup@4.18.0)
       cli-table: 0.3.11
       inquirer: 9.2.23
@@ -10537,11 +10559,11 @@ snapshots:
       - utf-8-validate
       - vite
 
-  nuxt-icon@0.6.10(magicast@0.3.4)(nuxt@3.12.2(@opentelemetry/api@1.9.0)(@parcel/watcher@2.4.1)(@types/node@20.14.4)(@unocss/reset@0.61.0)(change-case@4.1.2)(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.12.2(magicast@0.3.4)(rollup@4.18.0))(vue@3.4.29))(fuse.js@6.6.2)(ioredis@5.4.1)(magicast@0.3.4)(rollup@4.18.0)(terser@5.31.1)(unocss@0.61.0(postcss@8.4.38)(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1)))(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1)))(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1))(vue@3.4.29):
+  nuxt-icon@0.6.10(magicast@0.3.4)(nuxt@3.12.2(@opentelemetry/api@1.9.0)(@parcel/watcher@2.4.1)(@types/node@20.14.8)(@unocss/reset@0.61.0)(change-case@4.1.2)(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.12.2(magicast@0.3.4)(rollup@4.18.0))(vue@3.4.29))(fuse.js@6.6.2)(ioredis@5.4.1)(magicast@0.3.4)(rollup@4.18.0)(terser@5.31.1)(unocss@0.61.0(postcss@8.4.38)(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1)))(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1)))(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1))(vue@3.4.29):
     dependencies:
       '@iconify/collections': 1.0.432
       '@iconify/vue': 4.1.2(vue@3.4.29)
-      '@nuxt/devtools-kit': 1.3.3(magicast@0.3.4)(nuxt@3.12.2(@opentelemetry/api@1.9.0)(@parcel/watcher@2.4.1)(@types/node@20.14.4)(@unocss/reset@0.61.0)(change-case@4.1.2)(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.12.2(magicast@0.3.4)(rollup@4.18.0))(vue@3.4.29))(fuse.js@6.6.2)(ioredis@5.4.1)(magicast@0.3.4)(rollup@4.18.0)(terser@5.31.1)(unocss@0.61.0(postcss@8.4.38)(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1)))(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1)))(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1))
+      '@nuxt/devtools-kit': 1.3.3(magicast@0.3.4)(nuxt@3.12.2(@opentelemetry/api@1.9.0)(@parcel/watcher@2.4.1)(@types/node@20.14.8)(@unocss/reset@0.61.0)(change-case@4.1.2)(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.12.2(magicast@0.3.4)(rollup@4.18.0))(vue@3.4.29))(fuse.js@6.6.2)(ioredis@5.4.1)(magicast@0.3.4)(rollup@4.18.0)(terser@5.31.1)(unocss@0.61.0(postcss@8.4.38)(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1)))(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1)))(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1))
       '@nuxt/kit': 3.12.2(magicast@0.3.4)(rollup@4.18.0)
     transitivePeerDependencies:
       - magicast
@@ -10561,14 +10583,14 @@ snapshots:
       - rollup
       - supports-color
 
-  nuxt@3.12.2(@opentelemetry/api@1.9.0)(@parcel/watcher@2.4.1)(@types/node@20.14.4)(@unocss/reset@0.61.0)(change-case@4.1.2)(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.12.2(magicast@0.3.4)(rollup@4.18.0))(vue@3.4.29))(fuse.js@6.6.2)(ioredis@5.4.1)(magicast@0.3.4)(rollup@4.18.0)(terser@5.31.1)(unocss@0.61.0(postcss@8.4.38)(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1)))(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1)):
+  nuxt@3.12.2(@opentelemetry/api@1.9.0)(@parcel/watcher@2.4.1)(@types/node@20.14.8)(@unocss/reset@0.61.0)(change-case@4.1.2)(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.12.2(magicast@0.3.4)(rollup@4.18.0))(vue@3.4.29))(fuse.js@6.6.2)(ioredis@5.4.1)(magicast@0.3.4)(rollup@4.18.0)(terser@5.31.1)(unocss@0.61.0(postcss@8.4.38)(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1)))(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1)):
     dependencies:
       '@nuxt/devalue': 2.0.2
-      '@nuxt/devtools': 1.3.3(@unocss/reset@0.61.0)(change-case@4.1.2)(floating-vue@5.2.2(@nuxt/kit@3.12.2(magicast@0.3.4)(rollup@4.18.0))(vue@3.4.29))(fuse.js@6.6.2)(nuxt@3.12.2(@opentelemetry/api@1.9.0)(@parcel/watcher@2.4.1)(@types/node@20.14.4)(@unocss/reset@0.61.0)(change-case@4.1.2)(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.12.2(magicast@0.3.4)(rollup@4.18.0))(vue@3.4.29))(fuse.js@6.6.2)(ioredis@5.4.1)(magicast@0.3.4)(rollup@4.18.0)(terser@5.31.1)(unocss@0.61.0(postcss@8.4.38)(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1)))(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1)))(rollup@4.18.0)(unocss@0.61.0(postcss@8.4.38)(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1)))(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1))(vue@3.4.29)
+      '@nuxt/devtools': 1.3.3(@unocss/reset@0.61.0)(change-case@4.1.2)(floating-vue@5.2.2(@nuxt/kit@3.12.2(magicast@0.3.4)(rollup@4.18.0))(vue@3.4.29))(fuse.js@6.6.2)(nuxt@3.12.2(@opentelemetry/api@1.9.0)(@parcel/watcher@2.4.1)(@types/node@20.14.8)(@unocss/reset@0.61.0)(change-case@4.1.2)(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.12.2(magicast@0.3.4)(rollup@4.18.0))(vue@3.4.29))(fuse.js@6.6.2)(ioredis@5.4.1)(magicast@0.3.4)(rollup@4.18.0)(terser@5.31.1)(unocss@0.61.0(postcss@8.4.38)(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1)))(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1)))(rollup@4.18.0)(unocss@0.61.0(postcss@8.4.38)(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1)))(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1))(vue@3.4.29)
       '@nuxt/kit': 3.12.2(magicast@0.3.4)(rollup@4.18.0)
       '@nuxt/schema': 3.12.2(rollup@4.18.0)
       '@nuxt/telemetry': 2.5.4(magicast@0.3.4)(rollup@4.18.0)
-      '@nuxt/vite-builder': 3.12.2(@types/node@20.14.4)(magicast@0.3.4)(rollup@4.18.0)(terser@5.31.1)(vue@3.4.29)
+      '@nuxt/vite-builder': 3.12.2(@types/node@20.14.8)(magicast@0.3.4)(rollup@4.18.0)(terser@5.31.1)(vue@3.4.29)
       '@unhead/dom': 1.9.13
       '@unhead/ssr': 1.9.13
       '@unhead/vue': 1.9.13(vue@3.4.29)
@@ -10622,7 +10644,7 @@ snapshots:
       vue-router: 4.3.3(vue@3.4.29)
     optionalDependencies:
       '@parcel/watcher': 2.4.1
-      '@types/node': 20.14.4
+      '@types/node': 20.14.8
     transitivePeerDependencies:
       - '@azure/app-configuration'
       - '@azure/cosmos'
@@ -11943,9 +11965,9 @@ snapshots:
     dependencies:
       normalize-path: 2.1.1
 
-  unocss@0.61.0(postcss@8.4.38)(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1)):
+  unocss@0.61.0(postcss@8.4.38)(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1)):
     dependencies:
-      '@unocss/astro': 0.61.0(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1))
+      '@unocss/astro': 0.61.0(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1))
       '@unocss/cli': 0.61.0(rollup@4.18.0)
       '@unocss/core': 0.61.0
       '@unocss/extractor-arbitrary-variants': 0.61.0
@@ -11964,9 +11986,9 @@ snapshots:
       '@unocss/transformer-compile-class': 0.61.0
       '@unocss/transformer-directives': 0.61.0
       '@unocss/transformer-variant-group': 0.61.0
-      '@unocss/vite': 0.61.0(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1))
+      '@unocss/vite': 0.61.0(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1))
     optionalDependencies:
-      vite: 5.3.1(@types/node@20.14.4)(terser@5.31.1)
+      vite: 5.3.1(@types/node@20.14.8)(terser@5.31.1)
     transitivePeerDependencies:
       - postcss
       - rollup
@@ -12077,17 +12099,17 @@ snapshots:
 
   vary@1.1.2: {}
 
-  vite-hot-client@0.2.3(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1)):
+  vite-hot-client@0.2.3(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1)):
     dependencies:
-      vite: 5.3.1(@types/node@20.14.4)(terser@5.31.1)
+      vite: 5.3.1(@types/node@20.14.8)(terser@5.31.1)
 
-  vite-node@1.6.0(@types/node@20.14.4)(terser@5.31.1):
+  vite-node@1.6.0(@types/node@20.14.8)(terser@5.31.1):
     dependencies:
       cac: 6.7.14
       debug: 4.3.5
       pathe: 1.1.2
       picocolors: 1.0.1
-      vite: 5.3.1(@types/node@20.14.4)(terser@5.31.1)
+      vite: 5.3.1(@types/node@20.14.8)(terser@5.31.1)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -12098,7 +12120,7 @@ snapshots:
       - supports-color
       - terser
 
-  vite-plugin-checker@0.6.4(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1)):
+  vite-plugin-checker@0.6.4(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1)):
     dependencies:
       '@babel/code-frame': 7.24.7
       ansi-escapes: 4.3.2
@@ -12111,13 +12133,13 @@ snapshots:
       semver: 7.6.2
       strip-ansi: 6.0.1
       tiny-invariant: 1.3.3
-      vite: 5.3.1(@types/node@20.14.4)(terser@5.31.1)
+      vite: 5.3.1(@types/node@20.14.8)(terser@5.31.1)
       vscode-languageclient: 7.0.0
       vscode-languageserver: 7.0.0
       vscode-languageserver-textdocument: 1.0.11
       vscode-uri: 3.0.8
 
-  vite-plugin-inspect@0.8.4(@nuxt/kit@3.12.2(magicast@0.3.4)(rollup@4.18.0))(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1)):
+  vite-plugin-inspect@0.8.4(@nuxt/kit@3.12.2(magicast@0.3.4)(rollup@4.18.0))(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1)):
     dependencies:
       '@antfu/utils': 0.7.8
       '@rollup/pluginutils': 5.1.0(rollup@4.18.0)
@@ -12128,14 +12150,14 @@ snapshots:
       perfect-debounce: 1.0.0
       picocolors: 1.0.1
       sirv: 2.0.4
-      vite: 5.3.1(@types/node@20.14.4)(terser@5.31.1)
+      vite: 5.3.1(@types/node@20.14.8)(terser@5.31.1)
     optionalDependencies:
       '@nuxt/kit': 3.12.2(magicast@0.3.4)(rollup@4.18.0)
     transitivePeerDependencies:
       - rollup
       - supports-color
 
-  vite-plugin-vue-inspector@5.1.2(vite@5.3.1(@types/node@20.14.4)(terser@5.31.1)):
+  vite-plugin-vue-inspector@5.1.2(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1)):
     dependencies:
       '@babel/core': 7.24.7
       '@babel/plugin-proposal-decorators': 7.24.7(@babel/core@7.24.7)
@@ -12146,17 +12168,17 @@ snapshots:
       '@vue/compiler-dom': 3.4.29
       kolorist: 1.8.0
       magic-string: 0.30.10
-      vite: 5.3.1(@types/node@20.14.4)(terser@5.31.1)
+      vite: 5.3.1(@types/node@20.14.8)(terser@5.31.1)
     transitivePeerDependencies:
       - supports-color
 
-  vite@5.3.1(@types/node@20.14.4)(terser@5.31.1):
+  vite@5.3.1(@types/node@20.14.8)(terser@5.31.1):
     dependencies:
       esbuild: 0.21.5
       postcss: 8.4.38
       rollup: 4.18.0
     optionalDependencies:
-      '@types/node': 20.14.4
+      '@types/node': 20.14.8
       fsevents: 2.3.3
       terser: 5.31.1
 

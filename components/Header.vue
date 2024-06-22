@@ -1,6 +1,6 @@
 <script setup lang="ts">
-const { data: menu } = await useMenu()
-const { data: viewer } = await useViewer()
+const { data: menu } = await useWPMenu()
+const { data: viewer } = await useWPViewer()
 
 const wpMenu = computed(() => menu.value?.map((link) => ({
     label: link.label,
