@@ -66,8 +66,8 @@ const featuredImage = useFeaturedImage(post.value)
         <template #left>
           <UAside>
             <PrevNext
-              :prev="prev"
-              :next="next"
+              :prev="post.contentTypeName === 'post' ? prev : undefined"
+              :next="post.contentTypeName === 'post' ? next : undefined"
               prev-button="Vorige"
               next-button="Volgende"
             />
