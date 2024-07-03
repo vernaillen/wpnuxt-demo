@@ -28,7 +28,7 @@ const featuredImage = useFeaturedImage(post.value)
       <UPage
         v-if="post"
         :class="post.contentTypeName"
-        class="pt-10 prose dark:prose-invert"
+        class="pt-10 prose dark:prose-invert max-w-7xl mx-auto"
       >
         <NuxtImg
           v-if="featuredImage"
