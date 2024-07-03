@@ -69,10 +69,6 @@ export default defineNuxtConfig({
     }
   },
 
-  nitro: {
-    static: true
-  },
-
   plausible: {
     apiHost: 'https://demo.wpnuxt.com/plio'
   },
