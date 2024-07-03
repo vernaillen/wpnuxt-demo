@@ -2,7 +2,7 @@
 const route = useRoute()
 const uri = route.params.uri
 const wpUri = useWPUri()
-const { data: viewer } = await useWPViewer()
+const currentUserName = await getCurrentUserName()
 const staging = await isStaging()
 
 const { data: post } = await useWPNodeByUri({ uri: uri[0] })
@@ -48,7 +48,7 @@ const featuredImage = useFeaturedImage(post.value)
             />
           </span>
           <UButton
-            v-if="viewer?.username"
+            v-if="currentUserName"
             :to="wpUri.postEdit(''+post.databaseId)"
             icon="i-mdi-pencil"
             size="2xs"

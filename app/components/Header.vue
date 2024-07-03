@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const { data: menu } = await useWPMenu()
-const { data: viewer } = await useWPViewer()
+const currentUserName = await getCurrentUserName()
 
 const wpMenu = computed(() => menu.value?.map(link => ({
   label: link.label,
@@ -34,10 +34,10 @@ const links = computed(() => [
         aria-label="Sign in"
       >
         <span
-          v-if="viewer?.username"
+          v-if="currentUserName"
           class="hidden sm:inline-block"
         >
-          {{ viewer.username }}
+          {{ currentUserName }}
         </span>
         <span
           v-else

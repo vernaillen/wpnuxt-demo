@@ -7,11 +7,7 @@ const wpMenu = computed(() => menu.value?.map(link => ({
   to: link.uri
 })))
 const links = computed(() => [
-  ...wpMenu.value,
-  {
-    label: 'Test',
-    to: '/test'
-  }
+  ...wpMenu.value
 ])
 </script>
 
