@@ -1,4 +1,3 @@
-import { createSharedComposable } from '@vueuse/core'
 import { useWPPosts } from '#imports'
 
 const _usePostSlugs = async () => {
@@ -13,4 +12,4 @@ const _usePostSlugs = async () => {
   }
   return
 }
-export const usePostSlugs = createSharedComposable(_usePostSlugs)
+export const usePostSlugs = _usePostSlugs
