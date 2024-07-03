@@ -8,7 +8,7 @@ defineProps<{
 </script>
 
 <template>
-  <div class="grid grid-cols-3 gap-6">
+  <div class="grid grid-cols-3 gap-6 max-w-28">
     <div
       class="flex justify-start"
     >
