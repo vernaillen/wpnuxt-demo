@@ -14,6 +14,7 @@ if (post.value?.title) {
     title: post.value.title
   })
 }
+const { prev: prev, next: next } = await usePrevNext(uri[0])
 const featuredImage = useFeaturedImage(post.value)
 </script>
 
@@ -64,9 +65,12 @@ const featuredImage = useFeaturedImage(post.value)
         </div>
         <template #left>
           <UAside>
-            <UButton to="/">
-              Back
-            </UButton>
+            <PrevNext
+              :prev="prev"
+              :next="next"
+              prev-button="Vorige"
+              next-button="Volgende"
+            />
           </UAside>
         </template>
       </UPage>
