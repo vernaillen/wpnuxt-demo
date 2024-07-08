@@ -30,5 +30,9 @@
   "dependencies": {
     "vue-easy-lightbox": "^1.19.0",
     "vue-json-pretty": "^2.4.0"
+  },
+  "packageManager": "pnpm@9.4.0",
+  "engines": {
+    "pnpm": "9.4.0"
   }
 }
