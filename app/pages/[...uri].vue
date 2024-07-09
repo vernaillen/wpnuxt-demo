@@ -14,7 +14,7 @@ if (post.value?.title) {
     title: post.value.title
   })
 }
-const { prev: prev, next: next } = await usePrevNext(uri[0])
+const { prev: prev, next: next } = await usePrevNextPost(uri[0])
 const featuredImage = useFeaturedImage(post.value)
 </script>
 
