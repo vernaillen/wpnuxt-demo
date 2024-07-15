@@ -10,7 +10,7 @@ const { data: postByUri } = await useWPPostByUri({ uri: 'hello-world' })
 </script>
 
 <template>
-  <div>
+  <NuxtLayout>
     <UContainer class="prose dark:prose-invert pt-5">
       <h2>Examples of generated composables</h2>
       <p>
@@ -39,5 +39,5 @@ const { data: postByUri } = await useWPPostByUri({ uri: 'hello-world' })
         {{ postByUri?.title }}
       </p>
     </UContainer>
-  </div>
+  </NuxtLayout>
 </template>

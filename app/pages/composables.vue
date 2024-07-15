@@ -29,7 +29,7 @@ const items = [{
 </script>
 
 <template>
-  <UMain>
+  <NuxtLayout>
     <UContainer class="prose dark:prose-invert mt-10">
       <h1>Predefined composables</h1>
       <h2>Authentication</h2>
@@ -73,5 +73,5 @@ const items = [{
         </UAccordion>
       </div>
     </UContainer>
-  </UMain>
+  </NuxtLayout>
 </template>

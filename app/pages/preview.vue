@@ -14,18 +14,20 @@ if (previewId) {
 </script>
 
 <template>
-  <div class="prose dark:prose-invert">
-    <h3>Preview</h3>
-    [<NuxtLink :to="postEditUrl">
-      edit
-    </NuxtLink>]
-    <hr>
-    <BlockRenderer
-      v-if="page"
-      :blocks="page?.editorBlocks"
-    />
-    <div v-else>
-      Oops, page === null
+  <NuxtLayout>
+    <div class="prose dark:prose-invert">
+      <h3>Preview</h3>
+      [<NuxtLink :to="postEditUrl">
+        edit
+      </NuxtLink>]
+      <hr>
+      <BlockRenderer
+        v-if="page"
+        :blocks="page?.editorBlocks"
+      />
+      <div v-else>
+        Oops, page === null
+      </div>
     </div>
-  </div>
+  </NuxtLayout>
 </template>

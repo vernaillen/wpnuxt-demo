@@ -1,5 +1,4 @@
 <script setup lang="ts">
-const staging = await isStaging()
 useHead({
   meta: [
     { charset: 'utf-8' },
@@ -18,10 +17,7 @@ useSeoMeta({
 </script>
 
 <template>
-  <div v-if="staging">
-    <StagingBanner />
-  </div>
-  <Header :class="staging ? 'mt-[34px]' : 'mt-0'" />
+  <Header />
   <UMain>
     <NuxtPage />
   </UMain>

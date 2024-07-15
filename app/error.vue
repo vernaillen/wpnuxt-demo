@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import type { PropType } from 'vue'
 import type { NuxtError } from '#app'
-import { isStaging } from '#imports'
 
 const props = defineProps({
   error: {
@@ -12,14 +11,10 @@ const props = defineProps({
 if (props.error.statusCode !== 404) {
   console.error(props.error.message)
 }
-const staging = await isStaging()
 </script>
 
 <template>
-  <div v-if="staging">
-    <StagingBanner />
-  </div>
-  <Header :class="staging ? 'mt-[34px]' : 'mt-0'" />
+  <Header />
   <UMain>
     <UContainer>
       <UPage>

@@ -3,7 +3,6 @@ const route = useRoute()
 const uri = route.params.uri
 const wpUri = useWPUri()
 const currentUserName = await getCurrentUserName()
-const staging = await isStaging()
 
 const { data: post } = await useWPNodeByUri({ uri: uri[0] })
 if (!post.value) {
@@ -19,11 +18,7 @@ const featuredImage = useFeaturedImage(post.value)
 </script>
 
 <template>
-  <div>
-    <StagingBanner
-      v-if="post && staging"
-      :post="post"
-    />
+  <NuxtLayout>
     <UContainer>
       <UPage
         v-if="post"
@@ -75,7 +70,7 @@ const featuredImage = useFeaturedImage(post.value)
         </template>
       </UPage>
     </UContainer>
-  </div>
+  </NuxtLayout>
 </template>
 
 <style scoped>
