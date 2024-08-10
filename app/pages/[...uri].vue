@@ -49,7 +49,7 @@ const featuredImage = useFeaturedImage(post.value)
           />
           <div
             v-else
-            v-html="post.content"
+            v-sanitize="post.content"
           />
         </div>
         <template #left>

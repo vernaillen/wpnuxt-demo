@@ -7,6 +7,7 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxt/ui',
     '@nuxtjs/plausible',
+    '@wpnuxt/blocks',
     '@vernaillen/wpnuxt',
     'nuxt-time',
     '@nuxt/eslint'
