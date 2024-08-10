@@ -8,7 +8,7 @@ export default defineNuxtConfig({
     '@nuxt/ui',
     '@nuxtjs/plausible',
     '@wpnuxt/blocks',
-    '@vernaillen/wpnuxt',
+    '@wpnuxt/core',
     'nuxt-time',
     '@nuxt/eslint'
   ],
@@ -22,7 +22,6 @@ export default defineNuxtConfig({
     frontendUrl: 'https://demo.wpnuxt.com',
     defaultMenuName: 'main',
     blocks: true,
-    showBlockInfo: false,
     enableCache: true,
     staging: false,
     logLevel: 4,
