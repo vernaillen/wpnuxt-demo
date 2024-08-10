@@ -1,8 +1,6 @@
 <script setup lang="ts">
 const route = useRoute()
 const uri = route.params.uri
-const wpUri = useWPUri()
-const currentUserName = await getCurrentUserName()
 
 const { data: post } = await useWPNodeByUri({ uri: uri[0] })
 if (!post.value) {
@@ -43,19 +41,15 @@ const featuredImage = useFeaturedImage(post.value)
               locale="nl-BE"
             />
           </span>
-          <UButton
-            v-if="currentUserName"
-            :to="wpUri.postEdit(''+post.databaseId)"
-            icon="i-mdi-pencil"
-            size="2xs"
-            variant="soft"
-            class="mx-2 "
-          />
         </div>
         <div class="mt-5 postContent">
           <BlockRenderer
             v-if="post.editorBlocks"
             :blocks="post.editorBlocks"
+          />
+          <div
+            v-else
+            v-html="post.content"
           />
         </div>
         <template #left>

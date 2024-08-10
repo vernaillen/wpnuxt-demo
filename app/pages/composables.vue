@@ -5,7 +5,6 @@ const { data: settings } = await useWPGeneralSettings()
 const { data: pages } = await useWPPages()
 const { data: posts } = await useWPPosts()
 const staging = await isStaging()
-const userName: string = await getCurrentUserName()
 
 const items = [{
   label: 'const { data: settings } = await useWPGeneralSettings()',
@@ -22,9 +21,6 @@ const items = [{
 }, {
   label: 'const staging = await isStaging()',
   content: staging
-}, {
-  label: 'const userName = await getCurrentUserName()',
-  content: userName
 }]
 </script>
 
@@ -33,14 +29,6 @@ const items = [{
     <UContainer class="prose dark:prose-invert mt-10">
       <h1>Predefined composables</h1>
       <h2>Authentication</h2>
-      <div v-if="userName">
-        Authenticated in WordPress as {{ userName }}<br>
-        <a href="/logout">Log out</a>
-      </div>
-      <div v-else>
-        not logged in<br>
-        <a href="/login?redirect=/test">Log in</a>
-      </div>
       <h2>Composables</h2>
       <p>
         These are just some examples. Check the documentation for a <a
