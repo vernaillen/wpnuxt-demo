@@ -18,6 +18,12 @@ defineProps<{
         :to="'/' + prev"
         icon="i-heroicons-arrow-left-16-solid"
       />
+      <UButton
+        v-else
+        disabled
+        variant="soft"
+        icon="i-heroicons-arrow-left-16"
+      />
     </div>
     <div class="flex justify-center">
       <UButton
@@ -31,6 +37,12 @@ defineProps<{
         :alt="nextButton"
         :to="'/' + next"
         trailing-icon="i-heroicons-arrow-right-16-solid"
+      />
+      <UButton
+        v-else
+        disabled
+        variant="soft"
+        icon="i-heroicons-arrow-right-16"
       />
     </div>
   </div>
