@@ -1,45 +1,23 @@
 <script setup lang="ts">
-import type { PageFragment, PostFragment } from '#build/graphql-operations'
-
-const isLoading = ref(true)
-const postData = ref<PostFragment | PageFragment | undefined>()
-const prevData = ref(null)
-const nextData = ref(null)
 const route = useRoute()
-const id = computed(() => route.params?.uri?.[0])
-
-async function fetch() {
-  isLoading.value = true
-  try {
-    if (id.value) {
-      const { data } = await useWPNodeByUri({ uri: id.value })
-      if (!data.value) {
-        throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
-      }
-      postData.value = data.value
-      const { prev, next } = await usePrevNextPost(id.value)
-      prevData.value = prev
-      nextData.value = next
-    }
-  } finally {
-    isLoading.value = false
-  }
+const uri = route.params.uri
+const { data: post } = await useWPNodeByUri({ uri: uri[0] })
+if (!post.value) {
+  throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
 }
-onMounted(fetch)
-
-const post = computed<PostFragment | PageFragment | undefined>(() => postData.value)
-const featuredImage = computed(() => useFeaturedImage(post.value))
-
-useHead(() => ({
-  title: post.value?.title
-}))
+if (post.value?.title) {
+  useHead({
+    title: post.value.title
+  })
+}
+const { prev: prev, next: next } = await usePrevNextPost(uri[0])
+const featuredImage = useFeaturedImage(post.value)
 </script>
 
 <template>
   <NuxtLayout>
     <UContainer>
       <UPage
-        v-if="!isLoading && post"
         :class="post.contentTypeName"
         class="pt-10 prose dark:prose-invert max-w-7xl mx-auto"
       >
@@ -70,8 +48,8 @@ useHead(() => ({
         <template #left>
           <UAside class="pt-2">
             <PrevNext
-              :prev="post.contentTypeName === 'post' ? prevData : undefined"
-              :next="post.contentTypeName === 'post' ? nextData : undefined"
+              :prev="post.contentTypeName === 'post' ? prev : undefined"
+              :next="post.contentTypeName === 'post' ? next : undefined"
               prev-button="Vorige"
               next-button="Volgende"
             />
@@ -79,20 +57,6 @@ useHead(() => ({
               v-if="featuredImage"
               :src="featuredImage"
               class="object-cover rounded-md imgTransition"
-            />
-          </UAside>
-        </template>
-      </UPage>
-      <UPage
-        v-else
-        class="pt-10 prose dark:prose-invert max-w-7xl mx-auto"
-      >
-        <UIcon name="i-svg-spinners-bars-scale-fade" />
-        <template #left>
-          <UAside class="pt-2">
-            <PrevNext
-              :prev="undefined"
-              :next="undefined"
             />
           </UAside>
         </template>
