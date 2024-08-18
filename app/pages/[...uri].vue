@@ -1,25 +1,46 @@
 <script setup lang="ts">
-const route = useRoute()
-const uri = route.params.uri
+import type { PageFragment, PostFragment } from '#build/graphql-operations'
 
-const { data: post } = await useWPNodeByUri({ uri: uri[0] })
-if (!post.value) {
-  throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
+const isLoading = ref(true)
+const postData = ref<PostFragment | PageFragment | undefined>(null)
+const prevData = ref(null)
+const nextData = ref(null)
+const route = useRoute()
+const id = computed(() => route.params?.uri?.[0])
+
+async function fetch() {
+  isLoading.value = true
+  try {
+    if (!id.value) {
+      throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
+    }
+    const { data } = await useWPNodeByUri({ uri: id.value })
+    postData.value = data.value
+    if (!data.value) {
+      throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
+    }
+    const { prev, next } = await usePrevNextPost(id.value)
+    prevData.value = prev
+    nextData.value = next
+  } finally {
+    isLoading.value = false
+  }
 }
-if (post.value?.title) {
-  useHead({
-    title: post.value.title
-  })
-}
-const { prev: prev, next: next } = await usePrevNextPost(uri[0])
-const featuredImage = useFeaturedImage(post.value)
+onMounted(fetch)
+
+const post = computed<PostFragment | PageFragment | undefined>(() => postData.value)
+const featuredImage = computed(() => useFeaturedImage(post.value))
+
+useHead(() => ({
+  title: post.value?.title
+}))
 </script>
 
 <template>
   <NuxtLayout>
     <UContainer>
       <UPage
-        v-if="post"
+        v-if="!isLoading"
         :class="post.contentTypeName"
         class="pt-10 prose dark:prose-invert max-w-7xl mx-auto"
       >
@@ -55,10 +76,24 @@ const featuredImage = useFeaturedImage(post.value)
         <template #left>
           <UAside>
             <PrevNext
-              :prev="post.contentTypeName === 'post' ? prev : undefined"
-              :next="post.contentTypeName === 'post' ? next : undefined"
+              :prev="post.contentTypeName === 'post' ? prevData : undefined"
+              :next="post.contentTypeName === 'post' ? nextData : undefined"
               prev-button="Vorige"
               next-button="Volgende"
+            />
+          </UAside>
+        </template>
+      </UPage>
+      <UPage
+        v-else
+        class="pt-10 prose dark:prose-invert max-w-7xl mx-auto"
+      >
+        <UIcon name="i-svg-spinners-bars-scale-fade" />
+        <template #left>
+          <UAside>
+            <PrevNext
+              :prev="undefined"
+              :next="undefined"
             />
           </UAside>
         </template>

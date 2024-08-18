@@ -8,14 +8,18 @@ const wpMenu = computed(() => menu.value?.map(link => ({
 const links = computed(() => [
   ...wpMenu.value,
   {
-    label: 'Composables',
-    to: '/composables'
-  },
-  {
-    label: 'Generated Composables',
-    to: '/generated-composables'
+    label: 'WPNuxt info',
+    children: [
+      {
+        label: 'Composables',
+        to: '/composables'
+      },
+      {
+        label: 'Generated Composables',
+        to: '/generated-composables'
+      }
+    ]
   }
-
 ])
 </script>
 
