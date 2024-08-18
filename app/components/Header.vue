@@ -8,17 +8,12 @@ const wpMenu = computed(() => menu.value?.map(link => ({
 const links = computed(() => [
   ...wpMenu.value,
   {
-    label: 'WPNuxt info',
-    children: [
-      {
-        label: 'Composables',
-        to: '/composables'
-      },
-      {
-        label: 'Generated Composables',
-        to: '/generated-composables'
-      }
-    ]
+    label: 'Composables',
+    to: '/composables'
+  },
+  {
+    label: 'Generated Composables',
+    to: '/generated-composables'
   }
 ])
 </script>
@@ -26,7 +21,7 @@ const links = computed(() => [
 <template>
   <UHeader :links="links">
     <template #logo>
-      <WPNuxtLogo />
+      <WPNuxtLogo2 />
     </template>
   </UHeader>
 </template>
