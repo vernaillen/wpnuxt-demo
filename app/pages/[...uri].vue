@@ -25,7 +25,6 @@ useHead(() => ({
   title: post.value?.title
 }))
 fetch()
-onMounted(fetch)
 </script>
 
 <template>
@@ -76,9 +75,7 @@ onMounted(fetch)
           </UAside>
         </template>
       </UPage>
-      <UPage
-        v-else
-      >
+      <UPage v-else>
         <UPageHeader>
           <UIcon
             name="i-svg-spinners-bars-fade"

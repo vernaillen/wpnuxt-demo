@@ -13,7 +13,6 @@ async function fetch() {
   isLoading.value = false
 }
 fetch()
-onMounted(fetch)
 
 useHead({
   title: settings.value?.title || 'WPNuxt Demo'

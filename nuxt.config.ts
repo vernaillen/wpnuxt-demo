@@ -74,7 +74,6 @@ export default defineNuxtConfig({
    * @property {boolean} failOnError - This stops the build from failing but the page will not be statically generated
    */
   nitro: {
-    preset: 'vercel',
     prerender: {
       concurrency: 10,
       interval: 1000,
@@ -92,5 +91,5 @@ export default defineNuxtConfig({
     enabled: true
   },
 
-  compatibilityDate: '2024-07-03'
+  compatibilityDate: '2024-08-18'
 })
