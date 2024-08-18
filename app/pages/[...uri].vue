@@ -19,7 +19,6 @@ async function fetch() {
   prevData.value = computed(() => prev).value
   nextData.value = computed(() => next).value
   featuredImage.value = useFeaturedImage(post.value)
-  console.log('test', post.value)
   isLoading.value = false
 }
 useHead(() => ({
