@@ -40,15 +40,10 @@ useHead(() => ({
   <NuxtLayout>
     <UContainer>
       <UPage
-        v-if="!isLoading"
+        v-if="!isLoading && post"
         :class="post.contentTypeName"
         class="pt-10 prose dark:prose-invert max-w-7xl mx-auto"
       >
-        <NuxtImg
-          v-if="featuredImage"
-          :src="featuredImage"
-          class="object-cover rounded-xl w-1/2 imgTransition"
-        />
         <h1 class="text-4xl">
           {{ post.title }}
         </h1>
@@ -74,12 +69,17 @@ useHead(() => ({
           />
         </div>
         <template #left>
-          <UAside>
+          <UAside class="pt-2">
             <PrevNext
               :prev="post.contentTypeName === 'post' ? prevData : undefined"
               :next="post.contentTypeName === 'post' ? nextData : undefined"
               prev-button="Vorige"
               next-button="Volgende"
+            />
+            <NuxtImg
+              v-if="featuredImage"
+              :src="featuredImage"
+              class="object-cover rounded-md imgTransition"
             />
           </UAside>
         </template>
