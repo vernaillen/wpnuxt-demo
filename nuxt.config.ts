@@ -79,7 +79,7 @@ export default defineNuxtConfig({
       interval: 1000,
       failOnError: false,
       autoSubfolderIndex: false,
-      routes: process.env.WPNUXT_STAGING ? [] : ['/', '/sample-page', '/about', '/composables', '/generated-composables', '/test-image-gallery', '/nog-een-post-in-wordpress', 'test-wp-nuxt', 'hello-world']
+      routes: process.env.WPNUXT_STAGING ? [] : ['/', '/sample-page', '/composables', '/generated-composables', '/image-gallery', '/a-brand-new-nuxt-module', '/render-gutenberg-blocks', '/hello-world']
     }
   },
 
