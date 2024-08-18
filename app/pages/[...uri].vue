@@ -2,7 +2,7 @@
 import type { PageFragment, PostFragment } from '#build/graphql-operations'
 
 const isLoading = ref(true)
-const postData = ref<PostFragment | PageFragment | undefined>(null)
+const postData = ref<PostFragment | PageFragment | undefined>()
 const prevData = ref(null)
 const nextData = ref(null)
 const route = useRoute()
@@ -11,17 +11,16 @@ const id = computed(() => route.params?.uri?.[0])
 async function fetch() {
   isLoading.value = true
   try {
-    if (!id.value) {
-      throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
+    if (id.value) {
+      const { data } = await useWPNodeByUri({ uri: id.value })
+      if (!data.value) {
+        throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
+      }
+      postData.value = data.value
+      const { prev, next } = await usePrevNextPost(id.value)
+      prevData.value = prev
+      nextData.value = next
     }
-    const { data } = await useWPNodeByUri({ uri: id.value })
-    postData.value = data.value
-    if (!data.value) {
-      throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
-    }
-    const { prev, next } = await usePrevNextPost(id.value)
-    prevData.value = prev
-    nextData.value = next
   } finally {
     isLoading.value = false
   }
@@ -90,7 +89,7 @@ useHead(() => ({
       >
         <UIcon name="i-svg-spinners-bars-scale-fade" />
         <template #left>
-          <UAside>
+          <UAside class="pt-2">
             <PrevNext
               :prev="undefined"
               :next="undefined"
