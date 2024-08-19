@@ -9,20 +9,12 @@ defineProps<{
 
 <template>
   <div class="grid grid-cols-3 gap-6 max-w-28">
-    <div
-      class="flex justify-start"
-    >
+    <div class="flex justify-start">
       <UButton
         v-if="prev"
         :alt="prevButton"
         :to="'/' + prev"
         icon="i-heroicons-arrow-left-16-solid"
-      />
-      <UButton
-        v-else
-        disabled
-        variant="soft"
-        icon="i-heroicons-arrow-left-16"
       />
     </div>
     <div class="flex justify-center">
@@ -37,12 +29,6 @@ defineProps<{
         :alt="nextButton"
         :to="'/' + next"
         trailing-icon="i-heroicons-arrow-right-16-solid"
-      />
-      <UButton
-        v-else
-        disabled
-        variant="soft"
-        icon="i-heroicons-arrow-right-16"
       />
     </div>
   </div>

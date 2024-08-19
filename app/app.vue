@@ -17,16 +17,18 @@ useSeoMeta({
 </script>
 
 <template>
-  <Header />
-  <UMain>
-    <NuxtPage />
-  </UMain>
-  <Footer />
-  <EasyLightbox />
+  <div>
+    <Header />
+    <UMain>
+      <NuxtPage />
+    </UMain>
+    <Footer />
+    <EasyLightbox />
+  </div>
 </template>
 
 <style scoped>
-/* this transition is here to fix the z-index issue as explaied here:
+/* this transition is here to fix the z-index issue as explained here:
   https://www.nicchan.me/blog/view-transitions-and-stacking-context/
 */
 header {

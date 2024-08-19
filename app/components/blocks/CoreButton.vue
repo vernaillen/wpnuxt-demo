@@ -8,12 +8,11 @@ defineProps<{
 
 <template>
   <div>
-    Bluewashing the default CoreButton component:<br>
     <UButton
       :to="block.attributes.url"
       color="blue"
     >
-      Blue <span v-sanitize="block.attributes.text" />
+      <span v-sanitize="block.attributes.text" />
     </UButton>
   </div>
 </template>

@@ -24,82 +24,79 @@ async function fetch() {
 useHead(() => ({
   title: post.value?.title
 }))
-fetch()
+onMounted(fetch)
 </script>
 
 <template>
-  <NuxtLayout>
-    <UContainer>
-      <UPage
-        v-if="!isLoading"
-        :class="post.contentTypeName"
-      >
-        <UPageHeader :title="post.title" />
-        <UPageBody>
-          <div class="text-xs text-primary-500 my-2 postDate">
-            <span v-if="post.date">
-              gepubliceerd op <nuxt-time
-                :datetime="post.date"
-                month="long"
-                day="numeric"
-                year="numeric"
-                locale="nl-BE"
+  <div>
+    <NuxtLayout>
+      <UContainer>
+        <UPage
+          v-if="!isLoading"
+          :class="post.contentTypeName"
+        >
+          <UPageHeader :title="post.title" />
+          <UPageBody>
+            <div class="text-xs text-primary-500 my-2 postDate">
+              <span v-if="post.date">
+                gepubliceerd op <nuxt-time
+                  :datetime="post.date"
+                  month="long"
+                  day="numeric"
+                  year="numeric"
+                  locale="nl-BE"
+                />
+              </span>
+            </div>
+            <div class="mt-5 postContent">
+              <BlockRenderer
+                v-if="post.editorBlocks"
+                :blocks="post.editorBlocks"
               />
-            </span>
+            </div>
+          </UPageBody>
+          <template #left>
+            <UAside>
+              <PrevNext
+                :prev="post.contentTypeName === 'post' ? prevData : undefined"
+                :next="post.contentTypeName === 'post' ? nextData : undefined"
+                prev-button="Vorige"
+                next-button="Volgende"
+                class="mt-2 mb-12"
+              />
+              <NuxtImg
+                v-if="featuredImage"
+                :src="featuredImage"
+                class="object-cover rounded-md imgTransition"
+              />
+            </UAside>
+          </template>
+        </UPage>
+        <UPage v-else>
+          <UPageHeader>
+            <UIcon
+              name="i-svg-spinners-bars-fade"
+              class="mt-[18px] opacity-30"
+            />
+          </UPageHeader>
+          <div class="mt-9 space-y-3">
+            <USkeleton class="h-3 w-[200px] mb-7" />
+            <USkeleton class="h-4 w-2/3" />
+            <USkeleton class="h-4 w-1/2" />
           </div>
-          <div class="mt-5 postContent">
-            <BlockRenderer
-              v-if="post.editorBlocks"
-              :blocks="post.editorBlocks"
-            />
-            <div
-              v-else
-              v-sanitize="post.content"
-            />
-          </div>
-        </UPageBody>
-        <template #left>
-          <UAside>
-            <PrevNext
-              :prev="post.contentTypeName === 'post' ? prevData : undefined"
-              :next="post.contentTypeName === 'post' ? nextData : undefined"
-              prev-button="Vorige"
-              next-button="Volgende"
-              class="mt-2 mb-12"
-            />
-            <NuxtImg
-              v-if="featuredImage"
-              :src="featuredImage"
-              class="object-cover rounded-md imgTransition"
-            />
-          </UAside>
-        </template>
-      </UPage>
-      <UPage v-else>
-        <UPageHeader>
-          <UIcon
-            name="i-svg-spinners-bars-fade"
-            class="mt-[18px] opacity-30"
-          />
-        </UPageHeader>
-        <div class="mt-9 space-y-3">
-          <USkeleton class="h-3 w-[200px] mb-7" />
-          <USkeleton class="h-4 w-2/3" />
-          <USkeleton class="h-4 w-1/2" />
-        </div>
-        <template #left>
-          <UAside>
-            <PrevNext
-              :prev="undefined"
-              :next="undefined"
-              class="mt-2 mb-12"
-            />
-            <USkeleton class="h-32 w-full rounded-md" />
-          </UAside>
-        </template>
-      </UPage>
-    </UContainer>
-  </NuxtLayout>
+          <template #left>
+            <UAside>
+              <PrevNext
+                :prev="undefined"
+                :next="undefined"
+                class="mt-2 mb-12"
+              />
+            </UAside>
+          </template>
+        </UPage>
+      </UContainer>
+    </NuxtLayout>
+  </div>
 </template>
 
 <style scoped>

@@ -12,7 +12,7 @@ async function fetch() {
   settings.value = computed(() => settingsData).value
   isLoading.value = false
 }
-fetch()
+onMounted(fetch)
 
 useHead({
   title: settings.value?.title || 'WPNuxt Demo'
@@ -20,26 +20,28 @@ useHead({
 </script>
 
 <template>
-  <NuxtLayout>
-    <ULandingSection
-      id="posts"
-      :title="settings?.title || 'WPNuxt Demo'"
-      :headline="settings?.description || 'Nuxt + Headless WordPress'"
-      description="WordPress posts are shown below as cards. WordPress pages are listed above in the header."
-    >
-      <UPageGrid v-if="!isLoading">
-        <Post
-          v-for="post, index in posts"
-          :key="index"
-          :post="post"
-        />
-      </UPageGrid>
-      <UPageGrid v-else>
-        <Post
-          v-for="skel, index in [1, 2, 3]"
-          :key="index"
-        />
-      </UPageGrid>
-    </ULandingSection>
-  </NuxtLayout>
+  <div>
+    <NuxtLayout>
+      <ULandingSection
+        id="posts"
+        :title="settings?.title || 'WPNuxt Demo'"
+        :headline="settings?.description || 'Nuxt + Headless WordPress'"
+        description="WordPress posts are shown below as cards. WordPress pages are listed above in the header."
+      >
+        <UPageGrid v-if="!isLoading">
+          <Post
+            v-for="post, index in posts"
+            :key="index"
+            :post="post"
+          />
+        </UPageGrid>
+        <UPageGrid v-else>
+          <Post
+            v-for="skel, index in [1, 2, 3]"
+            :key="index"
+          />
+        </UPageGrid>
+      </ULandingSection>
+    </NuxtLayout>
+  </div>
 </template>
