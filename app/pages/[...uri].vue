@@ -48,11 +48,8 @@ onMounted(fetch)
                 />
               </span>
             </div>
-            <div class="mt-5 postContent">
-              <BlockRenderer
-                v-if="post.editorBlocks"
-                :blocks="post.editorBlocks"
-              />
+            <div class="mt-5 postContent prose dark:prose-invert">
+              <WPContent :node="post" />
             </div>
           </UPageBody>
           <template #left>
