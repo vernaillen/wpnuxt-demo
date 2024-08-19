@@ -22,7 +22,7 @@ const featuredImage = useFeaturedImage(props.post)
               v-if="featuredImage"
               :src="featuredImage"
               :alt="'Featured image for ' + post.title"
-              class="object-cover rounded-t-lg imgTransition"
+              class="object-cover rounded-t-lg"
               :class="{ active: active === post.id }"
               sizes="400px sm:600px md:400px"
               :width="600"
@@ -75,19 +75,3 @@ const featuredImage = useFeaturedImage(props.post)
     </UCard>
   </div>
 </template>
-
-<style scoped>
-h1.active {
-    view-transition-name: post;
-}
-img.imgTransition.active {
-    view-transition-name: featured-image;
-}
-</style>
-
-<style>
-::view-transition-old(post),
-::view-transition-new(post) {
-    width: auto;
-}
-</style>

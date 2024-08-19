@@ -26,12 +26,3 @@ useSeoMeta({
     <EasyLightbox />
   </div>
 </template>
-
-<style scoped>
-/* this transition is here to fix the z-index issue as explained here:
-  https://www.nicchan.me/blog/view-transitions-and-stacking-context/
-*/
-header {
-    view-transition-name: header;
-}
-</style>
