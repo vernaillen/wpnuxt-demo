@@ -29,13 +29,11 @@ useHead({
         description="WordPress posts are shown below as cards. WordPress pages are listed above in the header."
       >
         <UPageGrid v-if="!isLoading">
-          <DelayHydration>
-            <Post
-              v-for="post, index in posts"
-              :key="index"
-              :post="post"
-            />
-          </DelayHydration>
+          <Post
+            v-for="post, index in posts"
+            :key="index"
+            :post="post"
+          />
         </UPageGrid>
         <UPageGrid v-else>
           <Post

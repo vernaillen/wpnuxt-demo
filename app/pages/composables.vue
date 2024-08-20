@@ -1,100 +1,113 @@
 <script setup lang="ts">
 import VueJsonPretty from 'vue-json-pretty'
 
-const isLoading = ref(true)
-const posts = ref<PostFragment[]>([])
-const pages = ref<PageFragment[]>([])
-const settings = ref<GeneralSettingsFragment | null>(null)
+const isLoading = ref(false)
+const loadedData = ref<string>('posts')
+const data = ref({})
 
-async function fetch() {
-  isLoading.value = true
+async function fetchPosts() {
+  start('posts')
   const { data: postsData } = await useWPPosts()
-  const { data: pagesData } = await useWPPages()
-  const { data: settingsData } = await useWPGeneralSettings()
-
-  posts.value = computed(() => postsData).value
-  pages.value = computed(() => pagesData).value
-  settings.value = computed(() => settingsData).value
-  isLoading.value = false
+  data.value = computed(() => postsData).value
+  isReady()
 }
-onMounted(fetch)
+async function fetchPost() {
+  start('post')
+  const { data: postData } = await useWPPostByUri({ uri: 'hello-world' })
+  data.value = computed(() => postData).value
+  isReady()
+}
+async function fetchPages() {
+  start('pages')
+  const { data: pagesData } = await useWPPages()
+  data.value = computed(() => pagesData).value
+  isReady()
+}
+async function fetchSettings() {
+  start('settings')
+  const { data: settings } = await useWPGeneralSettings()
+  data.value = computed(() => settings).value
+  isReady()
+}
+async function fetchUri() {
+  start('wpUri')
+  const uri = await useWPUri()
+  data.value = computed(() => uri).value
+  isReady()
+}
 
-const staging = await isStaging()
-
-const items = [{
-  label: 'const { data: settings } = await useWPGeneralSettings()',
-  content: settings
-}, {
-  label: 'const { data: pages } = await useWPPages()',
-  content: pages
-}, {
-  label: 'const { data: posts } = await useWPPosts()',
-  content: posts
-}, {
-  label: 'const wpUri = useWPUri()',
-  content: useWPUri()
-}, {
-  label: 'const staging = await isStaging()',
-  content: staging
-}]
+function start(key: string) {
+  isLoading.value = true
+  loadedData.value = key
+}
+function isReady() {
+  setTimeout(() => {
+    isLoading.value = false
+  }, 200)
+}
 onMounted(() => {
-  isLoading.value = false
+  fetchPosts()
 })
 </script>
 
 <template>
   <NuxtLayout>
     <UContainer>
-      <UPage
-        v-if="!isLoading"
-      >
+      <UPage>
         <UPageHeader
           title="Composables"
         />
         <UPageBody class="prose dark:prose-invert mt-10">
           <p>
-            These are just some examples. Check the documentation for a <a
+            Check the documentation for a <a
               href="https://wpnuxt.com/getting-started/composables"
               target="_blank"
-            >full list of all available composables</a>.
+            >full list of available composables</a>.
           </p>
-          <div class="relative">
-            <UAccordion
-              :items="items"
-              :ui="{
-                default: {
-                  class: 'pl-8 mb-3'
-                },
-                item: {
-                  icon: 'absolute left-1 transform transition-transform duration-200'
-                }
-              }"
-            >
-              <template #item="{ item }">
-                <pre class="mt-0 py-0">
-                  <code class="flex justify-start py-0">
-                      <vue-json-pretty
-                        :path="'res'"
-                        :data="item.content"
-                      />
-                  </code>
-                </pre>
-              </template>
-            </UAccordion>
-          </div>
+          <ComposableExample
+            code="const { data: posts } = await useWPPosts()"
+            :trigger="fetchPosts"
+          />
+          <ComposableExample
+            code="const { data: post } = await useWPPostByUri({ uri: 'hello-world' })"
+            :trigger="fetchPost"
+          />
+          <ComposableExample
+            code="const { data: pages } = await useWPPages()"
+            :trigger="fetchPages"
+          />
+          <ComposableExample
+            code="const { data: settings } = await useWPGeneralSettings()"
+            :trigger="fetchSettings"
+          />
+          <ComposableExample
+            code="const wpUri = useWPUri()"
+            :trigger="fetchUri"
+          />
+          <h2 class="mt-10">
+            {{ loadedData }}:
+          </h2>
+          <pre class="mt-0 py-0 min-h-[500px]">
+            <code class="flex justify-start py-0">
+              <UIcon
+                v-if="isLoading"
+                name="i-svg-spinners-bars-fade"
+                class="mt-[18px] opacity-30"
+              />
+              <vue-json-pretty
+                v-else
+                path="res"
+                :data
+              />
+            </code>
+          </pre>
         </UPageBody>
-
         <template #left>
           <UAside>
-            <PrevNext
-              :prev="undefined"
-              :next="undefined"
-              class="mt-2 mb-12"
-            />
+            <PrevNext class="mt-2 mb-12" />
           </UAside>
         </template>
       </UPage>
-      <PageSkeleton v-else />
     </UContainer>
   </NuxtLayout>
 </template>

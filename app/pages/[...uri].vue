@@ -55,9 +55,7 @@ onMounted(fetch)
             class="mt-5 prose dark:prose-invert content-enter"
             style="--enter-stage: 1;"
           >
-            <DelayHydration>
-              <WPContent :node="post" />
-            </DelayHydration>
+            <WPContent :node="post" />
           </div>
         </UPageBody>
         <template #left>

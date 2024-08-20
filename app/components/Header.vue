@@ -10,10 +10,6 @@ const links = computed(() => [
   {
     label: 'Composables',
     to: '/composables'
-  },
-  {
-    label: 'Generated Composables',
-    to: '/generated-composables'
   }
 ])
 </script>
@@ -21,7 +17,7 @@ const links = computed(() => [
 <template>
   <UHeader :links="links">
     <template #logo>
-      <WPNuxtLogo2 />
+      <WPNuxtLogo />
     </template>
   </UHeader>
 </template>
