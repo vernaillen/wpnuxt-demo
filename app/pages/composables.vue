@@ -60,7 +60,7 @@ onMounted(() => {
         <UPageBody class="prose dark:prose-invert mt-10">
           <p>
             Check the documentation for a <a
-              href="https://wpnuxt.com/getting-started/composables"
+              href="https://wpnuxt.com/docs/composables"
               target="_blank"
             >full list of available composables</a>.
           </p>
