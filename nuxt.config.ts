@@ -4,13 +4,14 @@ export default defineNuxtConfig({
   extends: ['@nuxt/ui-pro'],
 
   modules: [
+    '@nuxt/eslint',
     '@nuxt/image',
     '@nuxt/ui',
     '@nuxtjs/plausible',
     '@wpnuxt/blocks',
     '@wpnuxt/core',
     'nuxt-time',
-    '@nuxt/eslint'
+    'nuxt-vitalizer'
   ],
 
   future: {
@@ -81,6 +82,12 @@ export default defineNuxtConfig({
       autoSubfolderIndex: false,
       routes: process.env.WPNUXT_STAGING ? [] : ['/', '/sample-page', '/composables', '/generated-composables', '/image-gallery', '/a-brand-new-nuxt-module', '/render-gutenberg-blocks', '/hello-world']
     }
+  },
+
+  vitalizer: {
+    // Remove the render-blocking entry CSS
+    disableStylesheets: 'entry',
+    disablePrefetchLinks: true
   },
 
   plausible: {

@@ -29,7 +29,7 @@ importers:
         version: 1.7.0(ioredis@5.4.1)(magicast@0.3.4)(rollup@4.21.0)
       '@nuxt/ui-pro':
         specifier: ^1.4.0
-        version: 1.4.1(change-case@5.4.4)(magicast@0.3.4)(rollup@4.21.0)(vite@5.4.1(@types/node@22.4.1)(terser@5.31.6))(vue@3.4.38(typescript@5.5.4))
+        version: 1.4.1(change-case@4.1.2)(magicast@0.3.4)(rollup@4.21.0)(vite@5.4.1(@types/node@22.4.1)(terser@5.31.6))(vue@3.4.38(typescript@5.5.4))
       '@nuxtjs/plausible':
         specifier: ^1.0.0
         version: 1.0.2(magicast@0.3.4)(rollup@4.21.0)
@@ -38,7 +38,7 @@ importers:
         version: 11.0.1(vue@3.4.38(typescript@5.5.4))
       '@wpnuxt/blocks':
         specifier: ^0.0.9
-        version: 0.0.9(@parcel/watcher@2.4.1)(@types/node@22.4.1)(change-case@5.4.4)(consola@3.2.3)(graphql-tag@2.12.6(graphql@16.9.0))(graphql@16.9.0)(ioredis@5.4.1)(knitwork@1.1.0)(magicast@0.3.4)(nuxt@3.12.4(@parcel/watcher@2.4.1)(@types/node@22.4.1)(eslint@9.9.0(jiti@1.21.6))(ioredis@5.4.1)(magicast@0.3.4)(optionator@0.9.4)(rollup@4.21.0)(terser@5.31.6)(typescript@5.5.4)(vite@5.4.1(@types/node@22.4.1)(terser@5.31.6))(vue-tsc@2.0.29(typescript@5.5.4)))(pathe@1.1.2)(rollup@4.21.0)(scule@1.3.0)(typescript@5.5.4)(vite@5.4.1(@types/node@22.4.1)(terser@5.31.6))(vue@3.4.38(typescript@5.5.4))
+        version: 0.0.9(@parcel/watcher@2.4.1)(@types/node@22.4.1)(change-case@4.1.2)(consola@3.2.3)(graphql-tag@2.12.6(graphql@16.9.0))(graphql@16.9.0)(ioredis@5.4.1)(knitwork@1.1.0)(magicast@0.3.4)(nuxt@3.12.4(@parcel/watcher@2.4.1)(@types/node@22.4.1)(eslint@9.9.0(jiti@1.21.6))(ioredis@5.4.1)(magicast@0.3.4)(optionator@0.9.4)(rollup@4.21.0)(terser@5.31.6)(typescript@5.5.4)(vite@5.4.1(@types/node@22.4.1)(terser@5.31.6))(vue-tsc@2.0.29(typescript@5.5.4)))(pathe@1.1.2)(rollup@4.21.0)(scule@1.3.0)(typescript@5.5.4)(vite@5.4.1(@types/node@22.4.1)(terser@5.31.6))(vue@3.4.38(typescript@5.5.4))
       '@wpnuxt/core':
         specifier: 1.0.0-edge.11
         version: 1.0.0-edge.11(@parcel/watcher@2.4.1)(@types/node@22.4.1)(consola@3.2.3)(graphql-tag@2.12.6(graphql@16.9.0))(graphql@16.9.0)(ioredis@5.4.1)(knitwork@1.1.0)(magicast@0.3.4)(nuxt@3.12.4(@parcel/watcher@2.4.1)(@types/node@22.4.1)(eslint@9.9.0(jiti@1.21.6))(ioredis@5.4.1)(magicast@0.3.4)(optionator@0.9.4)(rollup@4.21.0)(terser@5.31.6)(typescript@5.5.4)(vite@5.4.1(@types/node@22.4.1)(terser@5.31.6))(vue-tsc@2.0.29(typescript@5.5.4)))(pathe@1.1.2)(rollup@4.21.0)(scule@1.3.0)(typescript@5.5.4)(vite@5.4.1(@types/node@22.4.1)(terser@5.31.6))(vue@3.4.38(typescript@5.5.4))
@@ -48,6 +48,9 @@ importers:
       nuxt-time:
         specifier: ^0.1.3
         version: 0.1.3(magicast@0.3.4)(rollup@4.21.0)
+      nuxt-vitalizer:
+        specifier: ^0.10.0
+        version: 0.10.0(magicast@0.3.4)(rollup@4.21.0)
       typescript:
         specifier: 5.5.4
         version: 5.5.4
@@ -2341,9 +2344,6 @@ packages:
   change-case@4.1.2:
     resolution: {integrity: sha512-bSxY2ws9OtviILG1EiY5K7NNxkqg/JnRnFxLtKQ96JaviiIxi7djMrSd0ECT9AC+lttClmYwKw53BWpOMblo7A==}
 
-  change-case@5.4.4:
-    resolution: {integrity: sha512-HRQyTk2/YPEkt9TnUPbOpr64Uw3KOicFWPVBb+xiHvd6eBx/qPr9xqfBFDT8P2vWsvvz4jbEkfDe71W3VyNu2w==}
-
   chardet@0.7.0:
     resolution: {integrity: sha512-mT8iDcrh03qDGRRmoA2hmBJnxpllMR+0/0qlzjqZES6NdiWDcZkCNAk4rPFZ9Q85r27unkiNNg8ZOiwZXBHwcA==}
 
@@ -4119,6 +4119,9 @@ packages:
 
   nuxt-time@0.1.3:
     resolution: {integrity: sha512-Ie9KA4DfaebqDaTy+u49VVI8lHHjTlllEqdFgeQuvQItrkDaojXWKLwHfW7ju7tDJlpVIV9K6KpRXWPAWUq7Bw==}
+
+  nuxt-vitalizer@0.10.0:
+    resolution: {integrity: sha512-z5leudr8wD2msKl7ETLGUICSOVoXVLMA8bAeRuWN4/UuYl7g7G2k7Idzl1z8ft/VmoYZ9ld3J0/2UZOZuxxzog==}
 
   nuxt@3.12.4:
     resolution: {integrity: sha512-/ddvyc2kgYYIN2UEjP8QIz48O/W3L0lZm7wChIDbOCj0vF/yLLeZHBaTb3aNvS9Hwp269nfjrm8j/mVxQK4RhA==}
@@ -7378,10 +7381,10 @@ snapshots:
       - rollup
       - supports-color
 
-  '@nuxt/ui-pro@1.4.1(change-case@5.4.4)(magicast@0.3.4)(rollup@4.21.0)(vite@5.4.1(@types/node@22.4.1)(terser@5.31.6))(vue@3.4.38(typescript@5.5.4))':
+  '@nuxt/ui-pro@1.4.1(change-case@4.1.2)(magicast@0.3.4)(rollup@4.21.0)(vite@5.4.1(@types/node@22.4.1)(terser@5.31.6))(vue@3.4.38(typescript@5.5.4))':
     dependencies:
       '@iconify-json/vscode-icons': 1.1.37
-      '@nuxt/ui': 2.18.4(change-case@5.4.4)(magicast@0.3.4)(rollup@4.21.0)(vite@5.4.1(@types/node@22.4.1)(terser@5.31.6))(vue@3.4.38(typescript@5.5.4))
+      '@nuxt/ui': 2.18.4(change-case@4.1.2)(magicast@0.3.4)(rollup@4.21.0)(vite@5.4.1(@types/node@22.4.1)(terser@5.31.6))(vue@3.4.38(typescript@5.5.4))
       '@vueuse/core': 10.11.1(vue@3.4.38(typescript@5.5.4))
       defu: 6.1.4
       git-url-parse: 14.1.0
@@ -7412,7 +7415,7 @@ snapshots:
       - vite
       - vue
 
-  '@nuxt/ui@2.18.4(change-case@5.4.4)(magicast@0.3.4)(rollup@4.21.0)(vite@5.4.1(@types/node@22.4.1)(terser@5.31.6))(vue@3.4.38(typescript@5.5.4))':
+  '@nuxt/ui@2.18.4(change-case@4.1.2)(magicast@0.3.4)(rollup@4.21.0)(vite@5.4.1(@types/node@22.4.1)(terser@5.31.6))(vue@3.4.38(typescript@5.5.4))':
     dependencies:
       '@headlessui/tailwindcss': 0.2.1(tailwindcss@3.4.10)
       '@headlessui/vue': 1.7.22(vue@3.4.38(typescript@5.5.4))
@@ -7427,7 +7430,7 @@ snapshots:
       '@tailwindcss/forms': 0.5.7(tailwindcss@3.4.10)
       '@tailwindcss/typography': 0.5.14(tailwindcss@3.4.10)
       '@vueuse/core': 10.11.1(vue@3.4.38(typescript@5.5.4))
-      '@vueuse/integrations': 10.11.1(change-case@5.4.4)(fuse.js@6.6.2)(vue@3.4.38(typescript@5.5.4))
+      '@vueuse/integrations': 10.11.1(change-case@4.1.2)(fuse.js@6.6.2)(vue@3.4.38(typescript@5.5.4))
       '@vueuse/math': 10.11.1(vue@3.4.38(typescript@5.5.4))
       defu: 6.1.4
       fuse.js: 6.6.2
@@ -8231,13 +8234,13 @@ snapshots:
       - '@vue/composition-api'
       - vue
 
-  '@vueuse/integrations@10.11.1(change-case@5.4.4)(fuse.js@6.6.2)(vue@3.4.38(typescript@5.5.4))':
+  '@vueuse/integrations@10.11.1(change-case@4.1.2)(fuse.js@6.6.2)(vue@3.4.38(typescript@5.5.4))':
     dependencies:
       '@vueuse/core': 10.11.1(vue@3.4.38(typescript@5.5.4))
       '@vueuse/shared': 10.11.1(vue@3.4.38(typescript@5.5.4))
       vue-demi: 0.14.10(vue@3.4.38(typescript@5.5.4))
     optionalDependencies:
-      change-case: 5.4.4
+      change-case: 4.1.2
       fuse.js: 6.6.2
     transitivePeerDependencies:
       - '@vue/composition-api'
@@ -8314,11 +8317,11 @@ snapshots:
       fast-querystring: 1.1.2
       tslib: 2.6.3
 
-  '@wpnuxt/blocks@0.0.9(@parcel/watcher@2.4.1)(@types/node@22.4.1)(change-case@5.4.4)(consola@3.2.3)(graphql-tag@2.12.6(graphql@16.9.0))(graphql@16.9.0)(ioredis@5.4.1)(knitwork@1.1.0)(magicast@0.3.4)(nuxt@3.12.4(@parcel/watcher@2.4.1)(@types/node@22.4.1)(eslint@9.9.0(jiti@1.21.6))(ioredis@5.4.1)(magicast@0.3.4)(optionator@0.9.4)(rollup@4.21.0)(terser@5.31.6)(typescript@5.5.4)(vite@5.4.1(@types/node@22.4.1)(terser@5.31.6))(vue-tsc@2.0.29(typescript@5.5.4)))(pathe@1.1.2)(rollup@4.21.0)(scule@1.3.0)(typescript@5.5.4)(vite@5.4.1(@types/node@22.4.1)(terser@5.31.6))(vue@3.4.38(typescript@5.5.4))':
+  '@wpnuxt/blocks@0.0.9(@parcel/watcher@2.4.1)(@types/node@22.4.1)(change-case@4.1.2)(consola@3.2.3)(graphql-tag@2.12.6(graphql@16.9.0))(graphql@16.9.0)(ioredis@5.4.1)(knitwork@1.1.0)(magicast@0.3.4)(nuxt@3.12.4(@parcel/watcher@2.4.1)(@types/node@22.4.1)(eslint@9.9.0(jiti@1.21.6))(ioredis@5.4.1)(magicast@0.3.4)(optionator@0.9.4)(rollup@4.21.0)(terser@5.31.6)(typescript@5.5.4)(vite@5.4.1(@types/node@22.4.1)(terser@5.31.6))(vue-tsc@2.0.29(typescript@5.5.4)))(pathe@1.1.2)(rollup@4.21.0)(scule@1.3.0)(typescript@5.5.4)(vite@5.4.1(@types/node@22.4.1)(terser@5.31.6))(vue@3.4.38(typescript@5.5.4))':
     dependencies:
       '@nuxt/image': 1.7.0(ioredis@5.4.1)(magicast@0.3.4)(rollup@4.21.0)
       '@nuxt/kit': 3.12.4(magicast@0.3.4)(rollup@4.21.0)
-      '@nuxt/ui': 2.18.4(change-case@5.4.4)(magicast@0.3.4)(rollup@4.21.0)(vite@5.4.1(@types/node@22.4.1)(terser@5.31.6))(vue@3.4.38(typescript@5.5.4))
+      '@nuxt/ui': 2.18.4(change-case@4.1.2)(magicast@0.3.4)(rollup@4.21.0)(vite@5.4.1(@types/node@22.4.1)(terser@5.31.6))(vue@3.4.38(typescript@5.5.4))
       '@wpnuxt/core': 1.0.0-edge.11(@parcel/watcher@2.4.1)(@types/node@22.4.1)(consola@3.2.3)(graphql-tag@2.12.6(graphql@16.9.0))(graphql@16.9.0)(ioredis@5.4.1)(knitwork@1.1.0)(magicast@0.3.4)(nuxt@3.12.4(@parcel/watcher@2.4.1)(@types/node@22.4.1)(eslint@9.9.0(jiti@1.21.6))(ioredis@5.4.1)(magicast@0.3.4)(optionator@0.9.4)(rollup@4.21.0)(terser@5.31.6)(typescript@5.5.4)(vite@5.4.1(@types/node@22.4.1)(terser@5.31.6))(vue-tsc@2.0.29(typescript@5.5.4)))(pathe@1.1.2)(rollup@4.21.0)(scule@1.3.0)(typescript@5.5.4)(vite@5.4.1(@types/node@22.4.1)(terser@5.31.6))(vue@3.4.38(typescript@5.5.4))
       knitwork: 1.1.0
       pathe: 1.1.2
@@ -8801,9 +8804,6 @@ snapshots:
       sentence-case: 3.0.4
       snake-case: 3.0.4
       tslib: 2.6.3
-
-  change-case@5.4.4:
-    optional: true
 
   chardet@0.7.0: {}
 
@@ -10822,6 +10822,16 @@ snapshots:
       '@nuxt/kit': 3.12.4(magicast@0.3.4)(rollup@4.21.0)
       defu: 6.1.4
       pathe: 1.1.2
+    transitivePeerDependencies:
+      - magicast
+      - rollup
+      - supports-color
+
+  nuxt-vitalizer@0.10.0(magicast@0.3.4)(rollup@4.21.0):
+    dependencies:
+      '@nuxt/kit': 3.12.4(magicast@0.3.4)(rollup@4.21.0)
+      defu: 6.1.4
+      knitwork: 1.1.0
     transitivePeerDependencies:
       - magicast
       - rollup
