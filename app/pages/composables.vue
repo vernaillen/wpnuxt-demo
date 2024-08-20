@@ -2,10 +2,23 @@
 import VueJsonPretty from 'vue-json-pretty'
 
 const isLoading = ref(true)
+const posts = ref<PostFragment[]>([])
+const pages = ref<PageFragment[]>([])
+const settings = ref<GeneralSettingsFragment | null>(null)
 
-const { data: settings } = await useWPGeneralSettings()
-const { data: pages } = await useWPPages()
-const { data: posts } = await useWPPosts()
+async function fetch() {
+  isLoading.value = true
+  const { data: postsData } = await useWPPosts()
+  const { data: pagesData } = await useWPPages()
+  const { data: settingsData } = await useWPGeneralSettings()
+
+  posts.value = computed(() => postsData).value
+  pages.value = computed(() => pagesData).value
+  settings.value = computed(() => settingsData).value
+  isLoading.value = false
+}
+onMounted(fetch)
+
 const staging = await isStaging()
 
 const items = [{
