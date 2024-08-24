@@ -19,6 +19,7 @@ defineProps({
     <div>
       <UButton
         icon="i-mdi-play"
+        alt="Run the code"
         @click="trigger"
       />
     </div>

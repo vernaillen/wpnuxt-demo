@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import type { PageFragment, PostFragment } from '#build/graphql-operations'
+
 const isLoading = ref(true)
 const post = ref<PostFragment | PageFragment | undefined>()
 const prevData = ref()
@@ -31,7 +33,7 @@ onMounted(fetch)
   <NuxtLayout>
     <UContainer>
       <UPage
-        v-if="!isLoading"
+        v-if="!isLoading && post"
         :class="post.contentTypeName"
       >
         <UPageHeader
@@ -39,7 +41,7 @@ onMounted(fetch)
         />
         <UPageBody>
           <div
-            class="text-xs text-primary-500 my-2 postDate content-enter"
+            class="text-xs text-primary-500 my-2 postDate"
           >
             <span v-if="post.date">
               gepubliceerd op <nuxt-time
@@ -51,10 +53,7 @@ onMounted(fetch)
               />
             </span>
           </div>
-          <div
-            class="mt-5 prose dark:prose-invert content-enter"
-            style="--enter-stage: 1;"
-          >
+          <div class="mt-5 prose dark:prose-invert">
             <WPContent :node="post" />
           </div>
         </UPageBody>
@@ -70,8 +69,7 @@ onMounted(fetch)
             <NuxtImg
               v-if="featuredImage"
               :src="featuredImage"
-              class="object-cover rounded-md content-enter"
-              style="--enter-stage: 2;"
+              class="object-cover rounded-md"
             />
           </UAside>
         </template>

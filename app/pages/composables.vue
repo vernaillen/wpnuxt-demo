@@ -59,10 +59,20 @@ onMounted(() => {
         />
         <UPageBody class="prose dark:prose-invert mt-10">
           <p>
-            Check the documentation for a <a
+            Check the
+            <a
+              href="https://wpnuxt.com"
+              target="_blank"
+            >
+              WPNuxt documentation
+            </a>
+            for a full
+            <a
               href="https://wpnuxt.com/docs/composables"
               target="_blank"
-            >full list of available composables</a>.
+            >
+              list of available composables
+            </a>.
           </p>
           <ComposableExample
             code="const { data: posts } = await useWPPosts()"
