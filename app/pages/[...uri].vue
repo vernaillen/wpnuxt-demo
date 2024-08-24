@@ -36,6 +36,13 @@ onMounted(fetch)
         v-if="!isLoading && post"
         :class="post.contentTypeName"
       >
+        <PrevNext
+          :prev="post.contentTypeName === 'post' ? prevData : undefined"
+          :next="post.contentTypeName === 'post' ? nextData : undefined"
+          prev-button="Vorige"
+          next-button="Volgende"
+          class="mt-6 lg:hidden"
+        />
         <UPageHeader :title="post.title" />
         <UPageBody>
           <div class="text-xs text-primary-500 my-2 postDate">

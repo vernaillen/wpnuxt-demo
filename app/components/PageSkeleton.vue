@@ -1,5 +1,10 @@
 <template>
   <UPage>
+    <PrevNext
+      :prev="undefined"
+      :next="undefined"
+      class="mt-6 lg:hidden"
+    />
     <UPageHeader>
       <UIcon
         name="i-svg-spinners-bars-fade"
