@@ -14,19 +14,19 @@ const staging = await isStaging()
 </template>
 
 <style>
-@keyframes skeleton-leave {
+@keyframes content-enter {
   0% {
-    @apply opacity-100;
+    @apply opacity-10 blur-sm;
   }
   to {
-    @apply opacity-0;
+    @apply opacity-100 blur-0;
   }
 }
 
 @media (prefers-reduced-motion:no-preference) {
-  .skeleton-leave {
-    animation: content-leave 0.5s both 0.5s;
-    animation-delay: 0.1s;
+  .content-enter {
+    animation: content-enter 0.2s both 0.2s;
+    animation-delay: 0s;
   }
 }
 </style>

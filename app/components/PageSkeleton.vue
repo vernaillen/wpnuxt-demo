@@ -1,5 +1,5 @@
 <template>
-  <UPage class="skeleton-leave">
+  <UPage>
     <UPageHeader>
       <UIcon
         name="i-svg-spinners-bars-fade"

@@ -2,6 +2,11 @@ export default defineAppConfig({
   ui: {
     primary: 'reefgold',
     gray: 'neutral',
+    page: {
+      body: {
+        wrapper: 'content-enter'
+      }
+    },
     card: {
       base: 'overflow-hidden',
       rounded: 'rounded-xl',

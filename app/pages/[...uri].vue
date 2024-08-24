@@ -70,7 +70,7 @@ onMounted(fetch)
           </UAside>
         </template>
       </UPage>
-      <PageSkeleton v-else />
+      <PageSkeleton v-show="isLoading" />
     </UContainer>
   </NuxtLayout>
 </template>
