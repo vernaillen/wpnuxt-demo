@@ -36,20 +36,16 @@ onMounted(fetch)
         v-if="!isLoading && post"
         :class="post.contentTypeName"
       >
-        <UPageHeader
-          :title="post.title"
-        />
+        <UPageHeader :title="post.title" />
         <UPageBody>
-          <div
-            class="text-xs text-primary-500 my-2 postDate"
-          >
+          <div class="text-xs text-primary-500 my-2 postDate">
             <span v-if="post.date">
-              gepubliceerd op <nuxt-time
+              published on <nuxt-time
                 :datetime="post.date"
                 month="long"
                 day="numeric"
                 year="numeric"
-                locale="nl-BE"
+                locale="en-GB"
               />
             </span>
           </div>
