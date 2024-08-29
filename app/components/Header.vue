@@ -1,10 +1,14 @@
 <script setup lang="ts">
-const { data: menu } = await useAsyncData('menu', () => useWPMenu())
+const { data } = await useWPMenu()
 
-const wpMenu = computed(() => menu.value?.data?.map(link => ({
-  label: link.label,
-  to: link.uri
-})))
+const menu = computed(() =>
+  data?.map(link => ({
+    label: link.label,
+    to: link.uri
+  })) || [])
+const wpMenu = useState('wpMenu', () => [])
+wpMenu.value = menu.value
+
 const links = computed(() => [
   ...wpMenu.value,
   {

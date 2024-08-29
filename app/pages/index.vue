@@ -1,15 +1,14 @@
 <script setup lang="ts">
+import type { PostFragment } from '#build/graphql-operations'
+
 const isLoading = ref(true)
 const posts = ref<PostFragment[]>([])
-const settings = ref<GeneralSettingsFragment | null>(null)
+const settings = useState('settings')
 
 async function fetch() {
   isLoading.value = true
   const { data: postsData } = await useWPPosts()
-  const { data: settingsData } = await useWPGeneralSettings()
-
   posts.value = computed(() => postsData).value
-  settings.value = computed(() => settingsData).value
   isLoading.value = false
 }
 onMounted(fetch)

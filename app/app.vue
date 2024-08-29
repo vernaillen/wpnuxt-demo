@@ -1,4 +1,7 @@
 <script setup lang="ts">
+const { data } = await useWPGeneralSettings()
+const settings = useState('settings', () => data)
+
 useHead({
   meta: [
     { charset: 'utf-8' },
@@ -9,10 +12,10 @@ useHead({
   }
 })
 useSeoMeta({
-  title: 'WPNuxt Demo',
-  ogTitle: 'WPNuxt Demo',
-  description: 'Nuxt with WordPress as a headless CMS',
-  ogDescription: 'Nuxt with WordPress as a headless CMS'
+  title: settings?.title || 'WPNuxt Demo',
+  ogTitle: settings?.title || 'WPNuxt Demo',
+  description: settings?.description || 'Nuxt with WordPress as a headless CMS',
+  ogDescription: settings?.description || 'Nuxt with WordPress as a headless CMS'
 })
 </script>
 
