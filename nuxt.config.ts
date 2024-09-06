@@ -17,6 +17,7 @@ export default defineNuxtConfig({
   future: {
     compatibilityVersion: 4
   },
+  compatibilityDate: '2024-09-06',
 
   wpNuxt: {
     wordpressUrl: 'https://wpnuxtdev.wpenginepowered.com',
@@ -96,7 +97,5 @@ export default defineNuxtConfig({
 
   devtools: {
     enabled: true
-  },
-
-  compatibilityDate: '2024-08-18'
+  }
 })
