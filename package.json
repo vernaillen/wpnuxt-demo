@@ -24,7 +24,7 @@
     "@wpnuxt/blocks": "^0.0.10",
     "@wpnuxt/core": "1.0.0-edge.22",
     "nuxt": "^3.13.1",
-    "nuxt-time": "^0.1.3",
+    "nuxt-time": "^1.0.0",
     "nuxt-vitalizer": "^0.10.0",
     "typescript": "5.5.4",
     "vue-tsc": "^2.1.6"
