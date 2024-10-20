@@ -49,7 +49,7 @@ const featuredImage = useFeaturedImage(props.post)
           />
         </p>
         <template #footer>
-          <div v-html="post.excerpt" />
+          <div v-sanitize="post.excerpt" />
         </template>
       </UCard>
     </NuxtLink>
