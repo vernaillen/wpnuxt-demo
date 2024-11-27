@@ -20,7 +20,7 @@
     "@nuxt/image": "^1.8.1",
     "@nuxt/ui-pro": "^1.4.4",
     "@nuxtjs/plausible": "^1.0.3",
-    "@vueuse/core": "^11.1.0",
+    "@vueuse/core": "^12.0.0",
     "@wpnuxt/blocks": "^0.0.11",
     "@wpnuxt/core": "1.0.0-edge.24",
     "nuxt": "^3.13.2",
