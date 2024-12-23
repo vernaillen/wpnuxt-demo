@@ -22,7 +22,7 @@
     "@nuxtjs/plausible": "^1.0.3",
     "@vueuse/core": "^11.1.0",
     "@wpnuxt/blocks": "^0.0.11",
-    "@wpnuxt/core": "1.0.0-edge.24",
+    "@wpnuxt/core": "1.0.0-edge.25",
     "nuxt": "^3.13.2",
     "nuxt-time": "^1.0.2",
     "nuxt-vitalizer": "^0.10.0",
