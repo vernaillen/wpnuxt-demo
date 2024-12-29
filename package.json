@@ -34,7 +34,7 @@
     "vue-easy-lightbox": "^1.19.0",
     "vue-json-pretty": "^2.4.0"
   },
-  "packageManager": "pnpm@9.15.1",
+  "packageManager": "pnpm@9.15.2",
   "engines": {
     "node": ">=18"
   }
