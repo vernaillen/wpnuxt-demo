@@ -10,48 +10,16 @@ export default defineNuxtConfig({
     '@nuxtjs/plausible',
     '@wpnuxt/blocks',
     '@wpnuxt/core',
-    'nuxt-time',
-    'nuxt-vitalizer'
+    'nuxt-time'
   ],
 
-  future: {
-    compatibilityVersion: 4
-  },
-  compatibilityDate: '2024-09-06',
-
-  wpNuxt: {
-    wordpressUrl: 'https://wpnuxtdev.wpenginepowered.com',
-    frontendUrl: 'https://demo.wpnuxt.com',
-    defaultMenuName: 'main',
-    enableCache: true,
-    staging: false,
-    logLevel: 4,
-    downloadSchema: true
-  },
-
-  eslint: {
-    config: {
-      stylistic: {
-        commaDangle: 'never',
-        braceStyle: '1tbs'
-      }
-    },
-    checker: {
-      lintOnStart: true,
-      fix: true
-    }
+  devtools: {
+    enabled: true
   },
 
   css: [
     'vue-json-pretty/lib/styles.css'
   ],
-
-  image: {
-    provider: 'twicpics',
-    twicpics: {
-      baseURL: 'https://vernaillen.twic.pics/wpnuxt-demo'
-    }
-  },
 
   colorMode: {
     preference: 'dark'
@@ -66,6 +34,11 @@ export default defineNuxtConfig({
       prerender: true
     }
   },
+
+  future: {
+    compatibilityVersion: 4
+  },
+  compatibilityDate: '2024-12-31',
 
   /**
    * Depending on your servers capabilities, you may need to adjust the following settings.
@@ -85,17 +58,37 @@ export default defineNuxtConfig({
     }
   },
 
-  vitalizer: {
-    // Remove the render-blocking entry CSS
-    disableStylesheets: 'entry',
-    disablePrefetchLinks: true
+  eslint: {
+    config: {
+      stylistic: {
+        commaDangle: 'never',
+        braceStyle: '1tbs'
+      }
+    },
+    checker: {
+      lintOnStart: true,
+      fix: true
+    }
+  },
+
+  image: {
+    provider: 'twicpics',
+    twicpics: {
+      baseURL: 'https://vernaillen.twic.pics/wpnuxt-demo'
+    }
   },
 
   plausible: {
     apiHost: 'https://demo.wpnuxt.com/plio'
   },
 
-  devtools: {
-    enabled: true
+  wpNuxt: {
+    wordpressUrl: 'https://wpnuxtdev.wpenginepowered.com',
+    frontendUrl: 'https://demo.wpnuxt.com',
+    defaultMenuName: 'main',
+    enableCache: true,
+    staging: false,
+    logLevel: 4,
+    downloadSchema: true
   }
 })
