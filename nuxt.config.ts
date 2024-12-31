@@ -83,7 +83,7 @@ export default defineNuxtConfig({
   },
 
   wpNuxt: {
-    wordpressUrl: 'https://wpnuxtdev.wpenginepowered.com',
+    wordpressUrl: 'https://wordpress.wpnuxt.com',
     frontendUrl: 'https://demo.wpnuxt.com',
     defaultMenuName: 'main',
     enableCache: true,
