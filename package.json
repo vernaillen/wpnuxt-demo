@@ -25,7 +25,7 @@
     "@wpnuxt/core": "1.0.0-edge.25",
     "nuxt": "^3.15.0",
     "nuxt-time": "^1.0.3",
-    "typescript": "5.7.2",
+    "typescript": "5.7.3",
     "vite-plugin-eslint2": "^5.0.3",
     "vue-tsc": "^2.2.0"
   },
