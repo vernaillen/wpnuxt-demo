@@ -23,6 +23,15 @@ const links = computed(() => [
     <template #title>
       <WPNuxtLogo />
     </template>
-    <UNavigationMenu :items="links" />
+    <template #body>
+      <UNavigationMenu
+        orientation="vertical"
+        :items="links"
+      />
+    </template>
+    <UNavigationMenu
+      orientation="horizontal"
+      :items="links"
+    />
   </UHeader>
 </template>
