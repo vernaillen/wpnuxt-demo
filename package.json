@@ -22,6 +22,7 @@
     "@nuxt/image": "^1.9.0",
     "@nuxt/ui-pro": "^3.0.0",
     "@nuxtjs/plausible": "^1.2.0",
+    "@tailwindcss/typography": "^0.5.16",
     "@vueuse/core": "^13.0.0",
     "@wpnuxt/blocks": "^0.0.16",
     "@wpnuxt/core": "1.0.0-edge.28",
