@@ -17,13 +17,13 @@
       <USkeleton class="h-4 w-1/2" />
     </div>
     <template #left>
-      <UAside>
+      <UPageAside>
         <PrevNext
           :prev="undefined"
           :next="undefined"
           class="mt-2 mb-12"
         />
-      </UAside>
+      </UPageAside>
     </template>
   </UPage>
 </template>

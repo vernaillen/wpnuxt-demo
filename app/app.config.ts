@@ -1,19 +1,15 @@
 export default defineAppConfig({
   ui: {
-    primary: 'reefgold',
-    gray: 'neutral',
-    page: {
-      body: {
-        wrapper: 'content-enter'
-      }
+    color: {
+      primary: 'reefgold',
+      gray: 'neutral'
     },
     card: {
-      base: 'overflow-hidden',
-      rounded: 'rounded-xl',
-      shadow: 'shadow-md',
-      header: {
-        base: 'overflow-hidden',
-        padding: 'p-0 sm:p-0'
+      slots: {
+        wrapper: 'overflow-hidden',
+        rounded: 'rounded-xl',
+        shadow: 'shadow-md',
+        header: 'overflow-hidden p-0 sm:p-0'
       }
     }
   }

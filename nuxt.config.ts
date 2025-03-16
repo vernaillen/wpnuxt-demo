@@ -1,12 +1,10 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
 
-  extends: ['@nuxt/ui-pro'],
-
   modules: [
     '@nuxt/eslint',
     '@nuxt/image',
-    '@nuxt/ui',
+    '@nuxt/ui-pro',
     '@nuxtjs/plausible',
     '@wpnuxt/blocks',
     '@wpnuxt/core',
@@ -18,15 +16,12 @@ export default defineNuxtConfig({
   },
 
   css: [
+    '~/assets/css/main.css',
     'vue-json-pretty/lib/styles.css'
   ],
 
   colorMode: {
     preference: 'dark'
-  },
-
-  ui: {
-    icons: ['mdi']
   },
 
   routeRules: {

@@ -20,12 +20,12 @@ useSeoMeta({
 </script>
 
 <template>
-  <div>
+  <UApp>
     <Header />
     <UMain>
       <NuxtPage />
     </UMain>
     <Footer />
     <EasyLightbox />
-  </div>
+  </UApp>
 </template>

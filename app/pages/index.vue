@@ -19,9 +19,9 @@ useHead({
 </script>
 
 <template>
-  <div>
-    <NuxtLayout>
-      <ULandingSection
+  <NuxtLayout>
+    <UContainer>
+      <UPageSection
         id="posts"
         :title="settings?.title || 'WPNuxt Demo'"
         :headline="settings?.description || 'Nuxt + Headless WordPress'"
@@ -36,11 +36,11 @@ useHead({
         </UPageGrid>
         <UPageGrid v-else>
           <Post
-            v-for="skel, index in [1, 2, 3]"
+            v-for="skel, index in [1, 2, 3, 4, 5]"
             :key="index"
           />
         </UPageGrid>
-      </ULandingSection>
-    </NuxtLayout>
-  </div>
+      </UPageSection>
+    </UContainer>
+  </NuxtLayout>
 </template>

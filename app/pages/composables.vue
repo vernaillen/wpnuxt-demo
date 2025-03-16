@@ -113,9 +113,9 @@ onMounted(() => {
           </pre>
         </UPageBody>
         <template #left>
-          <UAside>
+          <UPageAside>
             <PrevNext class="mt-2 mb-12" />
-          </UAside>
+          </UPageAside>
         </template>
       </UPage>
     </UContainer>

@@ -19,9 +19,10 @@ const links = computed(() => [
 </script>
 
 <template>
-  <UHeader :links="links">
-    <template #logo>
+  <UHeader>
+    <template #title>
       <WPNuxtLogo />
     </template>
+    <UNavigationMenu :items="links" />
   </UHeader>
 </template>

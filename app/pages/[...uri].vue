@@ -61,7 +61,7 @@ onMounted(fetch)
           </div>
         </UPageBody>
         <template #left>
-          <UAside>
+          <UPageAside>
             <PrevNext
               :prev="post.contentTypeName === 'post' ? prevData : undefined"
               :next="post.contentTypeName === 'post' ? nextData : undefined"
@@ -74,7 +74,7 @@ onMounted(fetch)
               :src="featuredImage"
               class="object-cover rounded-md"
             />
-          </UAside>
+          </UPageAside>
         </template>
       </UPage>
       <PageSkeleton v-show="isLoading" />
