@@ -7,8 +7,7 @@ export default defineNuxtConfig({
     '@nuxt/ui-pro',
     '@nuxtjs/plausible',
     '@wpnuxt/blocks',
-    '@wpnuxt/core',
-    'nuxt-time'
+    '@wpnuxt/core'
   ],
 
   devtools: {
@@ -33,7 +32,7 @@ export default defineNuxtConfig({
   future: {
     compatibilityVersion: 4
   },
-  compatibilityDate: '2024-12-31',
+  compatibilityDate: '2025-05-04',
 
   /**
    * Depending on your servers capabilities, you may need to adjust the following settings.
