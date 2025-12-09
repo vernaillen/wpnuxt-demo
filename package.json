@@ -30,7 +30,7 @@
     "nuxt": "^3.17.1",
     "typescript": "5.8.3",
     "vite-plugin-eslint2": "^5.0.3",
-    "vue-tsc": "^2.2.10"
+    "vue-tsc": "^3.0.0"
   },
   "dependencies": {
     "vue-easy-lightbox": "^1.19.0",
