@@ -16,11 +16,8 @@ jobs:
       - uses: actions/checkout@v6
 
       - uses: pnpm/action-setup@v4
-        name: Install pnpm
-        id: pnpm-install
         with:
           run_install: false
-          version: 10
 
       - name: Install dependencies
         run: pnpm install
