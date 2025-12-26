@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { data } = await useWPGeneralSettings()
+const { data } = await useGeneralSettings()
 const settings = useState('settings', () => data)
 
 useHead({

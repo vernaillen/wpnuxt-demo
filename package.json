@@ -1,6 +1,6 @@
 {
   "name": "wpnuxt-demo",
-  "version": "0.2.0",
+  "version": "2.0.0-alpha.2",
   "private": true,
   "type": "module",
   "scripts": {
@@ -16,7 +16,7 @@
   },
   "devDependencies": {
     "@iconify-json/heroicons": "^1.2.3",
-    "@iconify-json/lucide": "^1.2.81",
+    "@iconify-json/lucide": "^1.2.82",
     "@iconify-json/mdi": "^1.2.3",
     "@iconify-json/svg-spinners": "^1.2.4",
     "@nuxt/eslint": "^1.12.1",
@@ -25,15 +25,16 @@
     "@nuxtjs/plausible": "^2.0.1",
     "@tailwindcss/typography": "^0.5.19",
     "@vueuse/core": "^14.1.0",
-    "@wpnuxt/blocks": "^0.0.17",
-    "@wpnuxt/core": "1.0.0-edge.30",
+    "@wpnuxt/blocks": "2.0.0-alpha.2",
+    "@wpnuxt/core": "2.0.0-alpha.2",
     "eslint": "^9.39.2",
     "nuxt": "^4.2.2",
     "typescript": "5.9.3",
     "vite-plugin-eslint2": "^5.0.4",
-    "vue-tsc": "^3.1.8"
+    "vue-tsc": "^3.2.1"
   },
   "dependencies": {
+    "@nuxtjs/mdc": "^0.19.2",
     "vue-easy-lightbox": "^1.19.0",
     "vue-json-pretty": "^2.6.0"
   },

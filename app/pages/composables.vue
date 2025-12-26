@@ -1,38 +1,39 @@
 <script setup lang="ts">
 import VueJsonPretty from 'vue-json-pretty'
+import type { JSONDataType } from 'vue-json-pretty/types/utils'
 
 const isLoading = ref(false)
 const loadedData = ref<string>('posts')
-const data = ref({})
+const data = ref<JSONDataType>({})
 
 async function fetchPosts() {
   start('posts')
-  const { data: postsData } = await useWPPosts()
-  data.value = computed(() => postsData).value
+  const { data: postsData } = await usePosts()
+  data.value = postsData.value as JSONDataType
   isReady()
 }
 async function fetchPost() {
   start('post')
-  const { data: postData } = await useWPPostByUri({ uri: 'hello-world' })
-  data.value = computed(() => postData).value
+  const { data: postData } = await usePostByUri({ uri: 'hello-world' })
+  data.value = postData.value as JSONDataType
   isReady()
 }
 async function fetchPages() {
   start('pages')
-  const { data: pagesData } = await useWPPages()
-  data.value = computed(() => pagesData).value
+  const { data: pagesData } = await usePages()
+  data.value = pagesData.value as JSONDataType
   isReady()
 }
 async function fetchSettings() {
   start('settings')
-  const { data: settings } = await useWPGeneralSettings()
-  data.value = computed(() => settings).value
+  const { data: settingsData } = await useGeneralSettings()
+  data.value = settingsData.value as JSONDataType
   isReady()
 }
 async function fetchUri() {
   start('wpUri')
-  const uri = await useWPUri()
-  data.value = computed(() => uri).value
+  const uri = useWPUri()
+  data.value = uri as JSONDataType
   isReady()
 }
 
@@ -75,19 +76,19 @@ onMounted(() => {
             </a>.
           </p>
           <ComposableExample
-            code="const { data: posts } = await useWPPosts()"
+            code="const { data: posts } = await usePosts()"
             :trigger="fetchPosts"
           />
           <ComposableExample
-            code="const { data: post } = await useWPPostByUri({ uri: 'hello-world' })"
+            code="const { data: post } = await usePostByUri({ uri: 'hello-world' })"
             :trigger="fetchPost"
           />
           <ComposableExample
-            code="const { data: pages } = await useWPPages()"
+            code="const { data: pages } = await usePages()"
             :trigger="fetchPages"
           />
           <ComposableExample
-            code="const { data: settings } = await useWPGeneralSettings()"
+            code="const { data: settings } = await useGeneralSettings()"
             :trigger="fetchSettings"
           />
           <ComposableExample

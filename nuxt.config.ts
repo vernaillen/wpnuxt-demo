@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxt/ui',
     '@nuxtjs/plausible',
+    '@nuxtjs/mdc',
     '@wpnuxt/blocks',
     '@wpnuxt/core'
   ],
@@ -78,11 +79,12 @@ export default defineNuxtConfig({
 
   wpNuxt: {
     wordpressUrl: 'https://wordpress.wpnuxt.com',
-    frontendUrl: 'https://demo.wpnuxt.com',
-    defaultMenuName: 'main',
-    enableCache: true,
-    staging: false,
-    logLevel: 4,
+    cache: {
+      enabled: true,
+      maxAge: 60 * 60 * 24 * 30,
+      swr: true
+    },
+    debug: true,
     downloadSchema: true
   }
 })

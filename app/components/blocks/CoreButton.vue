@@ -9,10 +9,10 @@ defineProps<{
 <template>
   <div>
     <UButton
-      :to="block.attributes.url"
-      color="blue"
+      :to="block.attributes.url ?? undefined"
+      color="primary"
     >
-      <span v-sanitize="block.attributes.text" />
+      <span v-sanitize-html="block.attributes.text" />
     </UButton>
   </div>
 </template>

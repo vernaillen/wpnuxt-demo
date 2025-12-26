@@ -1,17 +1,8 @@
 <script setup lang="ts">
-import type { PostFragment } from '#build/graphql-operations'
+import type { GeneralSettingsFragment } from '#build/graphql-operations'
 
-const isLoading = ref(true)
-const posts = ref<PostFragment[]>([])
-const settings = useState('settings')
-
-async function fetch() {
-  isLoading.value = true
-  const { data: postsData } = await useWPPosts()
-  posts.value = computed(() => postsData).value
-  isLoading.value = false
-}
-onMounted(fetch)
+const settings = useState<GeneralSettingsFragment | undefined>('settings')
+const { data: posts, pending } = await usePosts()
 
 useHead({
   title: settings.value?.title || 'WPNuxt Demo'
@@ -27,17 +18,17 @@ useHead({
         :headline="settings?.description || 'Nuxt + Headless WordPress'"
         description="WordPress posts are shown below as cards. WordPress pages are listed above in the header."
       >
-        <UPageGrid v-if="!isLoading">
+        <UPageGrid v-if="!pending && posts">
           <Post
-            v-for="post, index in posts"
-            :key="index"
+            v-for="post in posts"
+            :key="post.id"
             :post="post"
           />
         </UPageGrid>
         <UPageGrid v-else>
           <Post
-            v-for="skel, index in [1, 2, 3, 4, 5]"
-            :key="index"
+            v-for="n in 5"
+            :key="n"
           />
         </UPageGrid>
       </UPageSection>

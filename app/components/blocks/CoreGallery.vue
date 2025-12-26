@@ -1,25 +1,26 @@
 <script setup lang="ts">
-import type { CoreGallery, CoreImage } from '#graphql-operations'
+import type { CoreGallery, CoreImage } from '#wpnuxt/blocks'
 
 const img = useImage()
 const config = useRuntimeConfig()
-const wpUrl = config.public.wpNuxt.wordpressUrl
+const wpUrl = config.public.wpNuxt.wordpressUrl as string
 const props = defineProps<{
   block: CoreGallery
 }>()
 const lightbox = useLightbox()
 const images: string[] = []
-props.block?.innerBlocks?.forEach((innerBlock) => {
+props.block?.innerBlocks?.forEach((innerBlock: CoreImage | null) => {
   if (innerBlock && innerBlock.name === 'core/image') {
-    const imgBlock = innerBlock as CoreImage
-    const imgUrl = img(getRelativeImageUrl(imgBlock))
+    const imgUrl = img(getRelativeImageUrl(innerBlock))
     images.push(imgUrl)
   }
 })
-function getRelativeImageUrl(imgBlock: CoreImage) {
-  if (imgBlock.attributes?.url && imgBlock.attributes.url.indexOf(wpUrl) > -1) {
-    return imgBlock.attributes.url.replace(wpUrl, '')
+function getRelativeImageUrl(imgBlock: CoreImage): string {
+  const url = imgBlock.attributes?.url
+  if (url && url.indexOf(wpUrl) > -1) {
+    return url.replace(wpUrl, '')
   }
+  return url || ''
 }
 function openGallery(i: number) {
   lightbox.images = images

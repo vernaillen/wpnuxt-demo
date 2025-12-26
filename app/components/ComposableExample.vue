@@ -1,14 +1,8 @@
 <script setup lang="ts">
-defineProps({
-  code: {
-    type: String,
-    required: true
-  },
-  trigger: {
-    type: Function,
-    required: true
-  }
-})
+const props = defineProps<{
+  code: string
+  trigger: () => void | Promise<void>
+}>()
 </script>
 
 <template>
@@ -19,8 +13,8 @@ defineProps({
     <div>
       <UButton
         icon="i-mdi-play"
-        alt="Run the code"
-        @click="trigger"
+        aria-label="Run the code"
+        @click="props.trigger"
       />
     </div>
   </div>
