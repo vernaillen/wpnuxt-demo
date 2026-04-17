@@ -29,7 +29,7 @@
     "@wpnuxt/core": "2.0.0-alpha.2",
     "eslint": "^9.39.2",
     "nuxt": "^4.2.2",
-    "typescript": "5.9.3",
+    "typescript": "6.0.3",
     "vite-plugin-eslint2": "^5.0.4",
     "vue-tsc": "^3.2.1"
   },
